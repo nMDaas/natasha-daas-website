@@ -1,0 +1,46 @@
+  @font-face {
+    font-family: 'NatashaFont';
+    src: url('../assets/fonts/Natashafont-Regular.woff') format('woff');
+  }
+  
+  .menu-bar {
+    background-color: #b78a80;
+    font-family: 'NatashaFont';
+    font-size: 34px;
+    z-index: 10000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100% !important;
+  }
+
+  .menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-bar ul li {
+    display: inline-block;
+  }
+  
+  .menu-bar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .menu-bar ul li a:hover {
+    background-color: #111;
+  }
+
+  ul a {
+    color: white; /* Preserve the original color of the icon */
+    text-decoration: none; /* Remove underline */
+    padding-right: 14px;
+    padding-top: 10px;
+    float: right;
+  }
+ 

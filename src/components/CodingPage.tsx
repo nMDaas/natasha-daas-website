@@ -45,7 +45,7 @@ function Masonry() {
       const changeImage = () => {
         gsap.to(image, {
           backgroundImage: `url(${hoverImages[imageIndex]})`,
-          duration: 0.01,
+          duration: 0.5,
           ease: "power3.inOut",
           onComplete: () => {
             imageIndex = (imageIndex + 1) % hoverImages.length;

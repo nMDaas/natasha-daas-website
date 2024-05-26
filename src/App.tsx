@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div id="code-section">
-        <TestPage />
+        <CodingPage />
       </div>
     </>
   )

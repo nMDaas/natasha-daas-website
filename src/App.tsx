@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import TaskBar from "./components/TaskBar";
-import CodingPage from "./components/codingPage";
+import CodingPage from "./components/CodingPage";
 
 function App() {
   const urls = [

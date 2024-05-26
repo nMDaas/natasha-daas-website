@@ -1,7 +1,6 @@
 import raytracer from '/code/raytracer.jpg';
 import opengl from '/code/opengl.gif';
 import productionplan from '/code/productionplanner.jpg';
-import spirograph from '/code/spirograph.jpg';
 import bakeryapp from '/code/bakeapp.jpg';
 import plantgen from '/code/plantGen.jpg';
 import portfolio from '/code/portfolio.jpg';
@@ -45,7 +44,7 @@ export default [
       "Allows quick distribution of leaves around an object (like a stem) or in a concentrated location"
     ] },
   { css: opengl, 
-    hoverImages: [opengl2,opengl3,opengl4,opengl], 
+    hoverImages: [opengl], 
     height: 1500, 
     description: "Trackball, Lighting, Texturing and Animation in OpenGL",
     skills: "C++ | OpenGL | GLSL | Graphics Programming",

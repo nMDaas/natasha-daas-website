@@ -1,15 +1,15 @@
 import React, { useEffect, useMemo, useState, useRef } from "react";
 import { gsap } from "gsap";
-import useMedia from './useMedia'
-import { useTransition, a } from '@react-spring/web'
-import data from './data'
-import styles from './codingStyles.module.css'
-import useMeasure from 'react-use-measure'
+import useMedia from './useMedia';
+import { useTransition, a } from '@react-spring/web';
+import data from './data';
+import styles from './codingStyles.module.css';
+import useMeasure from 'react-use-measure';
 
 function Masonry() {
-  const columns = useMedia(['(min-width: 1500px)', '(min-width: 1000px)', '(min-width: 600px)'], [4, 4], 2)
-  const [ref, { width }] = useMeasure()
-  const [items, set] = useState(data)
+  const columns = useMedia(['(min-width: 1500px)', '(min-width: 1000px)', '(min-width: 600px)'], [4, 4], 2);
+  const [ref, { width }] = useMeasure();
+  const [items, set] = useState(data);
 
   const [heights, gridItems] = useMemo(() => {
     let heights = new Array(columns).fill(0);
@@ -36,26 +36,45 @@ function Masonry() {
   const intervalIds = useRef({});
 
   useEffect(() => {
-    items.forEach((item, index) => {
-      const element = document.getElementById(`grid-item-${index}`);
-      const image = element.querySelector('.image');
-      const hoverImages = item.hoverImages;
-      let imageIndex = 0;
+    const preloadImage = (url) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = url;
+        img.onload = resolve;
+        img.onerror = reject;
+      });
+    };
 
-      const changeImage = () => {
-        gsap.to(image, {
-          backgroundImage: `url(${hoverImages[imageIndex]})`,
-          duration: 0.5,
-          ease: "power3.inOut",
-          onComplete: () => {
-            imageIndex = (imageIndex + 1) % hoverImages.length;
-            intervalIds.current[index] = setTimeout(changeImage, 1500); // Pause for 1.5 seconds before changing the image
-          }
+    const preloadImages = (urls) => {
+      return Promise.all(urls.map(preloadImage));
+    };
+
+    const allImages = items.flatMap(item => [item.css, ...item.hoverImages]);
+
+    preloadImages(allImages)
+      .then(() => {
+        items.forEach((item, index) => {
+          const element = document.getElementById(`grid-item-${index}`);
+          const image = element.querySelector('.image');
+          const hoverImages = item.hoverImages;
+          let imageIndex = 0;
+
+          const changeImage = () => {
+            gsap.to(image, {
+              backgroundImage: `url(${hoverImages[imageIndex]})`,
+              duration: 0.5,
+              ease: "power3.inOut",
+              onComplete: () => {
+                imageIndex = (imageIndex + 1) % hoverImages.length;
+                intervalIds.current[index] = setTimeout(changeImage, 1500); // Pause for 1.5 seconds before changing the image
+              }
+            });
+          };
+
+          changeImage();
         });
-      };
-
-      changeImage();
-    });
+      })
+      .catch((error) => console.error("Failed to preload images", error));
 
     return () => {
       // Clear all intervals when the component unmounts
@@ -91,7 +110,7 @@ function Masonry() {
 }
 
 const CodingPage = () => {
-  return <Masonry />
+  return <Masonry />;
 };
 
 export default CodingPage;

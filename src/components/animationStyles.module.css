@@ -1,0 +1,11 @@
+.animpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .animContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

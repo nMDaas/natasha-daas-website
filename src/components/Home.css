@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'NatashaFont';
+    src: url('../fonts/Natashafont-Regular.woff') format('woff');
+}
+
+.home-page {
+    font-family:'NatashaFont';
+    background-color: #b78a80;
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f2c9bf;
+    font-size: 100px;
+}

@@ -1,29 +1,29 @@
 import React, { useState } from 'react';
 import './AnimationPage.css';
 import PopUpImage from './PopUpImage'; 
-import anim1 from '/natasha-daas-website/animation/anim1.gif';
-import anim1tn from '/natasha-daas-website/animation/anim1pic.jpeg';
-import flythrough from '/natasha-daas-website/animation/flythrough.gif';
-import flythroughtn from '/natasha-daas-website/animation/flythroughpic.jpg';
-import basics from '/natasha-daas-website/animation/basics.gif';
-import basicstn from '/natasha-daas-website/animation/basicpic.jpeg';
-import ft1 from '/natasha-daas-website/animation/ft1.jpg';
-import ft2 from '/natasha-daas-website/animation/ft2.jpg';
-import ft3 from '/natasha-daas-website/animation/ft3.jpg';
-import ft4 from '/natasha-daas-website/animation/ft4.jpg';
-import ft5 from '/natasha-daas-website/animation/ft5.jpg';
-import ft6 from '/natasha-daas-website/animation/ft6.jpg';
-import anim1a from '/natasha-daas-website/animation/anim1a.jpg';
-import anim1b from '/natasha-daas-website/animation/anim1b.jpg';
-import anim1c from '/natasha-daas-website/animation/anim1c.jpg';
-import anim1d from '/natasha-daas-website/animation/anim1d.jpg';
-import anim1e from '/natasha-daas-website/animation/anim1e.jpg';
-import anim1f from '/natasha-daas-website/animation/anim1f.jpg';
-import toast1 from '/natasha-daas-website/animation/toast1.jpg';
-import toast2 from '/natasha-daas-website/animation/toast2.jpg';
-import toast3 from '/natasha-daas-website/animation/toast3.jpg';
-import toast4 from '/natasha-daas-website/animation/toast4.jpg';
-import toast5 from '/natasha-daas-website/animation/toast5.jpg';
+import anim1 from '/animation/test.mp4';
+import anim1tn from '/animation/anim1pic.jpeg';
+import flythrough from '/animation/test.mp4';
+import flythroughtn from '/animation/flythroughpic.jpg';
+import basics from '/animation/test.mp4';
+import basicstn from '/animation/basicpic.jpeg';
+import ft1 from '/animation/ft1.jpg';
+import ft2 from '/animation/ft2.jpg';
+import ft3 from '/animation/ft3.jpg';
+import ft4 from '/animation/ft4.jpg';
+import ft5 from '/animation/ft5.jpg';
+import ft6 from '/animation/ft6.jpg';
+import anim1a from '/animation/anim1a.jpg';
+import anim1b from '/animation/anim1b.jpg';
+import anim1c from '/animation/anim1c.jpg';
+import anim1d from '/animation/anim1d.jpg';
+import anim1e from '/animation/anim1e.jpg';
+import anim1f from '/animation/anim1f.jpg';
+import toast1 from '/animation/toast1.jpg';
+import toast2 from '/animation/toast2.jpg';
+import toast3 from '/animation/toast3.jpg';
+import toast4 from '/animation/toast4.jpg';
+import toast5 from '/animation/toast5.jpg';
 
 interface Slide {
   src: string;
@@ -109,88 +109,90 @@ const slides: Slide[] = [
 ];
 
 const AnimationPage: React.FC = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [imageOpen, setImageOpen] = useState(false);
-  const [currentImage, setCurrentImage] = useState({ src: '', alt: '' });
-
-  const handleThumbnailClick = (index: number) => {
-    setCurrentIndex(index);
-  };
-
-  const handleImageClick = (image: { src: string, alt: string }) => {
-    setCurrentImage(image);
-    setImageOpen(true);
-  };
-
-  const closeModal = () => {
-    setImageOpen(false);
-  };
-
-  return (
-    <section className="animsec">
-      <div className="container">
-        <div className="carousel">
-          <ul className="carousel__slides">
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [imageOpen, setImageOpen] = useState(false);
+    const [currentImage, setCurrentImage] = useState({ src: '', alt: '' });
+  
+    const handleThumbnailClick = (index: number) => {
+      setCurrentIndex(index);
+    };
+  
+    const handleImageClick = (image: { src: string, alt: string }) => {
+      setCurrentImage(image);
+      setImageOpen(true);
+    };
+  
+    const closeModal = () => {
+      setImageOpen(false);
+    };
+  
+    return (
+      <section className="animsec">
+        <div className="container">
+          <div className="carousel">
+            <ul className="carousel__slides">
+              {slides.map((slide, index) => (
+                <li key={index} className={`carousel__slide ${index === currentIndex ? 'active' : ''}`}>
+                    <video width="850" height="478" autoPlay loop muted>
+                      <source src={slide.src} type="video/mp4"/>
+                      Your browser does not support the video tag.
+                    </video>
+                </li>
+              ))}
+            </ul>
+            <ul className="carousel__thumbnails">
+              {slides.map((slide, index) => (
+                <li key={index}>
+                  <img
+                    src={slide.thumbnail}
+                    alt={slide.alt}
+                    onClick={() => handleThumbnailClick(index)}
+                    className={index === currentIndex ? 'active' : ''}
+                  />
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="text">
             {slides.map((slide, index) => (
-              <li key={index} className={`carousel__slide ${index === currentIndex ? 'active' : ''}`}>
+              <div key={index} className={`carousel__slide ${index === currentIndex ? 'active' : ''}`}>
                 <figure>
-                  <img src={slide.src} alt={slide.alt} width="850px" />
+                  <figcaption className="title">
+                    {slide.caption}
+                  </figcaption>
+                  <figcaption className="skills">
+                    {slide.skills}
+                  </figcaption>
+                  <ul>
+                    {slide.details.map((details, index) => (
+                      <li key={index}>{details}</li>
+                    ))}
+                  </ul>
+                  <div className="slide-images">
+                    {slide.images.map((image, i) => (
+                      <img
+                        key={i}
+                        src={image.src}
+                        alt={image.alt}
+                        width={image.width}
+                        height={image.height}
+                        className="slide-image"
+                        onClick={() => handleImageClick(image)}
+                      />
+                    ))}
+                  </div>
                 </figure>
-              </li>
-            ))}
-          </ul>
-          <ul className="carousel__thumbnails">
-            {slides.map((slide, index) => (
-              <li key={index}>
-                <img
-                  src={slide.thumbnail}
-                  alt={slide.alt}
-                  onClick={() => handleThumbnailClick(index)}
-                  className={index === currentIndex ? 'active' : ''}
-                />
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="text">
-          {slides.map((slide, index) => (
-            <div key={index} className={`carousel__slide ${index === currentIndex ? 'active' : ''}`}>
-              <figure>
-                <figcaption className="title">
-                  {slide.caption}
-                </figcaption>
-                <figcaption className="skills">
-                  {slide.skills}
-                </figcaption>
-                <ul>
-                  {slide.details.map((details, index) => (
-                    <li key={index}>{details}</li>
-                  ))}
-                </ul>
-                <div className="slide-images">
-                  {slide.images.map((image, i) => (
-                    <img
-                      key={i}
-                      src={image.src}
-                      alt={image.alt}
-                      width={image.width}
-                      height={image.height}
-                      className="slide-image"
-                      onClick={() => handleImageClick(image)}
-                    />
-                  ))}
+                <div className="link">
+                  <a href={slide.link} target="_blank" rel="noopener noreferrer">watch here!</a>
                 </div>
-              </figure>
-              <div className="link">
-                <a href={slide.link} target="_blank" rel="noopener noreferrer">watch here!</a>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-      <PopUpImage show={imageOpen} onClose={closeModal} imageSrc={currentImage.src} imageAlt={currentImage.alt} customSize={true} />
-    </section>
-  );
-};
-
-export default AnimationPage;
+        <PopUpImage show={imageOpen} onClose={closeModal} imageSrc={currentImage.src} imageAlt={currentImage.alt} customSize={true} />
+      </section>
+      
+    );
+  };
+  
+  export default AnimationPage;

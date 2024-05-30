@@ -1,5 +1,4 @@
 import raytracer from '/code/raytracer.jpg';
-import opengl from '/code/opengl.gif';
 import productionplan from '/code/productionplanner.jpg';
 import bakeryapp from '/code/bakeapp.jpg';
 import plantgen from '/code/plantGen.jpg';
@@ -7,7 +6,6 @@ import portfolio from '/code/portfolio.jpg';
 import raytracer2 from '/code/rb.jpg';
 import raytracer3 from '/code/rc.jpg';
 import raytracer4 from '/code/rd.jpg';
-import spirogif from '/code/spirograph.gif';
 import bakeapp from '/code/bakeapp.jpg';
 import photoeditor from '/code/photoeditor.jpg';
 import photoeditor2 from '/code/re.jpg';
@@ -15,9 +13,6 @@ import photoeditor3 from '/code/rf.jpg';
 import photoeditor4 from '/code/rg.jpg';
 import productionplan2 from '/code/rh.jpg';
 import productionplan3 from '/code/ri.jpg';
-import opengl2 from '/code/rk.gif';
-import opengl3 from '/code/rl.gif';
-import opengl4 from '/code/rm.gif';
 
 export default [
   { css: raytracer, 
@@ -43,8 +38,8 @@ export default [
       "Used Python and MEL scripting to quickly generate various models of a leaf from a prototype using distorting, tilting and scaling",
       "Allows quick distribution of leaves around an object (like a stem) or in a concentrated location"
     ] },
-  { css: opengl, 
-    hoverImages: [opengl], 
+  { css: plantgen, 
+    hoverImages: [plantgen], 
     height: 1500, 
     description: "Trackball, Lighting, Texturing and Animation in OpenGL",
     skills: "C++ | OpenGL | GLSL | Graphics Programming",
@@ -75,8 +70,8 @@ export default [
       "Used Typescript and Javascript to manage user's various production plans, task completion and keep track of production progress"
     ]
   },
-  { css: spirogif,
-    hoverImages: [spirogif], 
+  { css: plantgen,
+    hoverImages: [plantgen], 
     height: 1500, 
     description: "Spirograph Animation", 
     skills: "C++ | OpenGL Animation | Graphics Programming",

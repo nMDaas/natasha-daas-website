@@ -7,7 +7,7 @@ import styles from './codingStyles.module.css'
 import useMeasure from 'react-use-measure'
 
 function Masonry() {
-  const columns = useMedia(['(min-width: 1500px)', '(min-width: 1000px)', '(min-width: 600px)'], [4, 4], 2)
+  const columns = useMedia(['(min-width: 1500px)', '(min-width: 1000px)', '(min-width: 600px)'], [3, 3, 2], 2)
   const [ref, { width }] = useMeasure()
   const [items, set] = useState(data)
 

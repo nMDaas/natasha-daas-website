@@ -13,6 +13,9 @@ import photoeditor3 from '/code/rf.jpg';
 import photoeditor4 from '/code/rg.jpg';
 import productionplan2 from '/code/rh.jpg';
 import productionplan3 from '/code/ri.jpg';
+import opengl from '/code/opengl.mp4';
+import blank from '/code/blank.jpg';
+import spirograph from '/code/spirograph.mp4'
 
 export default [
   { css: raytracer, 
@@ -26,7 +29,8 @@ export default [
       "Allows for objects to have reflective and refractive properties using refractive index. Accounts for total internal reflection and infinite refraction",
       "Includes ability to create spotlights, point lights, and area lights in the scene",
       "Able to create hard and soft shadows by adjusting sampling of cells on lights"
-     ] },
+     ],
+    video: '' },
   { css: plantgen, 
     hoverImages: [plantgen],
     height: 1500,
@@ -37,9 +41,10 @@ export default [
       "A Maya Tool to enable rapid generation of stylized and customizable plants",
       "Used Python and MEL scripting to quickly generate various models of a leaf from a prototype using distorting, tilting and scaling",
       "Allows quick distribution of leaves around an object (like a stem) or in a concentrated location"
-    ] },
-  { css: plantgen, 
-    hoverImages: [plantgen], 
+    ],
+    video: ''  },
+  { css: blank, 
+    hoverImages: [blank], 
     height: 1500, 
     description: "Trackball, Lighting, Texturing and Animation in OpenGL",
     skills: "C++ | OpenGL | GLSL | Graphics Programming",
@@ -48,11 +53,16 @@ export default [
       "Implemented a trackball effect as similarly seen in applications like Maya and Blender",
       "Programmed cameras to work as a global camera, helicopter camera and first person camera",
       "Allows for ambient, diffuse and specular lighting effects, spotlights and texturing"
-    ], },
+    ],
+  video: opengl,
+  vidHeight: "400px",
+  vidWidth: "400px",
+},
   { css: portfolio, hoverImages: [portfolio], height: 1500, description: "Personal Website", skills: "Typescript | React | GSAP", link: "https://github.com/nMDaas/Portfolio",
     details: [
       "Website to showcase my interests in and projects related to programming, computer graphics, 3D animation and modeling!"
     ],
+    video: '' 
   },
   { css: photoeditor, hoverImages: [photoeditor2, photoeditor3, photoeditor4, photoeditor], height: 1500, description: "Photo Editor", skills: "Java | Object-Oriented Programming | MVC Pattern", link: "https://github.com/nMDaas/Photo-Editor",
     details: [
@@ -60,7 +70,8 @@ export default [
       "Implemented blurring, sharpening, brightening and flipping of images",
       "Includes ability to edit image using various greyscale, sepia and RGB filters",
       "Supports upload, saving, and conversion between jpeg, ppm and png file formats",
-    ]
+    ],
+    video: '' 
   },
   { css: productionplan, hoverImages: [productionplan2, productionplan3, productionplan], height: 1500, description: "Animation Production Plan Generator", skills: "Javascript | Typescript | Generative AI", link: "https://github.com/Abby-Dennin/Animation-Production-Plan-Generator",
     details: [
@@ -68,23 +79,28 @@ export default [
       "Uses OpenAI to generate a production plan for animators based on user provided project details",
       "Implemented capability for user customization, styling and csv export",
       "Used Typescript and Javascript to manage user's various production plans, task completion and keep track of production progress"
-    ]
+    ],
+    video: '' 
   },
-  { css: plantgen,
-    hoverImages: [plantgen], 
+  { css: blank,
+    hoverImages: [blank], 
     height: 1500, 
     description: "Spirograph Animation", 
     skills: "C++ | OpenGL Animation | Graphics Programming",
     link:"https://github.com/nMDaas/Spirograph/tree/main", 
     details: [
       "A fun animation developed using openGL and C++ to visualize a spirograph and how its pattern changes with changes in circle size"
-    ] },
+    ],
+    video: spirograph,
+    vidHeight: "400px",
+    vidWidth: "400px", },
   { css: bakeapp, hoverImages: [bakeryapp], height: 1500, description: "Bakery App", skills: "mySQL | Java", link: "https://github.com/nMDaas/BakeryApp",
     details: [
       "Developed in collaboration Caroline Smith",
       "Console based application allowing users to find recipes, post recipes, and manage their ingredient inventory",
       "Wrote queries in SQL to allow filtering based on recipe types and user interests and informs user of missing ingredients",
       "Used the JDBC connector to connect Java code to the database, queries and triggers written in SQL"
-    ]
+    ],
+    video: '' 
   },
 ]

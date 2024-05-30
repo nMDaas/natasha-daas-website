@@ -5,6 +5,7 @@ import { useTransition, a } from '@react-spring/web'
 import data from './data'
 import styles from './codingStyles.module.css'
 import useMeasure from 'react-use-measure'
+import opengl from '/code/opengl.mp4';
 
 function Masonry() {
   const columns = useMedia(['(min-width: 1500px)', '(min-width: 1000px)', '(min-width: 600px)'], [3, 3, 2], 2)
@@ -121,6 +122,12 @@ function Masonry() {
               )}
             </div>
             <div className={styles.link}><a href={item.link} target="_blank" rel="noopener noreferrer">View Project!</a></div>
+            {item.video && (
+              <video className={styles.video} width={item.vidWidth} height={item.vidHeight} autoPlay loop muted>
+                <source src={item.video} type="video/mp4"/>
+                Your browser does not support the video tag.
+              </video>
+            )}
           </div>
         </a.div>
       ))}

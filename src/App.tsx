@@ -30,7 +30,7 @@ function App() {
       <div className="animpage">
         <ArtPage />
       </div>
-      <div className="contact-section">
+      <div id="contact-section">
         <ContactPage />
       </div>
     </div>

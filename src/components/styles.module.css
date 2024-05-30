@@ -1,0 +1,56 @@
+.list {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, white, #f2c9bf);
+  }
+  
+  .list > div {
+    position: absolute;
+    will-change: transform, width, height, opacity;
+    padding: 15px;
+  }
+  
+  .list > div > div {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.2);
+    border: 10px solid white;
+  }
+  
+  .description {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 19px;
+    padding: 25px;
+    height: 3px;
+    background-color: white;
+    color: #3b3b3b;
+  }
+
+  .list div {
+    transform-style: preserve-3d;
+    z-index: 10;
+  }
+  
+  .list div:hover {
+    transform: scale(1.7); /* Slightly less aggressive scale for smoother feel */
+    z-index: 20; /* Bring the hovered element to the front */
+    transition: transform 0.3s ease-in-out, z-index 0s ease 0s; /* Immediate z-index change */
+  }
+  
+  .list div div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+  }
+  

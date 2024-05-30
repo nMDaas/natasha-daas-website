@@ -10,7 +10,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
     border-radius: 4px;
     box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.2);
     border: 10px solid white;
@@ -47,7 +46,6 @@
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
   }
   
   .carousel__thumbnails li {
@@ -76,6 +74,7 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    float: left;
   }
   
   .text div figure figcaption {

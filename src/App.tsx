@@ -3,6 +3,7 @@ import CodingPage from "./components/CodingPage";
 import AnimationPage from "./components/AnimationPage";
 import HomePage from "./components/Home";
 import AboutPage from "./components/About";
+import ArtPage from "./components/ArtPage";
 
 import './App.css';
 
@@ -23,6 +24,10 @@ function App() {
       <h2 id="anim-section">Animation & Modeling</h2>
       <div className="animpage">
         <AnimationPage />
+      </div>
+      <h2 id="art-section">Some Art!</h2>
+      <div className="animpage">
+        <ArtPage />
       </div>
 
     </div>

@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'NatashaFont';
+  src: url('../assets/fonts/Natashafont-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PeachBlossom';
+  src: url('../assets/fonts/PeachBlossom.ttf') format('truetype');
+}
+  
+
+.contact-page {
+    font-family: 'PeachBlossom';
+    color: #b78a80;
+    position: relative;
+    padding-top: 50px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2c9bf;
+    font-size: 40px;
+}
+
+.contact_text {
+    font-family: 'NatashaFont';
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color:  #b78a80;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.links a {
+    color: inherit; /* Preserve the original color of the icon */
+    text-decoration: none; /* Remove underline */
+    padding: 5px;
+  }
+
+  .icon {
+    color: white;
+  }
+
+ 

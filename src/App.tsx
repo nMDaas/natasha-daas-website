@@ -4,6 +4,7 @@ import AnimationPage from "./components/AnimationPage";
 import HomePage from "./components/Home";
 import AboutPage from "./components/About";
 import ArtPage from "./components/ArtPage";
+import ContactPage from "./components/ContactPage";
 
 import './App.css';
 
@@ -29,7 +30,9 @@ function App() {
       <div className="animpage">
         <ArtPage />
       </div>
-
+      <div className="contact-section">
+        <ContactPage />
+      </div>
     </div>
   );
 }

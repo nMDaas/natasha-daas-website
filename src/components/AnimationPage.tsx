@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './AnimationPage.css';
 import PopUpImage from './PopUpImage'; 
-import anim1 from '/animation/test.mp4';
+import anim1 from '/animation/anim1.mp4';
 import anim1tn from '/animation/anim1pic.jpeg';
-import flythrough from '/animation/test.mp4';
+import flythrough from '/animation/flythrough.mp4';
 import flythroughtn from '/animation/flythroughpic.jpg';
-import basics from '/animation/test.mp4';
+import basics from '/animation/basics.mp4';
 import basicstn from '/animation/basicpic.jpeg';
 import ft1 from '/animation/ft1.jpg';
 import ft2 from '/animation/ft2.jpg';

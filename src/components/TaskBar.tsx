@@ -39,13 +39,13 @@ const TaskBar = () => {
         <li><a href="#" onClick={(event) => handleScrollToElement(event, "contact-section")}>Contact</a></li>
         <li><a href={resume} target="_blank" rel="noopener noreferrer">Resume</a></li>
         <a href="https://github.com/nMDaas" target="_blank" rel="noopener noreferrer">
-          <GitHub fontSize="large" sx={{width: "40px", height: "40px"  }}/>
+          <GitHub fontSize="large" sx={{width: "30px", height: "30px"  }}/>
         </a>
         <a href="mailto:daas.n@northeastern.edu">
-          <MailRounded fontSize="large" sx={{width: "40px", height: "40px"  }}/>
+          <MailRounded sx={{width: "30px", height: "30px"  }}/>
         </a>
         <a href="https://www.linkedin.com/in/natashamishradaas/" target="_blank" rel="noopener noreferrer">
-          <LinkedIn fontSize="large" sx={{width: "40px", height: "40px"  }}/>
+          <LinkedIn sx={{width: "30px", height: "30px"  }}/>
         </a>
       </ul>
     </div>

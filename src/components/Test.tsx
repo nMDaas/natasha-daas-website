@@ -27,10 +27,11 @@ const ThreeJSComponent: React.FC = () => {
      const texture = loader.load( "/natasha-daas-website/art/test.jpg" )
      texture.colorSpace = THREE.SRGBColorSpace;
      texture.generateMipmaps = false;
-      texture.minFilter = THREE.LinearFilter;
-      texture.magFilter = THREE.LinearFilter;
-      texture.needsUpdate = true;
+     texture.minFilter = THREE.LinearFilter;
+     texture.magFilter = THREE.LinearFilter;
+     texture.needsUpdate = true;
      scene.background = texture;
+     scene.backgroundIntensity = 0.9;
 
     const animate = () => {
       requestAnimationFrame(animate);

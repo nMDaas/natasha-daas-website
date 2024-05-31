@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
+import background from '/art/test.jpeg'
 
 const ThreeJSComponent: React.FC = () => {
   const mountRef = useRef<HTMLDivElement>(null);
@@ -20,6 +21,16 @@ const ThreeJSComponent: React.FC = () => {
     scene.add(cube);
 
     camera.position.z = 5;
+
+    const loader = new THREE.TextureLoader();
+		 // for reference : https://threejs.org/examples/textures/uv_grid_opengl.jpg
+     const texture = loader.load( "/natasha-daas-website/art/test.jpg" )
+     texture.colorSpace = THREE.SRGBColorSpace;
+     texture.generateMipmaps = false;
+      texture.minFilter = THREE.LinearFilter;
+      texture.magFilter = THREE.LinearFilter;
+      texture.needsUpdate = true;
+     scene.background = texture;
 
     const animate = () => {
       requestAnimationFrame(animate);

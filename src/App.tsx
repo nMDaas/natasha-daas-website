@@ -1,3 +1,4 @@
+import TestPage from "./components/Test";
 import TaskBar from "./components/TaskBar";
 import CodingPage from "./components/CodingPage";
 import AnimationPage from "./components/AnimationPage";
@@ -13,6 +14,9 @@ function App() {
     <div>
       <div id="taskbar">
         <TaskBar />
+      </div>
+      <div>
+        <TestPage />
       </div>
       <div id="home-section">
         <HomePage />

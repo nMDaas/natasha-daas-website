@@ -16,11 +16,16 @@ const ThreeJSComponent: React.FC = () => {
     }
 
     const geometry = new THREE.BoxGeometry(1, 1, 1);
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    const material = new THREE.MeshPhongMaterial({ color: 0xff0000, shininess: 500, reflectivity: 1 });
     const cube = new THREE.Mesh(geometry, material);
     scene.add(cube);
 
     camera.position.z = 5;
+
+    // a light is required for MeshPhongMaterial to be seen
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 1)
+    directionalLight.position.z = 3
+    scene.add(directionalLight)
 
     const loader = new THREE.TextureLoader();
 		 // for reference : https://threejs.org/examples/textures/uv_grid_opengl.jpg

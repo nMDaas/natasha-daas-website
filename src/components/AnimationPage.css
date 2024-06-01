@@ -29,6 +29,7 @@
   display: flex;
   overflow: hidden;
   width: 100%;
+  height: 450px;
 }
 
 .carousel__slide {
@@ -44,12 +45,13 @@
 .carousel__thumbnails {
   list-style: none;
   padding: 0;
+  margin: 0; /* Ensure no margin */
   display: flex;
 }
 
 .carousel__thumbnails li {
   cursor: pointer;
-  padding: 3px;
+  padding: 1px; /* Reduce padding */
 }
 
 .carousel__thumbnails img {
@@ -146,7 +148,6 @@
     width: 100%;
     max-width: 800px !important;
     max-height: 450px;
-    height: 450px;
   }
 
   .anim_width {
@@ -166,12 +167,20 @@
     width: 100%;
     max-width: 100%;
     max-height: auto;
-    height: 300px;
+    margin-bottom: 0; /* Remove spacing between slides and thumbnails */
+  }
+
+  .carousel__thumbnails {
+    margin-top: 0; /* Ensure no margin at the top */
+  }
+
+  .carousel__thumbnails li {
+    padding: 0; /* Remove padding */
   }
 
   .text {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 10px;
     height: auto;
   }
 

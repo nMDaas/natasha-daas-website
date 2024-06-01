@@ -133,7 +133,7 @@ const AnimationPage: React.FC = () => {
             <ul className="carousel__slides">
               {slides.map((slide, index) => (
                 <li key={index} className={`carousel__slide ${index === currentIndex ? 'active' : ''}`}>
-                    <video width="850" height="478" autoPlay loop muted>
+                    <video className="anim_width" autoPlay loop muted>
                       <source src={slide.src} type="video/mp4"/>
                       Your browser does not support the video tag.
                     </video>

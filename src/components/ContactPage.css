@@ -55,3 +55,16 @@
   }
 
  
+/* desktop */
+@media (min-width: 1000px) and (max-width: 1500px) {
+  .contact-page {
+    font-size: 40px;
+  }
+}
+
+/* mobile */
+@media (max-width: 599px) {
+  .contact-page {
+    font-size: 25px;
+  }
+}

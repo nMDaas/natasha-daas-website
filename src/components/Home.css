@@ -33,7 +33,7 @@
 /* desktop */
 @media (min-width: 1000px) and (max-width: 1500px) {
     .home2-page {
-        font-size: 60px;
+        font-size: 60px !important;
     }
 
     .detail {
@@ -49,15 +49,15 @@
 /* mobile */
 @media (min-width: 600px) and (max-width: 999px) {
     .home2-page {
-        font-size: 60px;
+        font-size: 60px !important;
     }
 
     .detail {
-        font-size: 30px !important;
+        font-size: 40px !important;
     }
 
     .vl {
-        height: 150px;
-        padding: 10px !important;
+        height: 200px;
+        padding: 30px !important;
     }
 }

@@ -56,6 +56,7 @@
   width: 262px;
   height: 150px;
   opacity: 0.5;
+  transition: width 0.3s ease, height 0.3s ease;
 }
 
 .carousel__thumbnails img.active {
@@ -129,6 +130,12 @@
   .text {
     width: 100%;
   }
+
+  /* Adjusting thumbnail size for tablets */
+  .carousel__thumbnails img {
+    width: 200px;
+    height: 115px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -150,9 +157,15 @@
 
   .anim_slide {
     width: 600px !important;
-    padding-left: 180px !important;
+   
     justify-content: center;
     align-items: center;
+  }
+
+  /* Adjusting thumbnail size for mobile phones */
+  .carousel__thumbnails img {
+    width: 175px;
+    height: 100px;
   }
 }
 
@@ -171,7 +184,12 @@
     padding-top: 20px;
     height: auto;
   }
-  
+
+  /* Adjusting thumbnail size for very small screens */
+  .carousel__thumbnails img {
+    width: 100px;
+    height: 56px;
+  }
 }
 
 .slide-images {

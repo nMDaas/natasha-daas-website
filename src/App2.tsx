@@ -1,5 +1,5 @@
 import HomePage from "./components/Home";
-import TestPage from "./components/Test";
+import TestPage from "./components/ThreeJSComponent";
 
 function App() {
   return (

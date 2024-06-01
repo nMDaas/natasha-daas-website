@@ -1,4 +1,4 @@
-import TestPage from "./components/Test";
+import TestPage from "./components/ThreeJSComponent";
 import TaskBar from "./components/TaskBar";
 import CodingPage from "./components/CodingPage";
 import AnimationPage from "./components/AnimationPage";

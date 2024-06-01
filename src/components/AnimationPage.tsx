@@ -40,29 +40,6 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    src: anim1,
-    alt: 'Todd vs Can',
-    caption: 'Todd vs Can',
-    credit: '',
-    thumbnail: anim1tn,
-    details: [
-      "3D short created and animated in Maya and rendered using Arnold",
-      "Designed and modeled original character",
-      "Body rigged using Advanced Skeleton",
-      "Facial rigs created using Maya rigging tools",
-      "Used UV unwrapping and Adobe Substance painter for texturing"
-    ],
-    skills: 'Maya | Rigging | Character Design & Modeling | Adobe Substance Painter | Character Animation',
-    link: 'https://www.youtube.com/watch?v=zBDn8izuEAc',
-    paddingTop: 60,
-    images: [
-      { src: anim1c, alt: 'Image 1', width: '220px', height: '130px' },
-      { src: anim1e, alt: 'Image 3', width: '220px', height: '130px' },
-      { src: anim1b, alt: 'Image 2', width: '220px', height: '130px' },
-      { src: anim1a, alt: 'Image 3', width: '220px', height: '130px' },
-    ]
-  },
-  {
     src: flythrough,
     alt: 'Room Environment',
     caption: 'Room Environment',
@@ -86,11 +63,34 @@ const slides: Slide[] = [
     ] 
   },
   {
+    src: anim1,
+    alt: 'Todd vs Can',
+    caption: 'Todd vs Can',
+    credit: '',
+    thumbnail: anim1tn,
+    details: [
+      "3D short created and animated in Maya and rendered using Arnold",
+      "Designed and modeled original character",
+      "Body rigged using Advanced Skeleton",
+      "Facial rigs created using Maya rigging tools",
+      "Used UV unwrapping and Adobe Substance painter for texturing"
+    ],
+    skills: 'Maya | Rigging | Character Design & Modeling | Adobe Substance Painter | Character Animation',
+    link: 'https://www.youtube.com/watch?v=zBDn8izuEAc',
+    paddingTop: 60,
+    images: [
+      { src: anim1c, alt: 'Image 1', width: '220px', height: '130px' },
+      { src: anim1e, alt: 'Image 3', width: '220px', height: '130px' },
+      { src: anim1b, alt: 'Image 2', width: '220px', height: '130px' },
+      { src: anim1a, alt: 'Image 3', width: '220px', height: '130px' },
+    ]
+  },
+  {
     src: basics,
     alt: 'Good Morning, I\'m Toast',
     caption: 'Good Morning, I\'m Toast',
     credit: '',
-    thumbnail: basicstn,
+    thumbnail: toast3,
     details: [
       "2D animation created using Adobe Animate",
       "Compositing and editing done using Adobe After Effects and Adobe Premiere Pro"

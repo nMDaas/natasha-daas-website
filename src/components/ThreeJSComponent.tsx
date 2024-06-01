@@ -41,6 +41,14 @@ const ThreeJSComponent: React.FC = () => {
     directionalLight2.position.z = 50;
     scene.add(directionalLight2);
 
+    function isMobileDevice() {
+      return /Mobi|Android/i.test(navigator.userAgent);
+    }
+    
+    // Load the font depending on the device type
+    const imgUrl = isMobileDevice() ? "/natasha-daas-website/art/test0.jpg" : "/natasha-daas-website/art/test2.jpg";
+    
+
     const fontLoader = new FontLoader();
     fontLoader.load('/natasha-daas-website/other/Natashafont_Regular.json', (font) => {
       const textGeometry = new TextGeometry('Natasha M Daas', {
@@ -77,7 +85,7 @@ const ThreeJSComponent: React.FC = () => {
     });
 
     const loader = new THREE.TextureLoader();
-    const texture = loader.load("/natasha-daas-website/art/test2.jpg");
+    const texture = loader.load(imgUrl);
     texture.colorSpace = THREE.SRGBColorSpace;
     texture.generateMipmaps = false;
     texture.minFilter = THREE.LinearFilter;

@@ -212,6 +212,8 @@
 
 .slide-image {
   object-fit: cover;
+  width: 200px;
+  min-width: 200px;
 }
 
 .slide-image:hover {

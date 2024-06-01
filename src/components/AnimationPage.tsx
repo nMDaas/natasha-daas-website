@@ -109,90 +109,89 @@ const slides: Slide[] = [
 ];
 
 const AnimationPage: React.FC = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [imageOpen, setImageOpen] = useState(false);
-    const [currentImage, setCurrentImage] = useState({ src: '', alt: '' });
-  
-    const handleThumbnailClick = (index: number) => {
-      setCurrentIndex(index);
-    };
-  
-    const handleImageClick = (image: { src: string, alt: string }) => {
-      setCurrentImage(image);
-      setImageOpen(true);
-    };
-  
-    const closeModal = () => {
-      setImageOpen(false);
-    };
-  
-    return (
-      <section className="animsec">
-        <div className="container">
-          <div className="carousel">
-            <ul className="carousel__slides">
-              {slides.map((slide, index) => (
-                <li key={index} className={`carousel__slide ${index === currentIndex ? 'active' : ''}`}>
-                    <video className="anim_width" autoPlay loop muted>
-                      <source src={slide.src} type="video/mp4"/>
-                      Your browser does not support the video tag.
-                    </video>
-                </li>
-              ))}
-            </ul>
-            <ul className="carousel__thumbnails">
-              {slides.map((slide, index) => (
-                <li key={index}>
-                  <img
-                    src={slide.thumbnail}
-                    alt={slide.alt}
-                    onClick={() => handleThumbnailClick(index)}
-                    className={index === currentIndex ? 'active' : ''}
-                  />
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="text">
-            {slides.map((slide, index) => (
-              <div key={index} className={`carousel__slide ${index === currentIndex ? 'active' : ''}`}>
-                <figure>
-                  <figcaption className="title">
-                    {slide.caption}
-                  </figcaption>
-                  <figcaption className="skills">
-                    {slide.skills}
-                  </figcaption>
-                  <ul>
-                    {slide.details.map((details, index) => (
-                      <li key={index}>{details}</li>
-                    ))}
-                  </ul>
-                  <div className="slide-images">
-                    {slide.images.map((image, i) => (
-                      <img
-                        key={i}
-                        src={image.src}
-                        alt={image.alt}
-                        width={image.width}
-                        height={image.height}
-                        className="slide-image"
-                        onClick={() => handleImageClick(image)}
-                      />
-                    ))}
-                  </div>
-                </figure>
-                <div className="link">
-                  <a href={slide.link} target="_blank" rel="noopener noreferrer">watch here!</a>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        <PopUpImage show={imageOpen} onClose={closeModal} imageSrc={currentImage.src} imageAlt={currentImage.alt} customSize={true} />
-      </section>
-      
-    );
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [imageOpen, setImageOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState({ src: '', alt: '' });
+
+  const handleThumbnailClick = (index: number) => {
+    setCurrentIndex(index);
   };
-  
-  export default AnimationPage;
+
+  const handleImageClick = (image: { src: string, alt: string }) => {
+    setCurrentImage(image);
+    setImageOpen(true);
+  };
+
+  const closeModal = () => {
+    setImageOpen(false);
+  };
+
+  return (
+    <section className="animsec">
+      <div className="container">
+        <div className="carousel">
+          <ul className="carousel__slides">
+            {slides.map((slide, index) => (
+              <li key={index} className={`carousel__slide ${index === currentIndex ? 'active' : ''}`}>
+                <video className="anim_width" autoPlay loop muted>
+                  <source src={slide.src} type="video/mp4"/>
+                  Your browser does not support the video tag.
+                </video>
+              </li>
+            ))}
+          </ul>
+          <ul className="carousel__thumbnails">
+            {slides.map((slide, index) => (
+              <li key={index}>
+                <img
+                  src={slide.thumbnail}
+                  alt={slide.alt}
+                  onClick={() => handleThumbnailClick(index)}
+                  className={index === currentIndex ? 'active' : ''}
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="text">
+          {slides.map((slide, index) => (
+            <div key={index} className={`carousel__slide ${index === currentIndex ? 'active' : ''}`}>
+              <figure>
+                <figcaption className="title">
+                  {slide.caption}
+                </figcaption>
+                <figcaption className="skills">
+                  {slide.skills}
+                </figcaption>
+                <ul>
+                  {slide.details.map((details, index) => (
+                    <li key={index}>{details}</li>
+                  ))}
+                </ul>
+                <div className="slide-images">
+                  {slide.images.map((image, i) => (
+                    <img
+                      key={i}
+                      src={image.src}
+                      alt={image.alt}
+                      width={image.width}
+                      height={image.height}
+                      className="slide-image"
+                      onClick={() => handleImageClick(image)}
+                    />
+                  ))}
+                </div>
+              </figure>
+              <div className="link">
+                <a href={slide.link} target="_blank" rel="noopener noreferrer">watch here!</a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <PopUpImage show={imageOpen} onClose={closeModal} imageSrc={currentImage.src} imageAlt={currentImage.alt} customSize={true} />
+    </section>
+  );
+};
+
+export default AnimationPage;

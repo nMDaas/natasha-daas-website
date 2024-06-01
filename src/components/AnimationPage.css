@@ -46,8 +46,6 @@
   list-style: none;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .carousel__thumbnails li {
@@ -143,7 +141,8 @@
   }
 }
 
-@media (max-width: 1000px) {
+/* Additional media query for desktop adjustments */
+@media (min-width: 1000px) and (max-width: 1500px) {
   .carousel__slides {
     width: 100%;
     max-width: 800px !important;
@@ -151,11 +150,12 @@
   }
 
   .anim_width {
-    width: 100% !important;
-    height: auto !important;
+    width: 850px !important;
+    height: 478px !important;
   }
 }
 
+/* Mobile specific adjustments */
 @media (max-width: 599px) {
   .container {
     flex-direction: column;
@@ -164,8 +164,8 @@
 
   .carousel__slides {
     width: 100%;
-    max-width: 100% !important;
-    max-height: 100%;
+    max-width: 100%;
+    max-height: auto;
   }
 
   .text {

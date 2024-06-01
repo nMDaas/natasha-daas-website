@@ -166,6 +166,15 @@
     width: 100%;
     max-width: 100%;
     max-height: auto;
+    margin-bottom: 10px; /* Reduce spacing between slides and thumbnails */
+  }
+
+  .carousel__thumbnails {
+    margin-top: 0; /* Remove any top margin to reduce spacing */
+  }
+
+  .carousel__thumbnails li {
+    padding: 1px; /* Reduce padding between thumbnail items */
   }
 
   .text {

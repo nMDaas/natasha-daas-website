@@ -1,16 +1,14 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 import * as THREE from 'three';
-import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
+import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js';
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
-import "./Three.css"
+import './Three.css';
 
 const ThreeJSComponent: React.FC = () => {
   const mountRef = useRef<HTMLDivElement>(null);
-
+  const textureRef = useRef<THREE.Texture | null>(null);
 
   useEffect(() => {
-
-
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({
@@ -24,30 +22,13 @@ const ThreeJSComponent: React.FC = () => {
       mountRef.current.appendChild(renderer.domElement);
     }
 
-    const white = new THREE.Color("rgb(255, 255, 255)");
-    const lightColor = new THREE.Color("rgb(77, 60, 62)");
-    const lightPeach = new THREE.Color("rgb(242, 201, 191)");
-    const darkPeach = new THREE.Color("rgb(189, 128, 115)");
-
     camera.position.z = 5;
-
-    const directionalLight = new THREE.DirectionalLight(white, 10);
-    directionalLight.position.x = -30;
-    directionalLight.position.z = 50;
-    scene.add(directionalLight);
-
-    const directionalLight2 = new THREE.DirectionalLight(lightColor, 0);
-    directionalLight2.position.x = 30;
-    directionalLight2.position.z = 50;
-    scene.add(directionalLight2);
 
     function isMobileDevice() {
       return /Mobi|Android/i.test(navigator.userAgent);
     }
-    
-    // Load the font depending on the device type
-    const imgUrl = isMobileDevice() ? "/natasha-daas-website/art/test0.jpg" : "/natasha-daas-website/art/test2.jpg";
-    
+
+    const imgUrl = '/natasha-daas-website/art/test0.jpg';
 
     const fontLoader = new FontLoader();
     fontLoader.load('/natasha-daas-website/other/Natashafont_Regular.json', (font) => {
@@ -63,38 +44,69 @@ const ThreeJSComponent: React.FC = () => {
         bevelSegments: 5,
       });
 
-      // Create outline geometry
+      const white = new THREE.Color("rgb(255, 255, 255)");
+    const lightColor = new THREE.Color("rgb(77, 60, 62)");
+    const lightPeach = new THREE.Color("rgb(242, 201, 191)");
+    const darkPeach = new THREE.Color("rgb(189, 128, 115)");
+
       const edgesGeometry = new THREE.EdgesGeometry(textGeometry);
       const outlineMaterial = new THREE.LineBasicMaterial({ color: lightColor });
       const outlineMesh = new THREE.LineSegments(edgesGeometry, outlineMaterial);
 
-      // Create filled text geometry
       const filledMaterial = new THREE.MeshBasicMaterial({ color: darkPeach }); // Fill color
       const filledMesh = new THREE.Mesh(textGeometry, filledMaterial);
 
-      // Center the text
       textGeometry.computeBoundingBox();
       const centerOffset = -0.5 * (textGeometry.boundingBox!.max.x - textGeometry.boundingBox!.min.x);
       outlineMesh.position.x = centerOffset;
       filledMesh.position.x = centerOffset;
 
       outlineMesh.position.z = isMobileDevice() ? -2.0 : 0.0;
-
       filledMesh.position.z = outlineMesh.position.z - 0.1;
+
+      filledMesh.position.y = isMobileDevice() ? -0.2: 0.7;
+      outlineMesh.position.y = isMobileDevice() ? -0.2 : 0.7;
 
       scene.add(outlineMesh);
       scene.add(filledMesh);
     });
 
     const loader = new THREE.TextureLoader();
-    const texture = loader.load(imgUrl);
-    texture.colorSpace = THREE.SRGBColorSpace;
+    const texture = loader.load(imgUrl, (loadedTexture) => {
+      textureRef.current = loadedTexture;
+      texture.colorSpace = THREE.SRGBColorSpace;
     texture.generateMipmaps = false;
     texture.minFilter = THREE.LinearFilter;
     texture.magFilter = THREE.LinearFilter;
     texture.needsUpdate = true;
-    scene.background = texture;
-    scene.backgroundIntensity = 0.9;
+
+      // Set background
+      scene.background = texture;
+      scene.backgroundIntensity = 1.0;
+
+      handleWindowResize(); // Initially adjust texture scale
+    });
+
+    const handleWindowResize = () => {
+      if (!textureRef.current) return;
+
+      const texture = textureRef.current;
+
+      const aspect = window.innerWidth / window.innerHeight;
+      const width = aspect > 1 ? 1 : aspect;
+      const height = aspect > 1 ? 1 / aspect : 1;
+
+      texture.repeat.set(width/0.6, height/0.6);
+      texture.offset.set(0, 0);
+      texture.center.set(0.5, 0.5);
+      texture.needsUpdate = true;
+
+      camera.aspect = aspect;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    };
+
+    window.addEventListener('resize', handleWindowResize);
 
     const animate = () => {
       requestAnimationFrame(animate);
@@ -103,18 +115,16 @@ const ThreeJSComponent: React.FC = () => {
 
     animate();
 
-    // Cleanup on unmount
     return () => {
+      window.removeEventListener('resize', handleWindowResize);
       if (mountRef.current) {
         mountRef.current.removeChild(renderer.domElement);
       }
       renderer.dispose();
     };
-  }, []); // No dependencies
+  }, []);
 
-  return (
-    <div className="threeComponent" ref={mountRef} />
-  );
+  return <div className="threeComponent" ref={mountRef} />;
 };
 
 export default ThreeJSComponent;

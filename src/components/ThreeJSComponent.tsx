@@ -2,11 +2,15 @@ import React, { useRef, useEffect, useState } from 'react';
 import * as THREE from 'three';
 import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
+import "./Three.css"
 
 const ThreeJSComponent: React.FC = () => {
   const mountRef = useRef<HTMLDivElement>(null);
 
+
   useEffect(() => {
+
+
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer({
@@ -99,7 +103,7 @@ const ThreeJSComponent: React.FC = () => {
   }, []); // No dependencies
 
   return (
-    <div ref={mountRef} />
+    <div className="threeComponent" ref={mountRef} />
   );
 };
 

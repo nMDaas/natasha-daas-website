@@ -17,8 +17,14 @@ const Home = () => {
     }, []);
 
   return (
-    <div className="home-page" ref={homeRef}>
-      Hi! I'm Natasha!
+    <div className="home2-page">
+      <div className="hello">
+        Hi! I'm Natasha!
+      </div>
+      <div className="vl"></div>
+      <div className="detail">
+        I'm a programmer and 3D artist with interests in computer graphics and technical direction. I love problem solving, especially when it can enable artists and animators to tell their stories better :)
+      </div>
     </div>
   );
 };

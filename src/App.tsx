@@ -15,14 +15,11 @@ function App() {
       <div id="taskbar">
         <TaskBar />
       </div>
-      <div>
+      <div id="mount-section">
         <TestPage />
       </div>
-      <div id="home-section">
-        <HomePage />
-      </div>
       <div id="about-section">
-        <AboutPage />
+        <HomePage />
       </div>
       <h2 id="code-section">Coding Projects</h2>
       <CodingPage />

@@ -77,7 +77,7 @@ const ThreeJSComponent: React.FC = () => {
     });
 
     const loader = new THREE.TextureLoader();
-    const texture = loader.load("/natasha-daas-website/art/test.jpg");
+    const texture = loader.load("/natasha-daas-website/art/test2.jpg");
     texture.colorSpace = THREE.SRGBColorSpace;
     texture.generateMipmaps = false;
     texture.minFilter = THREE.LinearFilter;

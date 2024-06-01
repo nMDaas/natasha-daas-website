@@ -50,6 +50,7 @@
 .carousel__thumbnails li {
   cursor: pointer;
   padding: 3px;
+  display: block; /* Ensure list items are block-level elements */
 }
 
 .carousel__thumbnails img {
@@ -157,15 +158,15 @@
 
   .anim_slide {
     width: 600px !important;
-   
+    padding-left: 180px !important;
     justify-content: center;
     align-items: center;
   }
 
   /* Adjusting thumbnail size for mobile phones */
   .carousel__thumbnails img {
-    width: 175px;
-    height: 100px;
+    width: 150px;
+    height: 85px;
   }
 }
 

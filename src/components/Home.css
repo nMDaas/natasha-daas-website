@@ -47,7 +47,7 @@
 }
 
 /* mobile */
-@media (min-width: 600px) and (max-width: 999px) {
+@media (min-width: 400px) and (max-width: 599px) {
     .home2-page {
         font-size: 60px !important;
     }

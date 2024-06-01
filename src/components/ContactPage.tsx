@@ -11,13 +11,13 @@ const ContactPage = () => {
       <div className="links">
         <div className="contact_text">reach out to me @ </div>
         <a href="https://github.com/nMDaas" target="_blank" rel="noopener noreferrer">
-          <GitHub fontSize="large" sx={{ color: "white", width: "45px", height: "45px"  }}/>
+          <GitHub fontSize="large" sx={{ color: "white", width: { xs: "30px", md: "45px" }, height: { xs: "30px", md: "45px" } }}/>
         </a>
         <a href="mailto:daas.n@northeastern.edu">
-          <MailRounded fontSize="large"  sx={{ color: "white", width: "45px", height: "45px"  }}/>
+          <MailRounded fontSize="large" sx={{ color: "white", width: { xs: "30px", md: "45px" }, height: { xs: "30px", md: "45px" } }}/>
         </a>
         <a href="https://www.linkedin.com/in/natashamishradaas/" target="_blank" rel="noopener noreferrer">
-          <LinkedIn fontSize="large"  sx={{ color: "white", width: "45px", height: "45px" }}/>
+          <LinkedIn fontSize="large" sx={{ color: "white", width: { xs: "30px", md: "45px" }, height: { xs: "30px", md: "45px" } }}/>
         </a>
       </div>
     </div>

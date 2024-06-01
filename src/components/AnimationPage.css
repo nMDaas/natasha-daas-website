@@ -163,8 +163,7 @@
     .anim_width {
       width: 425px !important; 
       height: 239px !important;
-      justify-content: center;
-      align-items: center;
+      padding-left: 150px;
     }
 
   }

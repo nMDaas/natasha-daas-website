@@ -27,8 +27,6 @@
 
 .vl {
     border-left: 5px solid #f2c9bf;
-    height: 150px;
-    padding: 30px !important;
     border-left-style: double;
   }
 
@@ -41,15 +39,25 @@
     .detail {
         font-size: 40px !important;
     }
+
+    .vl {
+        height: 150px;
+        padding: 30px !important;
+    }
 }
 
 /* mobile */
 @media (min-width: 600px) and (max-width: 999px) {
     .home2-page {
-        font-size: 30px;
+        font-size: 40px;
     }
 
     .detail {
-        font-size: 20px !important;
+        font-size: 30px !important;
+    }
+
+    .vl {
+        height: 150px;
+        padding: 10px !important;
     }
 }

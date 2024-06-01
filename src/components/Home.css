@@ -41,7 +41,7 @@
     }
 
     .vl {
-        height: 150px;
+        height: 200px;
         padding: 30px !important;
     }
 }
@@ -49,7 +49,7 @@
 /* mobile */
 @media (min-width: 600px) and (max-width: 999px) {
     .home2-page {
-        font-size: 40px;
+        font-size: 60px;
     }
 
     .detail {

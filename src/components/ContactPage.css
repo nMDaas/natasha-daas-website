@@ -21,6 +21,7 @@
     justify-content: center;
     align-items: center;
     font-size: 40px;
+    background-color: #f2c9bf;
 }
 
 .contact_text {
@@ -56,16 +57,14 @@
  
 /* desktop */
 @media (min-width: 1000px) and (max-width: 1500px) {
-  .contact-page {
+  .contact_text {
     font-size: 40px;
-    background-color: #f2c9bf;
   }
 }
 
 /* mobile */
 @media (max-width: 599px) {
-  .contact-page {
+  .contact_text {
     font-size: 20px;
-    background-color: red;
   }
 }

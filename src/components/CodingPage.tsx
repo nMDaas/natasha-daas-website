@@ -43,9 +43,12 @@ function Masonry() {
       const hoverImages = item.hoverImages;
       let imageIndex = 0;
 
+
+      
+      // backgroundImage: `url(${hoverImages[imageIndex]})`,
       const changeImage = () => {
         gsap.to(image, {
-          backgroundImage: `url(${hoverImages[imageIndex]})`,
+          backgroundImage: `url(${hoverImages[imageIndex]}?auto=compress&dpr=2&h=500&w=500)`,
           duration: 0.5,
           ease: "power3.inOut",
           onComplete: () => {
@@ -87,6 +90,7 @@ function Masonry() {
     preloadImages();
   }, []);*/
 
+  /*
   function preloadImages() {
     for (let i = 0; i < urls.length; i++) {
       console.log(urls[i])
@@ -98,7 +102,7 @@ function Masonry() {
     const img = new Image();
     img.src = url;
   }
-
+*/ 
   return (
     <div ref={ref} className={styles.list} style={{ height: Math.max(...heights) }}>
       {transitions((style, item, t, index) => (

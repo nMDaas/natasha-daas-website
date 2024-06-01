@@ -21,7 +21,6 @@
 
 .detail {
     color: #f2c9bf !important;
-    width: 600px !important;
     text-align: left !important;
 }
 
@@ -38,6 +37,7 @@
 
     .detail {
         font-size: 40px !important;
+        width: 600px !important;
     }
 
     .vl {
@@ -54,6 +54,7 @@
 
     .detail {
         font-size: 25px !important;
+        width: 500px !important;
     }
 
     .vl {

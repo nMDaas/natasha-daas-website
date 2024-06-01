@@ -78,6 +78,8 @@ const ThreeJSComponent: React.FC = () => {
       outlineMesh.position.x = centerOffset;
       filledMesh.position.x = centerOffset;
 
+      outlineMesh.position.z = isMobileDevice() ? 1.0 : 0.0;
+
       filledMesh.position.z = outlineMesh.position.z - 0.1;
 
       scene.add(outlineMesh);

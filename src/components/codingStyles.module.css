@@ -29,7 +29,6 @@
   .description {
     text-transform: uppercase;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 18px;
     padding-left: 25px;
     padding-top: 20px;
     padding-bottom: 21px;
@@ -41,7 +40,6 @@
   
   .skills {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
     padding-left: 25px;
     padding-top: 20px;
     padding-bottom: 15px;
@@ -52,7 +50,6 @@
   
   .link {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
     padding-left: 25px;
     padding-top: 5px;
     padding-bottom: 20px;
@@ -67,7 +64,6 @@
   
   .detail {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 16px;
     padding-left: 25px;
     padding-top: 10px;
     padding-bottom: 5px;
@@ -107,4 +103,42 @@
     height: 100%;
     object-fit: cover;
   }
+
+  /* desktop */
+@media (min-width: 1000px) and (max-width: 1500px) {
+  .description { 
+    font-size: 18px;
+  }
+
+  .detail {
+    font-size: 16px;
+  }
+
+  .skills {
+    font-size: 16px;
+  }
+
+  .link {
+    font-size: 16px;
+  }
+}
+
+/* mobile */
+@media (max-width: 599px) {
+  .description { 
+    font-size: 16px;
+  }
+
+  .detail {
+    font-size: 14px;
+  }
+
+  .skills {
+    font-size: 14px;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+}
   

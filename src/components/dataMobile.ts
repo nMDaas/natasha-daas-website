@@ -21,7 +21,7 @@ export default [
   { blank: blank,
     css: raytracer, 
     hoverImages: [raytracer2, raytracer3, raytracer4, raytracer], 
-    height: 1600, description: "Raytracer",
+    height: 1800, description: "Raytracer",
      skills: "C++ | OpenGL | Graphics Programming | Vector Math", 
      link:"https://github.com/nMDaas/raytracer",
      details: [
@@ -34,7 +34,7 @@ export default [
     video: '' },
   { css: plantgen, 
     hoverImages: [plantgen],
-    height: 1600,
+    height: 1800,
     description: "Maya Plugin for Rapid Plant Generation", 
     skills: "Maya Tools | Python | Qt | MEL ", 
     link:"https://github.com/nMDaas/MyPlugins",
@@ -46,7 +46,7 @@ export default [
     video: ''  },
   { css: blank, 
     hoverImages: [blank], 
-    height: 1600, 
+    height: 1800, 
     description: "Trackball, Lighting, Texturing and Animation in OpenGL",
     skills: "C++ | OpenGL | GLSL | Graphics Programming",
     details: [
@@ -59,13 +59,13 @@ export default [
   vidHeight: "400px",
   vidWidth: "400px",
 },
-  { css: portfolio, hoverImages: [portfolio], height: 1600, description: "Personal Website", skills: "Typescript | React | GSAP", link: "https://github.com/nMDaas/Portfolio",
+  { css: portfolio, hoverImages: [portfolio], height: 1800, description: "Personal Website", skills: "Typescript | React | GSAP", link: "https://github.com/nMDaas/Portfolio",
     details: [
       "Website to showcase my interests in and projects related to programming, computer graphics, 3D animation and modeling!"
     ],
     video: '' 
   },
-  { css: photoeditor, hoverImages: [photoeditor2, photoeditor3, photoeditor4, photoeditor], height: 1600, description: "Photo Editor", skills: "Java | Object-Oriented Programming | MVC Pattern", link: "https://github.com/nMDaas/Photo-Editor",
+  { css: photoeditor, hoverImages: [photoeditor2, photoeditor3, photoeditor4, photoeditor], height: 1800, description: "Photo Editor", skills: "Java | Object-Oriented Programming | MVC Pattern", link: "https://github.com/nMDaas/Photo-Editor",
     details: [
       "Used model-view-controller pattern to build GUI and backend using Java programming",
       "Implemented blurring, sharpening, brightening and flipping of images",
@@ -74,7 +74,7 @@ export default [
     ],
     video: '' 
   },
-  { css: productionplan, hoverImages: [productionplan2, productionplan3, productionplan], height: 1600, description: "Animation Production Plan Generator", skills: "Javascript | Typescript | Generative AI", link: "https://github.com/Abby-Dennin/Animation-Production-Plan-Generator",
+  { css: productionplan, hoverImages: [productionplan2, productionplan3, productionplan], height: 1800, description: "Animation Production Plan Generator", skills: "Javascript | Typescript | Generative AI", link: "https://github.com/Abby-Dennin/Animation-Production-Plan-Generator",
     details: [
       "Web application developed in collaboration with Abigail Dennin, Meredith Scott and Sophia Allen",
       "Uses OpenAI to generate a production plan for animators based on user provided project details",
@@ -85,7 +85,7 @@ export default [
   },
   { css: blank,
     hoverImages: [blank], 
-    height: 1600, 
+    height: 1800, 
     description: "Spirograph Animation", 
     skills: "C++ | OpenGL Animation | Graphics Programming",
     link:"https://github.com/nMDaas/Spirograph/tree/main", 
@@ -95,7 +95,7 @@ export default [
     video: spirograph,
     vidHeight: "400px",
     vidWidth: "400px", },
-  { css: bakeapp, hoverImages: [bakeryapp], height: 1600, description: "Bakery App", skills: "mySQL | Java", link: "https://github.com/nMDaas/BakeryApp",
+  { css: bakeapp, hoverImages: [bakeryapp], height: 1800, description: "Bakery App", skills: "mySQL | Java", link: "https://github.com/nMDaas/BakeryApp",
     details: [
       "Developed in collaboration Caroline Smith",
       "Console based application allowing users to find recipes, post recipes, and manage their ingredient inventory",

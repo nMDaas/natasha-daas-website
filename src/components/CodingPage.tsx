@@ -1,29 +1,16 @@
 import React, { useEffect, useMemo, useState, useRef } from "react";
 import { gsap } from "gsap";
-import useMedia from './useMedia';
-import { useTransition, a } from '@react-spring/web';
-import data from './data';
-import dataMobile from './dataMobile';
-import styles from './codingStyles.module.css';
-import useMeasure from 'react-use-measure';
+import useMedia from './useMedia'
+import { useTransition, a } from '@react-spring/web'
+import data from './data'
+import styles from './codingStyles.module.css'
+import useMeasure from 'react-use-measure'
 import opengl from '/code/opengl.mp4';
 
 function Masonry() {
-  const columns = useMedia(['(min-width: 1500px)', '(min-width: 1000px)', '(min-width: 600px)', '(max-width: 599px)'], [3, 3, 1, 1], 2);
-  const [ref, { width }] = useMeasure();
-  const [items, set] = useState(data);
-
-  const isMobile = width <= 600;
-
-  useEffect(() => {
-    // Set the data based on whether it is mobile or not
-    if (isMobile) {
-      // Assuming you have different data for mobile
-      set(dataMobile); // Replace with mobile-specific data if available
-    } else {
-      set(data); // Replace with desktop-specific data if available
-    }
-  }, [isMobile]);
+  const columns = useMedia(['(min-width: 1500px)', '(min-width: 1000px)', '(min-width: 600px)', '(max-width: 599px)'], [3, 3, 1, 1], 2)
+  const [ref, { width }] = useMeasure()
+  const [items, set] = useState(data)
 
   const [heights, gridItems] = useMemo(() => {
     let heights = new Array(columns).fill(0);
@@ -52,34 +39,26 @@ function Masonry() {
   useEffect(() => {
     items.forEach((item, index) => {
       const element = document.getElementById(`grid-item-${index}`);
-      const hoverImageElement = element.querySelector('.hover-image');
+      const image = element.querySelector('.image');
       const hoverImages = item.hoverImages;
       let imageIndex = 0;
 
-      if (hoverImages.length > 1) {
-        const changeImage = () => {
-          const nextImage = `${hoverImages[imageIndex]}?auto=compress&dpr=2&h=500&w=500`;
-          gsap.to(hoverImageElement, {
-            opacity: 0,
-            duration: 0.5,
-            ease: "power3.inOut",
-            onComplete: () => {
-              hoverImageElement.src = nextImage;
-              gsap.to(hoverImageElement, {
-                opacity: 1,
-                duration: 0.5,
-                ease: "power3.inOut",
-                onComplete: () => {
-                  imageIndex = (imageIndex + 1) % hoverImages.length;
-                  intervalIds.current[index] = setTimeout(changeImage, 1500); // Pause for 1.5 seconds before changing the image
-                }
-              });
-            }
-          });
-        };
 
-        changeImage();
-      }
+      
+      // backgroundImage: `url(${hoverImages[imageIndex]})`,
+      const changeImage = () => {
+        gsap.to(image, {
+          backgroundImage: `url(${hoverImages[imageIndex]}?auto=compress&dpr=2&h=500&w=500)`,
+          duration: 0.5,
+          ease: "power3.inOut",
+          onComplete: () => {
+            imageIndex = (imageIndex + 1) % hoverImages.length;
+            intervalIds.current[index] = setTimeout(changeImage, 1500); // Pause for 1.5 seconds before changing the image
+          }
+        });
+      };
+
+      changeImage();
     });
 
     return () => {
@@ -88,11 +67,48 @@ function Masonry() {
     };
   }, [items]);
 
+  const urls = [
+    "/natasha-daas-website/code/raytracer.jpg",
+    "/natasha-daas-website/code/productionplanner.jpg",
+    "/natasha-daas-website/code/bakeapp.jpg",
+    "/natasha-daas-website/code/plantGen.jpg",
+    "/natasha-daas-website/code/portfolio.jpg",
+    "/natasha-daas-website/code/rb.jpg",
+    "/natasha-daas-website/code/rc.jpg",
+    "/natasha-daas-website/code/rd.jpg",
+    "/natasha-daas-website/code/bakeapp.jpg",
+    "/natasha-daas-website/code/photoeditor.jpg",
+    "/natasha-daas-website/code/re.jpg",
+    "/natasha-daas-website/code/rf.jpg",
+    "/natasha-daas-website/code/rg.jpg",
+    "/natasha-daas-website/code/rh.jpg",
+    "/natasha-daas-website/code/ri.jpg",
+  ]
+  
+  /*
+  useEffect(() => {
+    preloadImages();
+  }, []);*/
+
+  /*
+  function preloadImages() {
+    for (let i = 0; i < urls.length; i++) {
+      console.log(urls[i])
+      preloadImage(urls[i]);
+    }
+  }
+
+  function preloadImage(url) {
+    const img = new Image();
+    img.src = url;
+  }
+*/ 
   return (
     <div ref={ref} className={styles.list} style={{ height: Math.max(...heights) }}>
       {transitions((style, item, t, index) => (
         <a.div style={style} key={item.css} id={`grid-item-${index}`}>
-          <div className={`${styles.gridItem} image`} style={{ backgroundImage: `url(${item.blank}?auto=compress&dpr=2&h=500&w=500)` }}>
+          <div className={`${styles.gridItem} image`} 
+               style={{ backgroundImage: `url(${item.css}?auto=compress&dpr=2&h=500&w=500)` }}>
             <div className={styles.description}>{item.description}</div>
             <div className={styles.skills}>{item.skills}</div>
             <div className={styles.detail}>
@@ -107,7 +123,6 @@ function Masonry() {
               )}
             </div>
             <div className={styles.link}><a href={item.link} target="_blank" rel="noopener noreferrer">View Project!</a></div>
-            {!item.video && (<img className="hover-image" src={`${item.hoverImages[0]}?auto=compress&dpr=2&h=500&w=500`} alt="hover" style={{ width: '100%', height: 'auto', objectFit: 'cover', opacity: 1 }} /> )}
             {item.video && (
               <video className={styles.video} width={item.vidWidth} height={item.vidHeight} autoPlay loop muted>
                 <source src={item.video} type="video/mp4"/>
@@ -122,7 +137,7 @@ function Masonry() {
 }
 
 const CodingPage = () => {
-  return <Masonry />;
+  return <Masonry />
 };
 
 export default CodingPage;

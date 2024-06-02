@@ -3,9 +3,9 @@ import productionplan from '/code/productionplanner.jpg';
 import bakeryapp from '/code/bakeapp.jpg';
 import plantgen from '/code/plantGen.jpg';
 import portfolio from '/code/portfolio.jpg';
-import raytracer2 from '/code/rb.jpg';
-import raytracer3 from '/code/rc.jpg';
-import raytracer4 from '/code/rd.jpg';
+import raytracer2 from '/code/r2.jpg';
+import raytracer3 from '/code/r3.jpg';
+import raytracer4 from '/code/r4.jpg';
 import bakeapp from '/code/bakeapp.jpg';
 import photoeditor from '/code/photoeditor.jpg';
 import photoeditor2 from '/code/re.jpg';
@@ -18,7 +18,8 @@ import blank from '/code/blank.jpg';
 import spirograph from '/code/spirograph.mp4'
 
 export default [
-  { css: raytracer, 
+  { blank: blank,
+    css: raytracer, 
     hoverImages: [raytracer2, raytracer3, raytracer4, raytracer], 
     height: 1500, description: "Raytracer",
      skills: "C++ | OpenGL | Graphics Programming | Vector Math", 

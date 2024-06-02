@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 import useMedia from './useMedia';
 import { useTransition, a } from '@react-spring/web';
 import data from './data';
+import dataMobile from './dataMobile';
 import styles from './codingStyles.module.css';
 import useMeasure from 'react-use-measure';
 import opengl from '/code/opengl.mp4';
@@ -11,6 +12,18 @@ function Masonry() {
   const columns = useMedia(['(min-width: 1500px)', '(min-width: 1000px)', '(min-width: 600px)', '(max-width: 599px)'], [3, 3, 1, 1], 2);
   const [ref, { width }] = useMeasure();
   const [items, set] = useState(data);
+
+  const isMobile = width <= 600;
+
+  useEffect(() => {
+    // Set the data based on whether it is mobile or not
+    if (isMobile) {
+      // Assuming you have different data for mobile
+      set(dataMobile); // Replace with mobile-specific data if available
+    } else {
+      set(data); // Replace with desktop-specific data if available
+    }
+  }, [isMobile]);
 
   const [heights, gridItems] = useMemo(() => {
     let heights = new Array(columns).fill(0);

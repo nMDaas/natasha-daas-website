@@ -46,7 +46,7 @@ const slides: Slide[] = [
     credit: '',
     thumbnail: flythroughtn,
     details: [
-      "Environment created for 'Todd vs Can' short",
+      "Room Environment created for 'Todd vs Can' short",
       "Modeled all environment assets in scene in Maya",
       "Textured assets using Adobe Substance Painter",
     ],

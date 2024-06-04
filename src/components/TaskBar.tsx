@@ -34,7 +34,7 @@ const TaskBar = () => {
         <li><a href="#" onClick={(event) => handleScrollToElement(event, "mount-section")}>Home</a></li>
         <li><a href="#" onClick={(event) => handleScrollToElement(event, "about-section")}>About</a></li>
         <li><a href="#" onClick={(event) => handleScrollToElement(event, "code-section")}>Code</a></li>
-        <li><a href="#" onClick={(event) => handleScrollToElement(event, "anim-section")}>Animation & Modeling</a></li>
+        <li><a href="#" onClick={(event) => handleScrollToElement(event, "anim-section")}>Animation & 3D Modeling</a></li>
         <li><a href="#" onClick={(event) => handleScrollToElement(event, "art-section")}>Art</a></li>
         <li><a href="#" onClick={(event) => handleScrollToElement(event, "contact-section")}>Contact</a></li>
         <li><a href={resume} target="_blank" rel="noopener noreferrer">Resume</a></li>

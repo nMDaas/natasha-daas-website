@@ -2,6 +2,9 @@ import raytracer from '/code/raytracer.jpg';
 import productionplan from '/code/productionplanner.jpg';
 import bakeryapp from '/code/bakeapp.jpg';
 import plantgen from '/code/plantGen.jpg';
+import plugin1 from '/code/plugin1.jpg';
+import plugin2 from '/code/plugin2.jpg';
+import plugin3 from '/code/plugin3.jpg';
 import portfolio from '/code/portfolio.jpg';
 import raytracer2 from '/code/rb.jpg';
 import raytracer3 from '/code/rc.jpg';
@@ -33,8 +36,8 @@ export default [
       "Implemented sphere and box texturing using texture mapping",
      ],
     video: '' },
-  { css: plantgen, 
-    hoverImages: [plantgen],
+  { css: plugin1, 
+    hoverImages: [plugin2, plugin3, plugin1],
     height: 1500,
     description: "Maya Plugin for Rapid Plant Generation", 
     skills: "Maya Tools | Python | Qt | MEL ", 

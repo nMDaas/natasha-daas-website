@@ -23,7 +23,7 @@ const Home = () => {
       </div>
       <div className="vl"></div>
       <div className="detail">
-        I'm a programmer and 3D artist with interests in computer graphics and technical direction. I love problem solving, especially when it can enable artists and animators to tell their stories better :)
+       Hi, I'm Natasha! I'm a programmer and 3D artist with interests in computer graphics and technical direction. I love programming tools and finding solutions to enhance storytelling and interaction in animation and 3D media.
       </div>
     </div>
   );

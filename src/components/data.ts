@@ -54,6 +54,7 @@ export default [
     height: 1500, 
     description: "Trackball, Lighting, Texturing and Animation in OpenGL",
     skills: "C++ | OpenGL | GLSL | Graphics Programming",
+    link: "https://github.khoury.northeastern.edu/nmdaas/CS4300_HW5",
     details: [
       "Developed in collaboration with Natalie Potapov using Git",
       "Implemented trackball effect as seen in applications like Maya and Blender",

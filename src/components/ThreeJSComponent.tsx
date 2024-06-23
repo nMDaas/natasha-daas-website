@@ -28,7 +28,7 @@ const ThreeJSComponent: React.FC = () => {
       return /Mobi|Android/i.test(navigator.userAgent);
     }
 
-    const imgUrl = '/natasha-daas-website/art/test0compress.jpg';
+    const imgUrl = '/natasha-daas-website/art/test20clean.png';
 
     const fontLoader = new FontLoader();
     fontLoader.load('/natasha-daas-website/other/Natashafont_Regular.json', (font) => {
@@ -64,8 +64,8 @@ const ThreeJSComponent: React.FC = () => {
       outlineMesh.position.z = isMobileDevice() ? -2.0 : 0.0;
       filledMesh.position.z = outlineMesh.position.z - 0.1;
 
-      filledMesh.position.y = isMobileDevice() ? -4.0 : 0.7;
-      outlineMesh.position.y = isMobileDevice() ? -4.0 : 0.7;
+      filledMesh.position.y = isMobileDevice() ? -4.0 : 1.5;
+      outlineMesh.position.y = isMobileDevice() ? -4.0 : 1.5;
 
       scene.add(outlineMesh);
       scene.add(filledMesh);

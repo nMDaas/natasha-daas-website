@@ -55,12 +55,14 @@ function Masonry() {
             </div>
             <div className={styles.link}><a href={item.link} target="_blank" rel="noopener noreferrer">View Project!</a></div>
             
-            <Slide>
-              {item.hoverImages.map((src, idx) => (
-                <div key={idx} className="each-slide-effect" style={{ backgroundImage: `url(${src})`, height: '300px', backgroundSize: 'cover' }}>
-                </div>
-              ))}
-            </Slide>
+            {!item.video && (
+              <Slide>
+                {item.hoverImages.map((src, idx) => (
+                  <div key={idx} className="each-slide-effect" style={{ backgroundImage: `url(${src})`, height: '300px', backgroundSize: 'cover' }}>
+                  </div>
+                ))}
+              </Slide>
+            )}
             {item.video && (
               <video className={styles.video} width={item.vidWidth} height={item.vidHeight} autoPlay loop muted>
                 <source src={item.video} type="video/mp4"/>

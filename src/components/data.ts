@@ -1,11 +1,11 @@
 import raytracer from '/code/raytracer.jpg';
 import productionplan from '/code/productionplanner.jpg';
 import bakeryapp from '/code/bakeapp.jpg';
-import plantgen from '/code/plantGen.jpg';
-import plugin1 from '/code/plugin1.jpg';
+import plugin1 from '/code/plantGen.jpg';
 import plugin2 from '/code/plugin2.jpg';
 import plugin3 from '/code/plugin3.jpg';
 import portfolio from '/code/portfolio.jpg';
+import portfolio2 from '/code/portfolio2.jpg';
 import raytracer2 from '/code/rb.jpg';
 import raytracer3 from '/code/rc.jpg';
 import raytracer4 from '/code/rd.jpg';
@@ -36,8 +36,8 @@ export default [
       "Implemented sphere and box texturing using texture mapping",
      ],
     video: '' },
-  { css: plugin3, 
-    hoverImages: [plugin3],
+  { css: plugin1, 
+    hoverImages: [plugin3, plugin2, plugin1],
     height: 1700,
     description: "Maya Plugin for Rapid Plant Generation", 
     skills: "Maya Tools | Python | Qt | MEL ", 
@@ -68,7 +68,7 @@ export default [
   vidWidth: "400px",
 },
   { css: portfolio, 
-    hoverImages: [portfolio], 
+    hoverImages: [portfolio2, portfolio], 
     height: 1700, 
     description: "Personal Website", 
     skills: "Typescript | React | GSAP | Three.js | MUI", link: "https://github.com/nMDaas/natasha-daas-website",

@@ -56,7 +56,7 @@ function Masonry() {
             <div className={styles.link}><a href={item.link} target="_blank" rel="noopener noreferrer">View Project!</a></div>
             
             {!item.video && (
-              <Slide>
+              <Slide arrows={item.hoverImages.length > 1}>
                 {item.hoverImages.map((src, idx) => (
                   <div key={idx} className="each-slide-effect" style={{ backgroundImage: `url(${src})`, height: '300px', backgroundSize: 'cover' }}>
                   </div>

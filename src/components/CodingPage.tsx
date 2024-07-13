@@ -5,7 +5,8 @@ import { useTransition, a } from '@react-spring/web'
 import data from './data'
 import styles from './codingStyles.module.css'
 import useMeasure from 'react-use-measure'
-import opengl from '/code/opengl.mp4';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
 
 function Masonry() {
   const columns = useMedia(['(min-width: 1500px)', '(min-width: 1000px)', '(min-width: 600px)', '(max-width: 599px)'], [3, 3, 1, 1], 2)
@@ -34,81 +35,11 @@ function Masonry() {
     trail: 25,
   });
 
-  const intervalIds = useRef({});
-
-  useEffect(() => {
-    items.forEach((item, index) => {
-      const element = document.getElementById(`grid-item-${index}`);
-      const image = element.querySelector('.image');
-      const hoverImages = item.hoverImages;
-      let imageIndex = 0;
-
-
-      
-      // backgroundImage: `url(${hoverImages[imageIndex]})`,
-      const changeImage = () => {
-        gsap.to(image, {
-          backgroundImage: `url(${hoverImages[imageIndex]}?auto=compress&dpr=2&h=500&w=500)`,
-          duration: 0.5,
-          ease: "power3.inOut",
-          onComplete: () => {
-            imageIndex = (imageIndex + 1) % hoverImages.length;
-            intervalIds.current[index] = setTimeout(changeImage, 1500); // Pause for 1.5 seconds before changing the image
-          }
-        });
-      };
-
-      changeImage();
-    });
-
-    return () => {
-      // Clear all intervals when the component unmounts
-      Object.values(intervalIds.current).forEach(clearInterval);
-    };
-  }, [items]);
-
-  const urls = [
-    "/natasha-daas-website/code/raytracer.jpg",
-    "/natasha-daas-website/code/productionplanner.jpg",
-    "/natasha-daas-website/code/bakeapp.jpg",
-    "/natasha-daas-website/code/plantGen.jpg",
-    "/natasha-daas-website/code/portfolio.jpg",
-    "/natasha-daas-website/code/rb.jpg",
-    "/natasha-daas-website/code/rc.jpg",
-    "/natasha-daas-website/code/rd.jpg",
-    "/natasha-daas-website/code/bakeapp.jpg",
-    "/natasha-daas-website/code/photoeditor.jpg",
-    "/natasha-daas-website/code/re.jpg",
-    "/natasha-daas-website/code/rf.jpg",
-    "/natasha-daas-website/code/rg.jpg",
-    "/natasha-daas-website/code/rh.jpg",
-    "/natasha-daas-website/code/ri.jpg",
-  ]
-  
-  /*
-  useEffect(() => {
-    preloadImages();
-  }, []);*/
-
-  /*
-  function preloadImages() {
-    for (let i = 0; i < urls.length; i++) {
-      console.log(urls[i])
-      preloadImage(urls[i]);
-    }
-  }
-
-  function preloadImage(url) {
-    const img = new Image();
-    img.src = url;
-  }
-*/ 
   return (
     <div ref={ref} className={styles.list} style={{ height: Math.max(...heights) }}>
       {transitions((style, item, t, index) => (
         <a.div style={style} key={item.css} id={`grid-item-${index}`}>
-          <div className={`${styles.gridItem} image`} 
-               style={{ backgroundImage: `url(${item.css}?auto=compress&dpr=2&h=500&w=500)` }}>
+          <div className={styles.gridItem}>
             <div className={styles.description}>{item.description}</div>
             <div className={styles.skills}>{item.skills}</div>
             <div className={styles.detail}>
@@ -123,6 +54,13 @@ function Masonry() {
               )}
             </div>
             <div className={styles.link}><a href={item.link} target="_blank" rel="noopener noreferrer">View Project!</a></div>
+            
+            <Slide>
+              {item.hoverImages.map((src, idx) => (
+                <div key={idx} className="each-slide-effect" style={{ backgroundImage: `url(${src})`, height: '300px', backgroundSize: 'cover' }}>
+                </div>
+              ))}
+            </Slide>
             {item.video && (
               <video className={styles.video} width={item.vidWidth} height={item.vidHeight} autoPlay loop muted>
                 <source src={item.video} type="video/mp4"/>

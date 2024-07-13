@@ -24,7 +24,7 @@ export default [
   { blank: blank,
     css: raytracer, 
     hoverImages: [raytracer2, raytracer3, raytracer4, raytracer], 
-    height: 1500, description: "Raytracer",
+    height: 1700, description: "Raytracer",
      skills: "C++ | OpenGL | Graphics Programming", 
      link:"https://github.com/nMDaas/raytracer",
      details: [
@@ -38,7 +38,7 @@ export default [
     video: '' },
   { css: plugin3, 
     hoverImages: [plugin3],
-    height: 1500,
+    height: 1700,
     description: "Maya Plugin for Rapid Plant Generation", 
     skills: "Maya Tools | Python | Qt | MEL ", 
     link:"https://github.com/nMDaas/MyPlugins",
@@ -51,7 +51,7 @@ export default [
     video: ''  },
   { css: blank, 
     hoverImages: [blank], 
-    height: 1500, 
+    height: 1700, 
     description: "Trackball, Lighting, Texturing and Animation in OpenGL",
     skills: "C++ | OpenGL | GLSL | Graphics Programming",
     link: "https://github.khoury.northeastern.edu/nmdaas/CS4300_HW5",
@@ -69,7 +69,7 @@ export default [
 },
   { css: portfolio, 
     hoverImages: [portfolio], 
-    height: 1500, 
+    height: 1700, 
     description: "Personal Website", 
     skills: "Typescript | React | GSAP | Three.js | MUI", link: "https://github.com/nMDaas/natasha-daas-website",
     details: [
@@ -80,7 +80,7 @@ export default [
     ],
     video: '' 
   },
-  { css: photoeditor, hoverImages: [photoeditor2, photoeditor3, photoeditor4, photoeditor], height: 1500, description: "Photo Editor", skills: "Java | Object-Oriented Programming | MVC Pattern", link: "https://github.com/nMDaas/Photo-Editor",
+  { css: photoeditor, hoverImages: [photoeditor2, photoeditor3, photoeditor4, photoeditor], height: 1700, description: "Photo Editor", skills: "Java | Object-Oriented Programming | MVC Pattern", link: "https://github.com/nMDaas/Photo-Editor",
     details: [
       "Used the model-view-controller pattern and Java to build GUI and backend of a photo editor application",
       "Implemented blurring, sharpening, brightening and flipping of images",
@@ -89,7 +89,7 @@ export default [
     ],
     video: '' 
   },
-  { css: productionplan, hoverImages: [productionplan2, productionplan3, productionplan], height: 1500, description: "Animation Production Plan Generator", 
+  { css: productionplan, hoverImages: [productionplan2, productionplan3, productionplan], height: 1700, description: "Animation Production Plan Generator", 
     skills: "Javascript | Typescript | Generative AI | React", link: "https://github.com/Abby-Dennin/Animation-Production-Plan-Generator",
     details: [
       "Web application developed in collaboration with Abigail Dennin, Meredith Scott and Sophia Allen using Git",
@@ -101,7 +101,7 @@ export default [
   },
   { css: blank,
     hoverImages: [blank], 
-    height: 1500, 
+    height: 1700, 
     description: "Spirograph Animation", 
     skills: "C++ | OpenGL | 2D Animation | Graphics Programming",
     link:"https://github.com/nMDaas/Spirograph/tree/main", 
@@ -111,7 +111,7 @@ export default [
     video: spirograph,
     vidHeight: "400px",
     vidWidth: "400px", },
-  { css: bakeapp, hoverImages: [bakeryapp], height: 1500, description: "Bakery App", skills: "mySQL | Java", link: "https://github.com/nMDaas/BakeryApp",
+  { css: bakeapp, hoverImages: [bakeryapp], height: 1700, description: "Bakery App", skills: "mySQL | Java", link: "https://github.com/nMDaas/BakeryApp",
     details: [
       "Developed in collaboration Caroline Southard-Smith using Git",
       "Console based application allowing users to find recipes, post recipes, and manage their ingredient inventory",

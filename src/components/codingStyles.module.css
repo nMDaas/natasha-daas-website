@@ -12,8 +12,6 @@
   
   .list > div > div {
     position: relative;
-    background-size: cover;
-    background-position: center center;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -23,7 +21,6 @@
     box-shadow: 0px 10px 50px -10px rgba(0, 0, 0, 0.2);
     border: 10px solid white;
     padding: 10px;
-    transition: background-image 1.0s ease-in-out; /* Add transition for smooth image change */
   }
   
   .description {
@@ -102,6 +99,22 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  .each-slide-effect > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+  }
+  
+  .each-slide-effect span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
   }
 
   /* desktop */

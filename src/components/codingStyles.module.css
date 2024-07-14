@@ -136,6 +136,24 @@
   }
 }
 
+@media (min-width: 600px) and (max-width: 1499px) {
+  .description { 
+    font-size: 16px;
+  }
+
+  .detail {
+    font-size: 14px;
+  }
+
+  .skills {
+    font-size: 14px;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+}
+
 /* mobile */
 @media (max-width: 599px) {
   .description { 

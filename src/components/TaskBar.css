@@ -59,11 +59,19 @@
   }
 }
 
+@media (min-width: 600) and (max-width: 1499) {
+  .home-icon {
+    width: 45px;
+    height: 40px;
+    vertical-align: middle !important;
+  }
+}
+
 /* mobile */
 @media (max-width: 599px) {
   .home-icon {
-    width: 30px;
-    height: 25px;
+    width: 35px;
+    height: 30px;
     vertical-align: middle !important;
   }
 }

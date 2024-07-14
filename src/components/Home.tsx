@@ -36,13 +36,13 @@ const Home = () => {
             - <em>Northeastern University: </em> Teaching Assistant, Computer Graphics CS4300 (Fall 2024)
           </div>
           <div className="info">
-            - <em>Nickelodeon: </em> Internship, Data Strattegy Intern (Summer 2024)
+            - <em>Nickelodeon: </em> Internship, Data Strategy Intern (Summer 2024)
           </div>
           <div className="info">
             - <em>Northeastern University: </em> Co-op, System Support Associate -  (Fall 2024)
           </div>
           <div className="info">
-            - <em>Northeastern University: </em> Teaching Assistant, Fundaments of Computer Science 2 CS2510 (Spring 2023)
+            - <em>Northeastern University: </em> Teaching Assistant, Fundamentals of Computer Science 2 CS2510 (Spring 2023)
           </div> 
           <div className="info">
             - <em>Social Alpha: </em> Internship, Digital Design Intern (Summer 2022)

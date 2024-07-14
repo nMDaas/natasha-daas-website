@@ -62,8 +62,8 @@
 /* mobile */
 @media (max-width: 599px) {
   .home-icon {
-    width: 50px;
-    height: 45px;
+    width: 30px;
+    height: 25px;
     vertical-align: middle !important;
   }
 }

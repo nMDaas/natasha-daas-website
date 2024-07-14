@@ -48,6 +48,16 @@
         height: 300px;
         padding: 30px !important;
     }
+
+    .heading {
+        font-size: 20px !important;
+        padding: 6px;
+    }
+    
+    .info {
+        font-size: 18px !important;
+        padding: 4px !important;
+    }
 }
 
 /* mobile */
@@ -70,23 +80,14 @@
         height: 260px;
         padding: 15px !important;
     }
-}
 
-.heading {
-    font-size: 20px !important;
-    padding: 6px;
-}
-
-.info {
-    font-size: 18px !important;
-    padding: 4px !important;
-}
-
-ul.small-bullets {
-    list-style-type: none;
-}
-
-ul.small-bullets li::before {
-    content: '•'; /* Unicode for bullet point */
-    font-size: 0.6em; /* Adjust this to make the bullet smaller or larger */
+    .heading {
+        font-size: 18px !important;
+        padding: 5px;
+    }
+    
+    .info {
+        font-size: 16px !important;
+        padding: 3px !important;
+    }
 }

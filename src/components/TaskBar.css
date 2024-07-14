@@ -59,7 +59,7 @@
   }
 }
 
-@media (min-width: 600) and (max-width: 1499) {
+@media (min-width: 600px) and (max-width: 1499px) {
   .home-icon {
     width: 45px;
     height: 40px;
@@ -70,8 +70,8 @@
 /* mobile */
 @media (max-width: 599px) {
   .home-icon {
-    width: 35px;
-    height: 30px;
+    width: 45px;
+    height: 40px;
     vertical-align: middle !important;
   }
 }

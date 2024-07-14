@@ -18,13 +18,36 @@ const Home = () => {
 
   return (
     <div className="home2-page">
-      <div className="hello">
-        Hi! I'm Natasha!
+      <div className="detail">
+        <div className="heading">SKILLS</div>
+        <div className="info">
+          <em>Programming: </em>C++, Python, PyQt, Qt, OpenGL, Java, Javascript, Typescript, React, GLSL, SQL, MongoDB, HTML CSS
+        </div>
+        <div className="info">
+          <em>Art/Animation: </em>Maya, Blender, Adobe Substance Painter, Adobe Illustrator, Adobe Photoshop, Adobe After Effects, Figma
+        </div>
+
+        
       </div>
       <div className="vl"></div>
-      <div className="detail">
-       Hi, I'm Natasha! I'm a programmer and 3D artist with interests in computer graphics and technical direction. I love programming tools and finding solutions to enhance storytelling and interaction in animation and 3D media.
-      </div>
+        <div className="detail">
+          <div className="heading">EXPERIENCE</div>
+          <div className="info">
+            - <em>Northeastern University: </em> Teaching Assistant, Computer Graphics CS4300 (Fall 2024)
+          </div>
+          <div className="info">
+            - <em>Nickelodeon: </em> Internship, Data Strattegy Intern (Summer 2024)
+          </div>
+          <div className="info">
+            - <em>Northeastern University: </em> Co-op, System Support Associate -  (Fall 2024)
+          </div>
+          <div className="info">
+            - <em>Northeastern University: </em> Teaching Assistant, Fundaments of Computer Science 2 CS2510 (Spring 2023)
+          </div> 
+          <div className="info">
+            - <em>Social Alpha: </em> Internship, Digital Design Intern (Summer 2022)
+          </div>
+        </div>
     </div>
   );
 };

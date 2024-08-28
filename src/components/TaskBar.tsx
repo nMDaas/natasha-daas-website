@@ -1,14 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import './TaskBar.css';
-import { useNavigate } from 'react-router-dom';
 import resume from "../assets/NatashaDaasResume.pdf";
 import home1icon from '/other/home1.png';
 import home2icon from '/other/home2.png';
 import { GitHub, MailRounded, LinkedIn } from "@mui/icons-material";
 
 const TaskBar = () => {
-  const navigate = useNavigate();
   const menuBarRef = useRef(null);
   const [homeIcon, setHomeIcon] = useState(home1icon); // State for the home icon
 

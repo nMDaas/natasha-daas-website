@@ -1,12 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import './TaskBar.css';
+import { useNavigate } from 'react-router-dom';
 import resume from "../assets/NatashaDaasResume.pdf";
 import home1icon from '/other/home1.png';
 import home2icon from '/other/home2.png';
 import { GitHub, MailRounded, LinkedIn } from "@mui/icons-material";
 
 const TaskBar = () => {
+  const navigate = useNavigate();
   const menuBarRef = useRef(null);
   const [homeIcon, setHomeIcon] = useState(home1icon); // State for the home icon
 
@@ -52,9 +54,9 @@ const TaskBar = () => {
           </a>
         </li>
         <li><a href="#" onClick={(event) => handleScrollToElement(event, "about-section")}>About</a></li>
-        <li><a href="#" onClick={(event) => handleScrollToElement(event, "code-section")}>Code</a></li>
+        <li><a href="#" onClick={() => navigate('/natasha-daas-website/code')}>Code</a></li>
         <li><a href="#" onClick={(event) => handleScrollToElement(event, "anim-section")}>Animation & 3D Modeling</a></li>
-        <li><a href="#" onClick={(event) => handleScrollToElement(event, "art-section")}>Art</a></li>
+        <li><a href="#" onClick={() => navigate('/natasha-daas-website/art')}>Art</a></li>
         <li><a href="#" onClick={(event) => handleScrollToElement(event, "contact-section")}>Contact</a></li>
         <li><a href={resume} target="_blank" rel="noopener noreferrer">Resume</a></li>
         <a href="https://github.com/nMDaas" target="_blank" rel="noopener noreferrer">

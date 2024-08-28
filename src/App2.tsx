@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import TestPage from "./components/ThreeJSComponent";
-import TaskBar from "./components/TaskBar";
+import TaskBar from "./components/TaskBar2";
 import CodingPage from "./components/CodingPage2";
 import AnimationPage from "./components/AnimationPage";
 import HomePage from "./components/Home";
@@ -27,6 +27,7 @@ function App() {
       <Router>
         <ResetScroll/>
         <Routes>
+          <Route path="natasha-daas-website/" element={<AboutPage />} />
           <Route path="natasha-daas-website/code" element={<CodingPage />} />
           <Route path="natasha-daas-website/art" element={<ArtPage />} />
         </Routes>

@@ -9,22 +9,22 @@
 
 .home2-page {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #b78a80;
     position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #f2c9bf;
+    color: #cb9f95;
+    background-color: #4d3c3e;
 }
 
 .detail {
-    color: #f2c9bf !important;
+    color: #cb9f95 !important;
     text-align: left !important;
 }
 
 .vl {
-    border-left: 5px solid #f2c9bf;
+    border-left: 5px solid #cb9f95;
     border-left-style: double;
   }
 

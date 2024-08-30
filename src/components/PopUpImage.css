@@ -12,20 +12,6 @@
     padding: 30px;
   }
   
-  .modal-content {
-    border-radius: 8px;
-    position: relative;
-    max-width: 90%;
-    max-height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .modal-content.custom-size {
-    overflow: hidden;
-  }
-  
   .close-button {
     position: absolute;
     top: 20px;
@@ -43,6 +29,9 @@
     font-weight: bold;
     line-height: 0 !important;
     text-align: center !important;
+    transition: color 0.3s ease-in-out, z-index 0s ease 0s; 
+    transition: background-color 0.3s ease-in-out, z-index 0s ease 0s; 
+    
   }
 
   .close-button:hover {

@@ -1,0 +1,62 @@
+[
+    {
+      "title": "Room Environment",
+      "toolsAndSkills": "Maya | Prop Modeling | Environments | Adobe Substance Painter",
+      "thumbnailSrc": "/natasha-daas-website/public/animation/flythroughpic.jpg",
+      "descriptionBullets": [
+        "Room Environment created for 'Todd vs Can' short",
+        "Modeled all environment assets in scene in Maya",
+        "Textured assets using Adobe Substance Painter"
+      ],
+      "imageStills": [
+        "../public/animation/flythroughpic.jpg",
+        "/animation/ft1.jpg",
+        "/animation/ft2.jpg",
+        "/animation/ft3.jpg",
+        "/animation/ft4.jpg",
+        "/animation/ft5.jpg",
+        "/animation/ft6.jpg",
+        "/animation/ft7.jpg"
+      ]
+    },
+    {
+        "title": "Todd vs Can",
+        "toolsAndSkills": "Maya | Rigging | Character Design & Modeling | Adobe Substance Painter | Character Animation",
+        "thumbnailSrc": "/natasha-daas-website/public/animation/anim1tn.jpeg",
+        "descriptionBullets": [
+          "Room Environment created for 'Todd vs Can' short",
+          "Modeled all environment assets in scene in Maya",
+          "Textured assets using Adobe Substance Painter"
+        ],
+        "imageStills": [
+          "/animation/flythroughpic.jpg",
+          "/animation/ft1.jpg",
+          "/animation/ft2.jpg",
+          "/animation/ft3.jpg",
+          "/animation/ft4.jpg",
+          "/animation/ft5.jpg",
+          "/animation/ft6.jpg",
+          "/animation/ft7.jpg"
+        ]
+      },
+      {
+        "title": "Good Morning, I'm Toast",
+        "toolsAndSkills": "2D Animation | Adobe Animate | Adobe After Effects | Adobe Premiere Pro",
+         "thumbnailSrc": "/natasha-daas-website/public/animation/toast5.jpg",
+        "descriptionBullets": [
+          "Room Environment created for 'Todd vs Can' short",
+          "Modeled all environment assets in scene in Maya",
+          "Textured assets using Adobe Substance Painter"
+        ],
+        "imageStills": [
+          "/animation/flythroughpic.jpg",
+          "/animation/ft1.jpg",
+          "/animation/ft2.jpg",
+          "/animation/ft3.jpg",
+          "/animation/ft4.jpg",
+          "/animation/ft5.jpg",
+          "/animation/ft6.jpg",
+          "/animation/ft7.jpg"
+        ]
+      }
+]

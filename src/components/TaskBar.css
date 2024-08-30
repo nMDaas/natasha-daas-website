@@ -6,7 +6,7 @@
   .menu-bar {
     background-color: #b78a80;
     font-family: 'NatashaFont';
-    font-size: 25px;
+    font-size: 30px;
     z-index: 10000;
     position: fixed;
     top: 0px;
@@ -32,17 +32,34 @@
     padding: 14px 16px;
     text-decoration: none;
   }
-  
+
   .menu-bar ul li a:hover {
-    background-color: #4d3c3e;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #f2c9bf;
+  }
+
+  ul {
+    vertical-align: middle;
   }
 
   ul a {
     color: white; /* Preserve the original color of the icon */
     text-decoration: none; /* Remove underline */
     padding-right: 14px;
-    padding-top: 10px;
+    padding-top: 15px;
     float: right;
+  }
+
+  ul a:hover {
+    color: #f2c9bf; /* Preserve the original color of the icon */
+    text-decoration: none; /* Remove underline */
+    padding-right: 14px;
+    padding-top: 15px;
+    float: right;
+    transition: color 0.3s ease-in-out, z-index 0s ease 0s; 
   }
 
   /* desktop */

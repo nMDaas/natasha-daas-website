@@ -45,6 +45,10 @@ function Masonry() {
             <div className={styles.gridItem}>
               <div className={styles.description}>{item.description}</div>
               <div className={styles.skills}>{item.skills}</div>
+              <div className={styles.summary}>{item.summary}</div>
+              {item.collaborators && (
+              <p className={styles.collaborators}>Collaborators: {item.collaborators}</p>
+              )}  
               <div className={styles.detail}>
                 {Array.isArray(item.details) ? (
                   <ul>
@@ -56,15 +60,19 @@ function Masonry() {
                   <p>{item.details}</p>
                 )}
               </div>
-              <div className={styles.link}><a href={item.link} target="_blank" rel="noopener noreferrer">View Project!</a></div>
-              
+              <div className={styles.link}><a href={item.link} target="_blank" rel="noopener noreferrer">VIEW PROJECT!</a></div>
               {!item.video && (
                 <Slide arrows={item.hoverImages.length > 1}>
-                  {item.hoverImages.map((src, idx) => (
-                    <div key={idx} className="each-slide-effect" style={{ backgroundImage: `url(${src})`, height: '300px', backgroundSize: 'cover' }}>
-                    </div>
-                  ))}
-                </Slide>
+                {item.hoverImages.map((src, idx) => (
+                  <div key={idx} className="each-slide-effect" style={{ height: '300px' }}>
+                    {src.endsWith('.mp4') ? (
+                      <video src={src} autoPlay loop muted playsInline style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
+                    ) : (
+                      <div style={{ backgroundImage: `url(${src})`, height: '100%', width: 'auto', backgroundSize: 'cover' }} />
+                    )}
+                  </div>
+                ))}
+              </Slide>
               )}
               {item.video && (
                 <video className={styles.video} width={item.vidWidth} height={item.vidHeight} autoPlay loop muted>

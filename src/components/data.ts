@@ -4,6 +4,11 @@ import bakeryapp from '/code/bakeapp.jpg';
 import plugin1 from '/code/plantGen.jpg';
 import plugin2 from '/code/plugin2.jpg';
 import plugin3 from '/code/plugin3.jpg';
+import plantgendemo1 from '/code/plantgendemo1.mp4';
+import plant1 from '/code/plant1.jpg';
+import plantgendemo2 from '/code/plantgendemo2.mp4';
+import plant2 from '/code/plant2.jpg';
+import plant3 from '/code/plant3.jpg';
 import portfolio from '/code/portfolio.jpg';
 import portfolio2 from '/code/portfolio2.jpg';
 import raytracer2 from '/code/rb.jpg';
@@ -24,39 +29,43 @@ export default [
   { blank: blank,
     css: raytracer, 
     hoverImages: [raytracer2, raytracer3, raytracer4, raytracer], 
-    height: 1700, description: "Raytracer",
-     skills: "C++ | OpenGL | Graphics Programming", 
+    height: 1730, description: "Raytracer",
+     skills: "C++ | OpenGL | Object-Oriented Programming (OOP)| Graphics Programming | MVC Pattern", 
      link:"https://github.com/nMDaas/raytracer",
+     summary: "Ray Tracing Engine in C++",
      details: [
       "Used vector calculations to determine ray-object intersections for boxes, spheres, cylinders and cones",
-      "Applied Object Oriented and Model-View-Controller concepts in C++ to develop a hierarchical node system to build custom scenes",
-      "Allows materials with reflection, refraction and refractive index. Accounts for total internal reflection and infinite refraction",
+      "Applied OOP and MVC framework and visitor pattern in C++ to develop a hierarchical node system to build custom scenes",
+      "Allows materials with reflection, refraction and refractive index, accounting for total internal reflection and infinite refraction",
       "Includes ability to create spotlights, point lights, and area lights",
-      "Allows creation of hard and soft shadows by adjusting number of samples for lights",
+      "Allows creation of hard and soft shadows by adjusting number of light sample counts",
       "Implemented sphere and box texturing using texture mapping",
      ],
-    video: '' },
+    video: '',
+    collaborators: ''},
   { css: plugin1, 
-    hoverImages: [plugin3, plugin2, plugin1],
-    height: 1700,
+    hoverImages: [plantgendemo1,plant1, plantgendemo2, plant2, plant3, plugin3, plugin1],
+    height: 1730,
     description: "Maya Plugin for Rapid Plant Generation", 
     skills: "Maya Tools | Python | Qt | MEL ", 
-    link:"https://github.com/nMDaas/MyPlugins",
+    link:"https://github.com/nMDaas/PlantGeneratorPluginMaya",
+    summary: "Maya Tool to streamline generation of stylized and customizable plants",
     details: [
-      "A Maya Tool to enable rapid generation of stylized and customizable plants",
-      "Used Python and MEL scripting to quickly generate variations of a leaf using distortion, tilting and scaling",
-      "Allows swift distribution of leaves around an object (like a stem) or in a concentrated location",
-      "An ongoing project"
+      "Developed this tool to reduce the time taken to model plants in Maya using Python and MEL scripting",
+      "Eliminated inefficient processes in plant part modeling by enabling one-click and bulk duplication, modification, and connection",
+      "Provided distortion, tilting and scaling options via a user-friendly GUI to allow customization over plant geometry",
+      "Enabled ability generate various plant varieties and arrangements through quick distribution plant parts around other plant parts or a concentrated location"
     ],
-    video: ''  },
+    video: '',
+    collaborators: ''  },
   { css: blank, 
     hoverImages: [blank], 
-    height: 1700, 
+    height: 1730, 
     description: "Trackball, Lighting, Texturing and Animation in OpenGL",
     skills: "C++ | OpenGL | GLSL | Graphics Programming",
     link: "https://github.khoury.northeastern.edu/nmdaas/CS4300_HW5",
+    summary: "Interactive OpenGL-based system for implementing trackball movement, camera control, lighting, and texturing in computer graphics",
     details: [
-      "Developed in collaboration with Natalie Potapov using Git",
       "Implemented trackball effect as seen in applications like Maya and Blender",
       "Programmed movements of a global camera, helicopter camera and first person camera",
       "Applied the visitor pattern in C++ to implement hierarchical rendering of nodes in scene",
@@ -66,59 +75,67 @@ export default [
   video: opengl,
   vidHeight: "400px",
   vidWidth: "400px",
+  collaborators: 'Natalie Potapov'
 },
   { css: portfolio, 
     hoverImages: [portfolio2, portfolio], 
-    height: 1700, 
+    height: 1730, 
     description: "Personal Website", 
-    skills: "Typescript | React | GSAP | Three.js | MUI", link: "https://github.com/nMDaas/natasha-daas-website",
+    skills: "Typescript | React | GSAP | Three.js | MUI | Software Development Life Cycle (SDLC)", link: "https://github.com/nMDaas/natasha-daas-website",
+    summary: "Website deployed using GitHub Pages to showcase my interests in and projects related to programming, computer graphics, 3D animation and modeling.",
     details: [
-      "Website to showcase my interests in and projects related to programming, computer graphics, 3D animation and modeling",
-      "Built using Vite and Typescript and deployed using Github Pages",
-      "Utilized React, GSAP, Three.js and the MUI library to implement animations and aesthetics for a more comfortable and seamless user experience",
-      "Debugged using DevTools and Web Inspector to resolve bugs and improve the website's performance, speed and loading time"
+      "Developed an engaging and visually striking GUI using React, GSAP, Three.js, and the MUI library by creating interactive custom UI/UX components",
+      "Improved responsiveness, performance and appearance on  7-8 devices and device sizes using Vite and Typescript",
+      "Enhanced website performance, speed and loading time by debugging using DevTools and Web Inspector"
     ],
-    video: '' 
+    video: '' ,
+    collaborators: ''
   },
-  { css: photoeditor, hoverImages: [photoeditor2, photoeditor3, photoeditor4, photoeditor], height: 1700, description: "Photo Editor", skills: "Java | Object-Oriented Programming | MVC Pattern", link: "https://github.com/nMDaas/Photo-Editor",
+  { css: photoeditor, hoverImages: [photoeditor2, photoeditor3, photoeditor4, photoeditor], height: 1730, description: "Photo Editor", skills: "Java | Object-Oriented Programming (OOP)| MVC Pattern", link: "https://github.com/nMDaas/Photo-Editor",
     details: [
-      "Used the model-view-controller pattern and Java to build GUI and backend of a photo editor application",
-      "Implemented blurring, sharpening, brightening and flipping of images",
-      "Includes ability to edit image using various greyscale, sepia and RGB filters",
-      "Supports upload, saving, and conversion between jpeg, ppm and png file formats",
+      "Designed and programmed a user-friendly GUI for a Photo Editor Application",
+      "Featured image manipulation tools such as blurring, sharpening, brightening, flipping, and filtering, including grayscale, sepia, and RGB filters",
+      "Applied object-oriented programming principles (OOP) and the model-view-controller (MVC) pattern to create a flexible, scalable and maintainable codebase",
+      "Enabled support for loading and saving images in multiple file formats, including PNG, JPG, JPEG, and PPM",
+      "Streamlined the integration of images in 25+ of my future school projects related to computer graphics, OpenGL, and C++ classes"
     ],
-    video: '' 
+    video: '' ,
+    summary: "Photo Editor Application with image manipulation, format support, and MVC architecture",
+    collaborators: ''
   },
-  { css: productionplan, hoverImages: [productionplan2, productionplan3, productionplan], height: 1700, description: "Animation Production Plan Generator", 
-    skills: "Javascript | Typescript | Generative AI | React", link: "https://github.com/Abby-Dennin/Animation-Production-Plan-Generator",
+  { css: productionplan, hoverImages: [productionplan2, productionplan3, productionplan], height: 1730, description: "Animation Production Plan Generator", 
+    skills: "Javascript | Typescript | Generative AI | React | HCI | Software Development Life Cycle (SDLC)", link: "https://github.com/Abby-Dennin/Animation-Production-Plan-Generator",
+    summary: "AI-powered web application to streamline animation production generation and management",
     details: [
-      "Web application developed in collaboration with Abigail Dennin, Meredith Scott and Sophia Allen using Git",
-      "Uses OpenAI to generate a production plan for animators based on user provided project details",
-      "Used Typescript and Javascript to manage user's various production plans, task completion and keep track of production progress",
-      "Implemented capability for user customization, styling and csv export"
+      "Streamlined production management and task tracking by taking user-provided project details as input",
+      "Leveraged OpenAI to auto-generate tabular plans with milestones, descriptions, and dates",
+      "Enhanced user engagement and experience using Typescript and Javascript through customizable production plans, styling options and CSV export functionality",
+      "Incorporated feedback from and conducted testing with 30+ animation students at NEU to refine the tool",
+      "Testing showed faster plan generation, production tracking efficiency, and greater flexibility in modifying and updating plans"
     ],
-    video: '' 
+    video: '' ,
+    collaborators: 'Abby Dennin, Meredith Scott, Sophia Allen'
   },
   { css: blank,
     hoverImages: [blank], 
-    height: 1700, 
+    height: 1730, 
     description: "Spirograph Animation", 
     skills: "C++ | OpenGL | 2D Animation | Graphics Programming",
-    link:"https://github.com/nMDaas/Spirograph/tree/main", 
-    details: [
-      "A fun animation developed using openGL and C++ to visualize a spirograph and how its pattern changes with changes in circle size",
-    ],
+    link:"https://github.com/nMDaas/Spirograph/tree/main",
+    summary: "A fun animation developed using OpenGL and C++ to visualize a spirograph and how its pattern changes with changes in circle size",
+    details: [],
     video: spirograph,
     vidHeight: "400px",
-    vidWidth: "400px", },
-  { css: bakeapp, hoverImages: [bakeryapp], height: 1700, description: "Bakery App", skills: "mySQL | Java", link: "https://github.com/nMDaas/BakeryApp",
+    vidWidth: "400px",
+    collaborators: '' },
+  { css: bakeapp, hoverImages: [bakeryapp], height: 1730, description: "Bakery App", skills: "mySQL | Java | JDBC", link: "https://github.com/nMDaas/BakeryApp",
+    summary: "Console based app to help users manage kitchen inventory and discover, save and post baking recipes",
     details: [
-      "Developed in collaboration Caroline Southard-Smith using Git",
-      "Console based application allowing users to find recipes, post recipes, and manage their ingredient inventory",
-      "Backend controller logic of the application was written in Java",
-      "Used the JDBC connector to connect Java code to the database, queries and triggers written in SQL",
-      "Wrote queries in SQL to allow filtering based on recipe types and user interests and informs user of missing ingredients",
+      "Designed the Conceptual and Logical Design of the database, including tables, relationships, and the User Activity Diagram, to establish the schema design and application flow from user perspective",
+      "Implemented SQL queries, aggregate functions, foreign keys, join operations, and dynamic queries to retrieve, filter, and summarize data, providing user-friendly feedback based on recipe types, user interests, and missing ingredients",
+      "Developed the backend controller logic in Java and utilized the JDBC connector to interface with the database, integrating SQL queries and triggers to manage data interactions",
     ],
-    video: '' 
+    video: '' ,
+    collaborators: 'Caroline Southard-Smith'
   },
 ]

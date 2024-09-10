@@ -44,12 +44,13 @@ function Masonry() {
           <a.div style={style} key={item.css} id={`grid-item-${index}`}>
             <div className={styles.gridItem}>
               <div className={styles.description}>{item.description}</div>
-              <div className={styles.skills}>{item.skills}</div>
               <div className={styles.summary}>{item.summary}</div>
+              <div className={styles.skills}>{item.skills}</div>
               {item.collaborators && (
               <p className={styles.collaborators}>Collaborators: {item.collaborators}</p>
               )}  
               <div className={styles.detail}>
+               
                 {Array.isArray(item.details) ? (
                   <ul>
                     {item.details.map((detail, index) => (
@@ -66,7 +67,7 @@ function Masonry() {
                 {item.hoverImages.map((src, idx) => (
                   <div key={idx} className="each-slide-effect" style={{ height: '300px' }}>
                     {src.endsWith('.mp4') ? (
-                      <video src={src} autoPlay loop muted playsInline style={{ height: '100%', width: '100%', objectFit: 'cover' }} />
+                      <video src={src} autoPlay loop muted playsInline style={{ height: '100%', width: '100%'}} />
                     ) : (
                       <div style={{ backgroundImage: `url(${src})`, height: '100%', width: 'auto', backgroundSize: 'cover' }} />
                     )}

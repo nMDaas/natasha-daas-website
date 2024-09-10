@@ -34,26 +34,28 @@
     background-color: #ebedf0;
     color: #262626;
     line-height: 1.1;
+    font-weight: 570;
   }
   
   .skills {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-left: 25px;
-    padding-top: 13px;
+    padding-top: 10px;
     padding-bottom: 15px;
     background-color: #ebedf0;
     color: #3b3b3b;
     line-height: 1.1;
+    font-weight: lighter !important;
   }
 
   .summary {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 15px;
     padding-left: 25px;
-    padding-bottom: 15px;
     background-color: #ebedf0;
     color: #3b3b3b;
-    font-style: italic;
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 500 !important;
     line-height: 1.1;
     font-weight: 500;
   }
@@ -94,7 +96,6 @@
   .detail {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-left: 25px;
-    padding-top: 10px;
     padding-bottom: 5px;
     background-color: white;
     line-height: 1.1;
@@ -160,7 +161,8 @@
   }
 
   .skills {
-    font-size: 16px;
+    font-size: 13px;
+    font-weight: lighter !important;
   }
 
   .collaborators {
@@ -182,7 +184,8 @@
   }
 
   .skills {
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: lighter !important;
   }
 
   .collaborators {
@@ -205,7 +208,8 @@
   }
 
   .skills {
-    font-size: 14px;
+    font-size: 13px;
+    font-weight: lighter !important;
   }
 
   .collaborators {

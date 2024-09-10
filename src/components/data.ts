@@ -24,6 +24,15 @@ import productionplan3 from '/code/ri.jpg';
 import opengl from '/code/opengl.mp4';
 import blank from '/code/blank.jpg';
 import spirograph from '/code/spirograph.mp4'
+import substancePluginImage from "/code/UVsFileStructureAndScene.jpg"
+import substancePluginDemo1 from '/code/SubstancePluginDemo1.mp4'
+import substancePluginDemo2 from '/code/SubstancePluginDemo2.mp4'
+import nickHome from '/code/NickPlusHome.mp4'
+import nickChar from '/code/nickPlusNickSona.mp4'
+import nickSettings from '/code/nickPlusSettings.mp4'
+import nickLayout from '/code/nickPlusLayout.mp4'
+import nickContent from '/code/nickPlusContentPlayer.mp4'
+import nickSearch from '/code/nickPlusSearch.mp4'
 
 export default [
   { blank: blank,
@@ -58,6 +67,36 @@ export default [
     ],
     video: '',
     collaborators: ''  },
+    { css: nickContent, 
+      hoverImages: [nickHome, nickChar, nickSearch, nickSettings, nickLayout],
+      height: 1730,
+      description: "Nickelodeon+ Demo", 
+      skills: "TypeScript | React | Node.js | JSON ", 
+      link:"https://youtu.be/knGxsfaEQk4",
+      summary: "Nickelodeon+ demo developed as a part of my intern project at Nickelodeon",
+      details: [
+        "Served as a frontend developer and software engineer on the NICKtern project to build a working demo using  TypeScript, React, Node.js, and JSON",
+        "Collaborated with 17 interns from art, development, and marketing teams as well as HR and Studio Learning to incorporate ideas and feedback iteratively to deliver a final product with our vision and objectives",
+        "Implemented unique streaming platform features, including search functionality, email-based 2FA, a drag-and-drop sticker canvas, and an avatar customization interface, contributing to a successful pitch and positive feedback from 40+ people"
+
+      ],
+      video: '',
+      collaborators: 'Summer 2024 NICKterns'  },
+    { css: substancePluginImage, 
+      hoverImages: [substancePluginImage, substancePluginDemo1, substancePluginDemo2],
+      height: 1730,
+      description: "Maya + Substance Painter Plugin for AI Standard Surfaces", 
+      skills: "Maya Tools | Python | Qt | MEL ", 
+      link:"https://github.com/nMDaas/AIStandardSurfaceSubstancePainterPluginMaya",
+      summary: "Maya Tool to streamline import and assignment of textures from Substance Painter",
+      details: [
+        "Built this tool to eliminate the tedious task that comes with creating and assigning multiple AI Standard Surface textures to multiple objects or UV shells",
+        "Automated creation of multiple AI Standard Surface materials through node creation and connection through batch import of texture files",
+        "Scripts handled multiple case scenarios - unecessary object selection, group node selection, and nested objects within node selection",
+        "Streamlined operation of UV shell-texture assignment through functions that identify an object's UV bounding box coordinates",
+      ],
+      video: '',
+      collaborators: ''  },
   { css: blank, 
     hoverImages: [blank], 
     height: 1730, 

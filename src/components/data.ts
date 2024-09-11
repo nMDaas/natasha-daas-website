@@ -51,7 +51,8 @@ export default [
       "Implemented sphere and box texturing using texture mapping",
      ],
     video: '',
-    collaborators: ''},
+    collaborators: '',
+    projectType: 'graphics'},
   { css: plugin1, 
     hoverImages: [plantgendemo1,plant1, plantgendemo2, plant2, plant3, plugin3, plugin1],
     height: 1730,
@@ -66,7 +67,8 @@ export default [
       "Enabled ability generate various plant varieties and arrangements through quick distribution plant parts around other plant parts or a concentrated location"
     ],
     video: '',
-    collaborators: ''  },
+    collaborators: '' ,
+    projectType: 'tools'},
     { css: nickContent, 
       hoverImages: [nickHome, nickChar, nickSearch, nickSettings, nickLayout],
       height: 1730,
@@ -81,7 +83,8 @@ export default [
 
       ],
       video: '',
-      collaborators: 'Summer 2024 NICKterns'  },
+      collaborators: 'Summer 2024 NICKterns',
+      projectType: 'SWE'}, 
     { css: substancePluginImage, 
       hoverImages: [substancePluginImage, substancePluginDemo1, substancePluginDemo2],
       height: 1730,
@@ -96,9 +99,10 @@ export default [
         "Streamlined operation of UV shell-texture assignment through functions that identify an object's UV bounding box coordinates",
       ],
       video: '',
-      collaborators: ''  },
-  { css: blank, 
-    hoverImages: [blank], 
+      collaborators: '',
+      projectType: 'tools'  },
+  { css: opengl, 
+    hoverImages: [opengl], 
     height: 1730, 
     description: "Trackball, Lighting, Texturing and Animation in OpenGL",
     skills: "C++ | OpenGL | GLSL | Graphics Programming",
@@ -111,10 +115,11 @@ export default [
       "Allows specification of ambient, diffuse and specular properties for lights and materials",
       "Developed ability to create spotlights and texture objects"
     ],
-  video: opengl,
+  video: '',
   vidHeight: "400px",
   vidWidth: "400px",
-  collaborators: 'Natalie Potapov'
+  collaborators: 'Natalie Potapov',
+  projectType: 'graphics'
 },
   { css: portfolio, 
     hoverImages: [portfolio2, portfolio], 
@@ -128,7 +133,8 @@ export default [
       "Enhanced website performance, speed and loading time by debugging using DevTools and Web Inspector"
     ],
     video: '' ,
-    collaborators: ''
+    collaborators: '',
+    projectType: 'archived'
   },
   { css: photoeditor, hoverImages: [photoeditor2, photoeditor3, photoeditor4, photoeditor], height: 1730, description: "Photo Editor", skills: "Java | Object-Oriented Programming (OOP)| MVC Pattern", link: "https://github.com/nMDaas/Photo-Editor",
     details: [
@@ -140,7 +146,8 @@ export default [
     ],
     video: '' ,
     summary: "Photo Editor Application with image manipulation, format support, and MVC architecture",
-    collaborators: ''
+    collaborators: '',
+    projectType: 'SWE'
   },
   { css: productionplan, hoverImages: [productionplan2, productionplan3, productionplan], height: 1730, description: "Animation Production Plan Generator", 
     skills: "Javascript | Typescript | Generative AI | React | HCI | Software Development Life Cycle (SDLC)", link: "https://github.com/Abby-Dennin/Animation-Production-Plan-Generator",
@@ -153,20 +160,22 @@ export default [
       "Testing showed faster plan generation, production tracking efficiency, and greater flexibility in modifying and updating plans"
     ],
     video: '' ,
-    collaborators: 'Abby Dennin, Meredith Scott, Sophia Allen'
+    collaborators: 'Abby Dennin, Meredith Scott, Sophia Allen',
+    projectType: 'SWE'
   },
-  { css: blank,
-    hoverImages: [blank], 
+  { css: spirograph,
+    hoverImages: [spirograph], 
     height: 1730, 
     description: "Spirograph Animation", 
     skills: "C++ | OpenGL | 2D Animation | Graphics Programming",
     link:"https://github.com/nMDaas/Spirograph/tree/main",
     summary: "A fun animation developed using OpenGL and C++ to visualize a spirograph and how its pattern changes with changes in circle size",
     details: [],
-    video: spirograph,
+    video: '',
     vidHeight: "400px",
     vidWidth: "400px",
-    collaborators: '' },
+    collaborators: '', 
+    projectType: 'graphics'},
   { css: bakeapp, hoverImages: [bakeryapp], height: 1730, description: "Bakery App", skills: "mySQL | Java | JDBC", link: "https://github.com/nMDaas/BakeryApp",
     summary: "Console based app to help users manage kitchen inventory and discover, save and post baking recipes",
     details: [
@@ -175,6 +184,7 @@ export default [
       "Developed the backend controller logic in Java and utilized the JDBC connector to interface with the database, integrating SQL queries and triggers to manage data interactions",
     ],
     video: '' ,
-    collaborators: 'Caroline Southard-Smith'
+    collaborators: 'Caroline Southard-Smith',
+    projectType: 'SWE'
   },
 ]

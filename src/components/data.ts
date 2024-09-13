@@ -106,7 +106,7 @@ export default [
     height: 1730, 
     description: "Trackball, Lighting, Texturing and Animation in OpenGL",
     skills: "C++ | OpenGL | GLSL | Graphics Programming",
-    link: "https://github.khoury.northeastern.edu/nmdaas/CS4300_HW5",
+    link: "https://github.com/nMDaas/OpenGLProject",
     summary: "Interactive OpenGL-based system for implementing trackball movement, camera control, lighting, and texturing in computer graphics",
     details: [
       "Implemented trackball effect as seen in applications like Maya and Blender",

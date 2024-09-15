@@ -92,6 +92,9 @@ const ThreeJSComponent: React.FC = () => {
 
       switch (windowType) {
         case 'small':
+          outlineMesh.position.x = centerOffset + 0.2;
+          filledMesh.position.x = centerOffset + 0.2;
+          filledMesh2.position.x = centerOffset + 0.9;
           outlineMesh.position.z = -2.0;
           filledMesh.position.z = -2.1;
           filledMesh2.position.z = -2.1;
@@ -99,20 +102,23 @@ const ThreeJSComponent: React.FC = () => {
           outlineMesh.position.y = -3.0;
           filledMesh2.position.y = -3.5;
 
-          outlineMesh.scale.x = 0.7;
-          outlineMesh.scale.y = 0.7;
-          outlineMesh.scale.z = 0.7;
-          filledMesh.scale.x = 0.7;
-          filledMesh.scale.y = 0.7;
-          filledMesh.scale.z = 0.7;
-          filledMesh2.scale.x = 0.7;
-          filledMesh2.scale.y = 0.7;
-          filledMesh2.scale.z = 0.7;
+          outlineMesh.scale.x = 0.9;
+          outlineMesh.scale.y = 0.9;
+          outlineMesh.scale.z = 0.9;
+          filledMesh.scale.x = 0.9;
+          filledMesh.scale.y = 0.9;
+          filledMesh.scale.z = 0.9;
+          filledMesh2.scale.x = 0.9;
+          filledMesh2.scale.y = 0.9;
+          filledMesh2.scale.z = 0.9;
           break;
         case 'medium':
           
           break;
         case 'large':
+          outlineMesh.position.x = centerOffset;
+          filledMesh.position.x = centerOffset;
+          filledMesh2.position.x = centerOffset + 0.9;
           outlineMesh.position.z = 0.0;
           filledMesh.position.z = -0.1;
           filledMesh2.position.z = -0.1;

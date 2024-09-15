@@ -88,10 +88,10 @@ export default [
     { css: substancePluginImage, 
       hoverImages: [substancePluginImage, substancePluginDemo1, substancePluginDemo2],
       height: 1730,
-      description: "Maya + Substance Painter Plugin for AI Standard Surfaces", 
+      description: "Maya Adobe Substance Painter Plugin", 
       skills: "Maya Tools | Python | Qt | MEL ", 
       link:"https://github.com/nMDaas/AIStandardSurfaceSubstancePainterPluginMaya",
-      summary: "Maya Tool to streamline import and assignment of textures from Substance Painter",
+      summary: "Maya Tool to streamline import and assignment of AI standard surface textures from Adobe Substance Painter",
       details: [
         "Built this tool to eliminate the tedious task that comes with creating and assigning multiple AI Standard Surface textures to multiple objects or UV shells",
         "Automated creation of multiple AI Standard Surface materials through node creation and connection through batch import of texture files",

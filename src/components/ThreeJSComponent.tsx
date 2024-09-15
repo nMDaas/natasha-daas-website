@@ -28,6 +28,21 @@ const ThreeJSComponent: React.FC = () => {
       return /Mobi|Android/i.test(navigator.userAgent);
     }
 
+    function getWindowType() {
+      const width = window.innerWidth;
+    
+      if (width <= 768) {
+        // Small window (e.g., mobile)
+        return 'small';
+      } else if (width > 768 && width <= 1024) {
+        // Medium window (e.g., tablet)
+        return 'medium';
+      } else {
+        // Large window (e.g., desktop)
+        return 'large';
+      }
+    }
+
     const imgUrl = '/natasha-daas-website/art/test20clean.png';
 
     const fontLoader = new FontLoader();
@@ -73,13 +88,37 @@ const ThreeJSComponent: React.FC = () => {
       filledMesh.position.x = centerOffset;
       filledMesh2.position.x = centerOffset + 0.9;
 
-      outlineMesh.position.z = isMobileDevice() ? -2.0 : 0.0;
-      filledMesh.position.z = outlineMesh.position.z - 0.1;
-      filledMesh2.position.z = outlineMesh.position.z - 0.1;
+      const windowType = getWindowType();
 
-      filledMesh.position.y = isMobileDevice() ? -3.0 : -3.35;
-      outlineMesh.position.y = isMobileDevice() ? -3.0 : -3.35;
-      filledMesh2.position.y = isMobileDevice() ? -3.0 : -3.8;
+      switch (windowType) {
+        case 'small':
+          outlineMesh.position.z = -2.0;
+          filledMesh.position.z = -2.1;
+          filledMesh2.position.z = -2.1;
+          filledMesh.position.y = -3.0;
+          outlineMesh.position.y = -3.0;
+          filledMesh2.position.y = -3.5;
+          break;
+        case 'medium':
+          
+          break;
+        case 'large':
+          outlineMesh.position.z = 0.0;
+          filledMesh.position.z = -0.1;
+          filledMesh2.position.z = -0.1;
+          filledMesh.position.y = -3.35;
+          outlineMesh.position.y = -3.35;
+          filledMesh2.position.y = -3.8;
+          break;
+      }
+
+      //outlineMesh.position.z = isMobileDevice() ? -2.0 : 0.0;
+      //filledMesh.position.z = outlineMesh.position.z - 0.1;
+      //filledMesh2.position.z = outlineMesh.position.z - 0.1;
+
+      //filledMesh.position.y = isMobileDevice() ? -3.0 : -3.35;
+      //outlineMesh.position.y = isMobileDevice() ? -3.0 : -3.35;
+      //filledMesh2.position.y = isMobileDevice() ? -3.5 : -3.8;
 
       scene.add(outlineMesh);
       scene.add(filledMesh);
@@ -126,6 +165,7 @@ const ThreeJSComponent: React.FC = () => {
     };
 
     window.addEventListener('resize', handleWindowResize);
+    
 
     const animate = () => {
       requestAnimationFrame(animate);

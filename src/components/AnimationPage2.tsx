@@ -112,7 +112,8 @@ const slides: Slide[] = [
   },
 ];
 
-const isMobile = () => {
+const isDesktop = () => {
+  console.log("window.innerWidth: ", window.innerWidth)
   return window.innerWidth >= 768; // Autoplay if window width is 768px or greater
 };
 
@@ -142,7 +143,7 @@ const AnimationPage: React.FC = () => {
           <div key={idx} className="container">
             
             <div className="video-container">
-              <video className="anim_slide" autoPlay={isMobile()} loop muted controls={isMobile()}>
+              <video className="anim_slide" autoPlay={!isDesktop()} loop muted>
                 <source src={slide.src} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>

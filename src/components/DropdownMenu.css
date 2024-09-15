@@ -15,7 +15,6 @@
 }
 
 .select {
-    padding-top: 90px;
     color: #333333;
     inline-size: 25%;
     font-size: 14px;
@@ -25,3 +24,19 @@
 .select:hover {
     border: none !important;
 }
+
+@media (min-width: 600px) and (max-width: 1499px) {
+    .select {
+        padding-top: 90px;
+        width: 50%;
+    }
+  }
+  
+  /* mobile */
+  @media (max-width: 599px) {
+    .select {
+        padding-top: 110px;
+        width: 50%;
+    }
+  }
+    

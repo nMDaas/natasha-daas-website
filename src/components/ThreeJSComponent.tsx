@@ -98,6 +98,16 @@ const ThreeJSComponent: React.FC = () => {
           filledMesh.position.y = -3.0;
           outlineMesh.position.y = -3.0;
           filledMesh2.position.y = -3.5;
+
+          outlineMesh.scale.x = 0.7;
+          outlineMesh.scale.y = 0.7;
+          outlineMesh.scale.z = 0.7;
+          filledMesh.scale.x = 0.7;
+          filledMesh.scale.y = 0.7;
+          filledMesh.scale.z = 0.7;
+          filledMesh2.scale.x = 0.7;
+          filledMesh2.scale.y = 0.7;
+          filledMesh2.scale.z = 0.7;
           break;
         case 'medium':
           

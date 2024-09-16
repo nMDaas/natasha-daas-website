@@ -76,12 +76,12 @@
   text-decoration: none !important;
   vertical-align: bottom !important;
 }
-
+/* test */
 /* mobile */
 @media (max-width: 599px) {
   .contact-icon {
     width: auto;
-    max-width: 20%; /* Limit the image width */
+    max-width: 20%;
     height: auto;
     margin-left: 15%;
   }

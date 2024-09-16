@@ -50,7 +50,7 @@ html, body {
 /* mobile */
 @media (max-width: 599px) {
   .list {
-    padding-top: 150px !important;
+    padding-top: 170px !important;
     padding-bottom: 100px;
     position: relative;
     width: 100%;

@@ -62,7 +62,9 @@ function Masonry() {
 
   return (
     <div>
-       <TaskBar currentPage="Art" />
+       <div className="artPageNavbar">
+        <TaskBar currentPage="Art" />
+        </div>
         <div ref={ref} className={styles.list} style={{ height: Math.max(...heights) }}>
         {transitions((style, item) => (
             <a.div style={{ ...style, borderRadius: '50%' }}>

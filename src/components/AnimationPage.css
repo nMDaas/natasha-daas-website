@@ -12,6 +12,8 @@
   padding: 10px; /* Add some padding to space out elements */
   box-shadow: 10px 10px 10px #ebedf0;
   margin: 10px;
+  width: 100%;
+  height: auto;
 }
 
 .video-container {

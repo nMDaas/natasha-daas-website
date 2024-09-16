@@ -116,3 +116,14 @@
   z-index: 20;
   transition: transform 0.3s ease-in-out, z-index 0s ease 0s; 
 }
+
+/* mobile */
+@media (max-width: 599px) {
+  .animsec {
+    padding-top: 140px;
+    display: flex;
+    flex-wrap: wrap; /* Allows content to wrap to the next line if there's not enough space */
+    justify-content: space-between; /* Adjust as needed to add spacing between items */
+    flex-direction: column;
+  }
+}

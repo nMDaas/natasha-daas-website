@@ -50,7 +50,10 @@ html, body {
 /* mobile */
 @media (max-width: 599px) {
   .list div:hover {
-
+    transform: scale(1); /* No transform! */
+    z-index: 20 !important; /* Bring the hovered element to the front */
+    transition: transform 0.3s ease-in-out, z-index 0s ease 0s; /* Immediate z-index change */
+    cursor: pointer;
   }
 }
   

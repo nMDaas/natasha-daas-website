@@ -35,7 +35,7 @@
   /* mobile */
   @media (max-width: 599px) {
     .select {
-        padding-top: 130px;
+        padding-top: 150px;
         width: 70%;
     }
   }

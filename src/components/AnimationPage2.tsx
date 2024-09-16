@@ -143,7 +143,7 @@ const AnimationPage: React.FC = () => {
           <div key={idx} className="container">
             
             <div className="video-container">
-              <video className="anim_slide" autoPlay={isDesktop()} loop muted>
+              <video className="anim_slide" autoPlay={false} loop muted controls>
                 <source src={slide.src} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>

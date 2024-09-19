@@ -7,6 +7,7 @@ import HomePage from "./components/Home";
 import AboutPage from "./components/About";
 import ArtPage from "./components/ArtPage2";
 import ContactPage from "./components/ContactPage2";
+import ContactPageMobile from "./components/ContactPageMobile";
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
 import './App.css';
@@ -62,7 +63,7 @@ function App() {
           />
           <Route
             path="natasha-daas-website/contact"
-            element={isMobile ? <MobileContactPage /> : <ContactPage />}
+            element={isMobile ? <ContactPageMobile /> : <ContactPage />}
           />
         </Routes>
       </Router>

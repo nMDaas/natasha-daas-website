@@ -5,7 +5,7 @@ import AnimationPage from "./components/AnimationPage";
 import HomePage from "./components/Home";
 import AboutPage from "./components/About";
 import ArtPage from "./components/ArtPage";
-import ContactPage from "./components/ContactPage";
+import ContactPage from "./components/ContactPageMobile";
 
 import './App.css';
 

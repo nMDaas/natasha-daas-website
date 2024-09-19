@@ -1,0 +1,14 @@
+.contactPageMobile {
+    display: flex; /* Create a grid layout */
+    gap: 50px; /* Space between the grid cells */
+    padding-top: 100px;
+    align-items: center; /* Align items vertically in the center */
+    background-color: #b78a80;
+    height: 100vh;
+  }
+
+  .contact-icon-mobile {
+    width: auto;
+    max-width: 80%; /* Limit the image width */
+    height: auto;
+  }

@@ -7,6 +7,9 @@
     padding: 40px;
 }
 
+.threepage {
+}
+
 .home2-page {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: relative;
@@ -68,6 +71,7 @@
     .home2-page {
         font-size: 40px !important;
         height: 500px;
+        margin-top: 0px !important;
     }
 
     .detail {
@@ -103,6 +107,7 @@
     .home2-page {
         font-size: 40px !important;
         height: 340px;
+        margin-top: -30px !important;
     }
 
     .detail {

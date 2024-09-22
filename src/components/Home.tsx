@@ -24,7 +24,9 @@ const Home = () => {
   return (
     <div>
       <TaskBar currentPage={pageName} />
-      <ThreeJSPage />
+      <div className="threepage">
+        <ThreeJSPage />
+      </div>
    
       <div className="home2-page">
 

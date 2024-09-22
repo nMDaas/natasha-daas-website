@@ -62,6 +62,20 @@
     transition: color 0.3s ease-in-out, z-index 0s ease 0s; 
   }
 
+    /* desktop */
+@media (min-width: 1501px) {
+  .home-icon {
+    width: 40px;
+    height: 35px;
+    vertical-align: middle !important;
+    transition: transform 0.6s;
+  }
+ 
+  .home-icon:hover {
+    transform: rotateY(180deg);
+  }
+}
+
   /* desktop */
 @media (min-width: 1000px) and (max-width: 1500px) {
   .home-icon {

@@ -1,6 +1,5 @@
 .contactPageMobile {
     gap: 50px; /* Space between the grid cells */
-    padding-top: 150px;
     align-items: center; /* Align items vertically in the center */
     background-color: #b78a80;
     height: 100vh;
@@ -13,6 +12,10 @@
     height: auto;
   }
 
+  .contact-content-mobile {
+    padding-top: 100px;
+  }
+
 
 .thankyou-mobile {
   font-family: 'PeachBlossom';
@@ -21,6 +24,7 @@
   color: #3b3b3b;
   justify-content: center;
   align-items: center;
+  padding-left: 30px !important;
 }
 
 .contact_text-mobile {
@@ -30,14 +34,16 @@
   padding: 2px;
   justify-content: center;
   align-items: center;
+  padding-left: 30px !important;
 }
 
 .links-mobile {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: 'NatashaFont';
   display: flex; /* Display icons in a row */
   gap: 10px; /* Space between icons */
   text-decoration: none !important;
+  padding-left: 30px !important;
 }
 
 .links-mobile a {

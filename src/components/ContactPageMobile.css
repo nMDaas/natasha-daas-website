@@ -13,7 +13,7 @@
   }
 
   .contact-content-mobile {
-    padding-top: 100px;
+    padding-top: 200px;
   }
 
 
@@ -38,7 +38,7 @@
 }
 
 .links-mobile {
-  font-size: 1.5rem;
+  font-size: 1.0rem;
   font-family: 'NatashaFont';
   display: flex; /* Display icons in a row */
   gap: 10px; /* Space between icons */

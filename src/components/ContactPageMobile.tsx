@@ -10,8 +10,8 @@ const ContactPage = () => {
       <TaskBar currentPage="Contact" />
         <img src={homeIcon} alt="Home Icon" className="contact-icon-mobile" />
         <div className="contact-content-mobile">
-        thank you for visiting!
-        reach out to me @
+          <div className="thankyou-mobile">thank you for visiting!</div>
+          <div className="contact_text-mobile">reach out to me @</div>
         </div>
       </div>
   );

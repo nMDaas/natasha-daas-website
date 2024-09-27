@@ -1,5 +1,4 @@
 .contactPageMobile {
-    display: flex; /* Create a grid layout */
     gap: 50px; /* Space between the grid cells */
     padding-top: 100px;
     align-items: center; /* Align items vertically in the center */

@@ -79,7 +79,7 @@ function Masonry() {
                   )}
                 </div>
                 <div className={styles.link}>
-                  <a href={item.link} target="_blank" rel="noopener noreferrer">VIEW PROJECT!</a>
+                  <a href={item.link} target="_blank" rel="noopener noreferrer">{item.linkInfo}!</a>
                 </div>
                 {item.hoverImages.length > 1 ? (
                   <Slide arrows={item.hoverImages.length > 1}>

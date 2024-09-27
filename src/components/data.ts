@@ -42,6 +42,7 @@ export default [
      skills: "C++ | OpenGL | Object-Oriented Programming (OOP)| Graphics Programming | MVC Pattern", 
      link:"https://github.com/nMDaas/raytracer",
      summary: "Ray Tracing Engine in C++",
+     linkInfo: "View GitHub Repo",
      details: [
       "Used vector calculations to determine ray-object intersections for boxes, spheres, cylinders and cones",
       "Applied OOP and MVC framework and visitor pattern in C++ to develop a hierarchical node system to build custom scenes",
@@ -59,6 +60,7 @@ export default [
     description: "Maya Plugin for Rapid Plant Generation", 
     skills: "Maya Tools | Python | Qt | MEL ", 
     link:"https://github.com/nMDaas/PlantGeneratorPluginMaya",
+    linkInfo: "View GitHub Repo",
     summary: "Maya Tool to streamline generation of stylized and customizable plants",
     details: [
       "Developed this tool to reduce the time taken to model plants in Maya using Python and MEL scripting",
@@ -74,6 +76,7 @@ export default [
       height: 1730,
       description: "Nickelodeon+ Demo", 
       skills: "TypeScript | React | Node.js | JSON ", 
+      linkInfo: "View YouTube Demo",
       link:"https://youtu.be/knGxsfaEQk4",
       summary: "Nickelodeon+ demo developed as a part of my intern project at Nickelodeon",
       details: [
@@ -90,6 +93,7 @@ export default [
       height: 1730,
       description: "Maya Adobe Substance Painter Plugin", 
       skills: "Maya Tools | Python | Qt | MEL ", 
+      linkInfo: "View GitHub Repo",
       link:"https://github.com/nMDaas/AIStandardSurfaceSubstancePainterPluginMaya",
       summary: "Maya Tool to streamline import and assignment of AI standard surface textures from Adobe Substance Painter",
       details: [
@@ -107,6 +111,7 @@ export default [
     description: "Trackball, Lighting, Texturing and Animation in OpenGL",
     skills: "C++ | OpenGL | GLSL | Graphics Programming",
     link: "https://github.com/nMDaas/OpenGLProject",
+    linkInfo: "View GitHub Repo",
     summary: "Interactive OpenGL-based system for implementing trackball movement, camera control, lighting, and texturing in computer graphics",
     details: [
       "Implemented trackball effect as seen in applications like Maya and Blender",
@@ -125,6 +130,7 @@ export default [
     hoverImages: [portfolio2, portfolio], 
     height: 1730, 
     description: "Personal Website", 
+    linkInfo: "View GitHub Repo",
     skills: "Typescript | React | GSAP | Three.js | MUI | Software Development Life Cycle (SDLC)", link: "https://github.com/nMDaas/natasha-daas-website",
     summary: "Website deployed using GitHub Pages to showcase my interests in and projects related to programming, computer graphics, 3D animation and modeling.",
     details: [
@@ -146,6 +152,7 @@ export default [
     ],
     video: '' ,
     summary: "Photo Editor Application with image manipulation, format support, and MVC architecture",
+    linkInfo: "View GitHub Repo",
     collaborators: '',
     projectType: 'SWE'
   },
@@ -160,6 +167,7 @@ export default [
       "Testing showed faster plan generation, production tracking efficiency, and greater flexibility in modifying and updating plans"
     ],
     video: '' ,
+    linkInfo: "View GitHub Repo",
     collaborators: 'Abby Dennin, Meredith Scott, Sophia Allen',
     projectType: 'SWE'
   },
@@ -169,6 +177,7 @@ export default [
     description: "Spirograph Animation", 
     skills: "C++ | OpenGL | 2D Animation | Graphics Programming",
     link:"https://github.com/nMDaas/Spirograph/tree/main",
+    linkInfo: "View GitHub Repo",
     summary: "A fun animation developed using OpenGL and C++ to visualize a spirograph and how its pattern changes with changes in circle size",
     details: [],
     video: '',
@@ -185,6 +194,7 @@ export default [
     ],
     video: '' ,
     collaborators: 'Caroline Southard-Smith',
-    projectType: 'SWE'
+    projectType: 'SWE',
+    linkInfo: "View GitHub Repo",
   },
 ]

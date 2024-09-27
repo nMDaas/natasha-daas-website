@@ -7,10 +7,11 @@
   }
 
   .contact-icon-mobile {
-    padding-top: 50px !important;
+    padding-top: 80px !important;
     width: auto;
-    max-width: 80%; /* Limit the image width */
+    max-width: 70%; /* Limit the image width */
     height: auto;
+    padding-left: 30px !important;
   }
 
   .contact-content-mobile {

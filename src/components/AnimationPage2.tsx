@@ -55,7 +55,7 @@ const slides: Slide[] = [
       "Textured assets using Adobe Substance Painter",
     ],
     skills: 'Maya | Prop Modeling | Environments | Adobe Substance Painter',
-    link: 'https://www.youtube.com/watch?v=zBDn8izuEAc',
+    link: 'https://youtu.be/FACYoF7FNbU',
     paddingTop: 140,
     images: [
       { src: ft1, alt: 'Image 1', width: '220px', height: '112px' },

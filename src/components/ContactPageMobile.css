@@ -7,6 +7,7 @@
   }
 
   .contact-icon-mobile {
+    padding-top: 50px !important;
     width: auto;
     max-width: 80%; /* Limit the image width */
     height: auto;
@@ -38,7 +39,7 @@
 }
 
 .links-mobile {
-  font-size: 1.0rem;
+  font-size: 20px;
   font-family: 'NatashaFont';
   display: flex; /* Display icons in a row */
   gap: 10px; /* Space between icons */

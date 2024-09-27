@@ -12,6 +12,32 @@ const ContactPage = () => {
         <div className="contact-content-mobile">
           <div className="thankyou-mobile">thank you for visiting!</div>
           <div className="contact_text-mobile">reach out to me @</div>
+          <div className="links-mobile">
+            <a
+              href="https://www.linkedin.com/in/natashamishradaas/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedIn sx={{ width: "45px", height: "45px" }} />
+              <span className="linkDescrip-mobile">https://www.linkedin.com/in/natashamishradaas/</span>
+            </a>
+          </div>
+          <div className="links-mobile">
+            <a href="mailto:daas.n@northeastern.edu">
+              <MailRounded sx={{ width: "45px", height: "45px" }} />
+              <span className="linkDescrip-mobile">daas.n@northeastern.edu</span>
+            </a>
+          </div>
+          <div className="links-mobile">
+              <a
+                href="https://github.com/nMDaas"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              <GitHub fontSize="large" sx={{ width: "45px", height: "45px" }} />
+              <span className="linkDescrip-mobile">https://github.com/nMDaas</span>
+            </a>
+          </div>
         </div>
       </div>
   );

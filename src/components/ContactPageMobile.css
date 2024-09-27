@@ -12,3 +12,38 @@
     max-width: 80%; /* Limit the image width */
     height: auto;
   }
+
+
+.thankyou-mobile {
+  font-family: 'PeachBlossom';
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #3b3b3b;
+}
+
+.contact_text-mobile {
+  font-size: 2.3rem;
+  font-family: 'NatashaFont';
+  color: #f2c9bf;
+  padding: 2px;
+}
+
+.links-mobile {
+  font-size: 2rem;
+  font-family: 'NatashaFont';
+  display: flex; /* Display icons in a row */
+  gap: 10px; /* Space between icons */
+  text-decoration: none !important;
+}
+
+.links-mobile a {
+  text-decoration: none !important;
+  color: white !important;
+  transition: color 0.2s ease-in-out, z-index 0s ease 0s; 
+}
+
+.links-mobile a .linkDescrip-mobile {
+  padding: 5px;
+  text-decoration: none !important;
+  vertical-align: bottom !important;
+}

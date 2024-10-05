@@ -147,9 +147,7 @@ export default [
       "Designed and programmed a user-friendly GUI for a Photo Editor Application",
       "Featured image manipulation tools such as blurring, sharpening, brightening, flipping, and filtering, including grayscale, sepia, and RGB filters",
       "Applied object-oriented programming principles (OOP) and the model-view-controller (MVC) pattern to create a flexible, scalable and maintainable codebase",
-      "Enabled support for loading and saving images in multiple file formats, including PNG, JPG, JPEG, and PPM",
-      "Streamlined the integration of images in 25+ of my future school projects related to computer graphics, OpenGL, and C++ classes"
-    ],
+      "Enabled support for loading and saving images in multiple file formats, including PNG, JPG, JPEG, and PPM"    ],
     video: '' ,
     summary: "Photo Editor Application with image manipulation, format support, and MVC architecture",
     linkInfo: "View GitHub Repo",

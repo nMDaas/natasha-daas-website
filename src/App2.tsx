@@ -4,7 +4,7 @@ import TaskBar from "./components/TaskBar2";
 import CodingPage from "./components/CodingPage2";
 import AnimationPage from "./components/AnimationPage2";
 import HomePage from "./components/Home";
-import AboutPage from "./components/About";
+import ReelPage from "./components/ReelPage";
 import ArtPage from "./components/ArtPage2";
 import ContactPage from "./components/ContactPage2";
 import ContactPageMobile from "./components/ContactPageMobile";
@@ -48,6 +48,10 @@ function App() {
           <Route
             path="natasha-daas-website/"
             element={<HomePage />}
+          />
+          <Route
+            path="natasha-daas-website/reel"
+            element={<ReelPage />}
           />
           <Route
             path="natasha-daas-website/code"

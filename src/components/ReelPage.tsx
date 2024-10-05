@@ -12,7 +12,7 @@ const ReelPage = () => {
             <iframe
                 width="900" 
                 height="500" 
-                src="https://www.youtube.com/embed/1WWw9eYF3nw" 
+                src="https://www.youtube.com/embed/hPRf5RilK7w" 
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

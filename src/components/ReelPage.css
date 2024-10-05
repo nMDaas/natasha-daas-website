@@ -1,0 +1,20 @@
+.reels {
+    padding-top: 100px;
+    justify-content: center;
+}
+
+.reelHeading {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #3b3b3b;
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.reels iframe {
+    margin: 20px;
+}
+
+iframe {
+    border-radius: 15px;
+    justify-content: center;
+}

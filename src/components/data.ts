@@ -33,6 +33,9 @@ import nickSettings from '/code/nickPlusSettings.mp4'
 import nickLayout from '/code/nickPlusLayout.mp4'
 import nickContent from '/code/nickPlusContentPlayer.mp4'
 import nickSearch from '/code/nickPlusSearch.mp4'
+import houdini1 from '/code/houdini1.png'
+import houdini2 from '/code/houdini2.png'
+import houdini3 from '/code/houdini3.png'
 
 export default [
   { blank: blank,
@@ -88,6 +91,21 @@ export default [
       video: '',
       collaborators: 'Summer 2024 NICKterns',
       projectType: 'SWE'}, 
+      { css: houdini1, 
+        hoverImages: [houdini2, houdini3, houdini1],
+        height: 1730,
+        description: "Image to Terrain and City Generator", 
+        skills: "Houdini Tools | Python | Qt | Vex", 
+        linkInfo: "View GitHub Repo",
+        link:"https://github.com/nMDaas/houdiniCapstone",
+        summary: "Houdini Tool to accelerate geographical landscape and urban landscape creation",
+        details: [
+          "This is a project I am currently working on as a part of my capstone project at Northeastern University",
+          "Through this project I have learned a lot and continue to learn a lot about Houdini, building plugins in Houdini and Vex scripting",
+        ],
+        video: '',
+        collaborators: '',
+        projectType: 'tools'  },
     { css: substancePluginImage, 
       hoverImages: [substancePluginImage, substancePluginDemo1, substancePluginDemo2],
       height: 1730,
@@ -140,7 +158,7 @@ export default [
     ],
     video: '' ,
     collaborators: '',
-    projectType: 'archived'
+    projectType: 'SWE'
   },
   { css: photoeditor, hoverImages: [photoeditor2, photoeditor3, photoeditor4, photoeditor], height: 1730, description: "Photo Editor", skills: "Java | Object-Oriented Programming (OOP)| MVC Pattern", link: "https://github.com/nMDaas/Photo-Editor",
     details: [

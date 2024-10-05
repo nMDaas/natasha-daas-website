@@ -12,7 +12,6 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({ options, onSelect }) => {
     { value: "SWE", label: "Software Development" },
     { value: "graphics", label: "Graphics/Rendering" },
     { value: "tools", label: "TD work/Pipeline tools/Plugins" },
-    { value: "archived", label: "Archived" },
   ];
 
   const customStyles = {

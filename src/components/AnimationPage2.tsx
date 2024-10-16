@@ -26,6 +26,17 @@ import toast2 from '/animation/toast2.jpg';
 import toast3 from '/animation/toast3.jpg';
 import toast4 from '/animation/toast4.jpg';
 import toast5 from '/animation/toast5.jpg';
+import vehicleVideo from '/animation/vehiclePreview.mp4';
+import v01 from '/animation/v01.png';
+import v02 from '/animation/v02.png';
+import v1 from '/animation/v1.jpg';
+import v2 from '/animation/v2.jpg';
+import v3 from '/animation/v3.jpg';
+import v4 from '/animation/v4.jpg';
+import v5 from '/animation/v5.jpg';
+import v6 from '/animation/v6.jpg';
+import vRig from '/animation/vRig.png';
+
 import TaskBar from "./TaskBar2";
 import { Slide } from 'react-slideshow-image';
 
@@ -43,6 +54,31 @@ interface Slide {
 }
 
 const slides: Slide[] = [
+  {
+    src: vehicleVideo,
+    alt: 'Carriage Cart',
+    caption: 'Carriage Cart',
+    credit: '',
+    thumbnail: v6,
+    details: [
+      "Responsible for concept art and vehicle profiles",
+      "Vehicle modeled in Maya and textured in Adobe Substance Painter",
+      "Lighting and Rigging done in Maya"
+    ],
+    skills: 'Maya | Vehicle | Adobe Substance Painter',
+    link: '',
+    paddingTop: 140,
+    images: [
+      { src: v01, alt: 'Image 6', width: '220px', height: '112px' },
+      { src: v02, alt: 'Image 6', width: '220px', height: '112px'},
+      { src: v1, alt: 'Image 1', width: '220px', height: '112px' },
+      { src: v2, alt: 'Image 2', width: '220px', height: '112px' },
+      { src: v3, alt: 'Image 3', width: '220px', height: '112px' },
+      { src: v6, alt: 'Image 6', width: '220px', height: '112px' },
+      
+      { src: vRig, alt: 'Image 6', width: '220px', height: '112px' },
+    ] 
+  },
   {
     src: flythrough,
     alt: 'Room Environment',
@@ -67,6 +103,27 @@ const slides: Slide[] = [
     ] 
   },
   {
+    src: basics,
+    alt: 'Good Morning, I\'m Toast',
+    caption: 'Good Morning, I\'m Toast',
+    credit: '',
+    thumbnail: toast3,
+    details: [
+      "2D animation created using Adobe Animate",
+      "Compositing and editing done using Adobe After Effects and Adobe Premiere Pro"
+    ],
+    skills: '2D Animation | Adobe Animate | Adobe After Effects | Adobe Premiere Pro',
+    link: 'https://www.youtube.com/watch?v=xH2mZjapZUA',
+    paddingTop: 170,
+    images: [
+      { src: toast1, alt: 'Image 1', width: '220px', height: '121px' },
+      { src: toast2, alt: 'Image 2', width: '220px', height: '121px' },
+      { src: toast3, alt: 'Image 3', width: '220px', height: '121px' },
+      { src: toast4, alt: 'Image 4', width: '220px', height: '121px' },
+      { src: toast5, alt: 'Image 5', width: '220px', height: '121px' },
+    ]
+  },
+  {
     src: anim1,
     alt: 'Todd vs Can',
     caption: 'Todd vs Can',
@@ -88,28 +145,7 @@ const slides: Slide[] = [
       { src: anim1b, alt: 'Image 2', width: '220px', height: '130px' },
       { src: anim1a, alt: 'Image 3', width: '220px', height: '130px' },
     ]
-  },
-  {
-    src: basics,
-    alt: 'Good Morning, I\'m Toast',
-    caption: 'Good Morning, I\'m Toast',
-    credit: '',
-    thumbnail: toast3,
-    details: [
-      "2D animation created using Adobe Animate",
-      "Compositing and editing done using Adobe After Effects and Adobe Premiere Pro"
-    ],
-    skills: '2D Animation | Adobe Animate | Adobe After Effects | Adobe Premiere Pro',
-    link: 'https://www.youtube.com/watch?v=xH2mZjapZUA',
-    paddingTop: 170,
-    images: [
-      { src: toast1, alt: 'Image 1', width: '220px', height: '121px' },
-      { src: toast2, alt: 'Image 2', width: '220px', height: '121px' },
-      { src: toast3, alt: 'Image 3', width: '220px', height: '121px' },
-      { src: toast4, alt: 'Image 4', width: '220px', height: '121px' },
-      { src: toast5, alt: 'Image 5', width: '220px', height: '121px' },
-    ]
-  },
+  }
 ];
 
 const isDesktop = () => {

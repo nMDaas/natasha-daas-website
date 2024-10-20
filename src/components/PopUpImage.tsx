@@ -8,9 +8,10 @@ interface ModalProps {
   imageAlt: string;
   customSize?: boolean; // New prop for custom size
   theCustomSize: string;
+  imageDescription: string;
 }
 
-const Modal: React.FC<ModalProps> = ({ show, onClose, imageSrc, imageAlt, customSize = false, theCustomSize = '800px'}) => {
+const Modal: React.FC<ModalProps> = ({ show, onClose, imageSrc, imageAlt, customSize = false, theCustomSize = '800px', imageDescription}) => {
   console.log("ModalProps: ", theCustomSize)
   if (!show) {
     return null;
@@ -30,7 +31,15 @@ const Modal: React.FC<ModalProps> = ({ show, onClose, imageSrc, imageAlt, custom
         }}>
         <span className="close-button" onClick={onClose}>&times;</span>
         <img src={imageSrc} alt={imageAlt} className="modal-image" />
+        
       </div>
+      {/*<div className='popUpTitle'>{imageAlt} </div> */}
+      <div>
+        <div className='popUpTitle'> Description</div>
+        <hr className='horizontalLine'></hr>
+        <div className='popUpDescription'> {imageDescription}</div>
+      </div>
+      
     </div>
   );
 };

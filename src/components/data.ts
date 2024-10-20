@@ -33,9 +33,12 @@ import nickSettings from '/code/nickPlusSettings.mp4'
 import nickLayout from '/code/nickPlusLayout.mp4'
 import nickContent from '/code/nickPlusContentPlayer.mp4'
 import nickSearch from '/code/nickPlusSearch.mp4'
-import houdini1 from '/code/houdini1.png'
 import houdini2 from '/code/houdini2.png'
-import houdini3 from '/code/houdini3.png'
+import houdini4 from '/code/houdini3.png'
+import houdini5 from '/code/houdini4.png'
+import houdini6 from '/code/houdini5.png'
+import houdini7 from '/code/houdini6.png'
+import houdini8 from '/code/houdini7.png'
 
 export default [
   { blank: blank,
@@ -57,23 +60,22 @@ export default [
     video: '',
     collaborators: '',
     projectType: 'graphics'},
-  { css: plugin1, 
-    hoverImages: [plantgendemo1,plant1, plantgendemo2, plant2, plant3, plugin3, plugin1],
-    height: 1730,
-    description: "Maya Plugin for Rapid Plant Generation", 
-    skills: "Maya Tools | Python | Qt | MEL ", 
-    link:"https://github.com/nMDaas/PlantGeneratorPluginMaya",
-    linkInfo: "View GitHub Repo",
-    summary: "Maya Tool to streamline generation of stylized and customizable plants",
-    details: [
-      "Developed this tool to reduce the time taken to model plants in Maya using Python and MEL scripting",
-      "Eliminated inefficient processes in plant part modeling by enabling one-click and bulk duplication, modification, and connection",
-      "Provided distortion, tilting and scaling options via a user-friendly GUI to allow customization over plant geometry",
-      "Enabled ability generate various plant varieties and arrangements through quick distribution plant parts around other plant parts or a concentrated location"
-    ],
-    video: '',
-    collaborators: '' ,
-    projectType: 'tools'},
+    { css: houdini5, 
+      hoverImages: [houdini6, houdini4, houdini7, houdini8, houdini5],
+      height: 1730,
+      description: "Image to Terrain and City Generator", 
+      skills: "Houdini Tools | Python | Qt | Vex", 
+      linkInfo: "View GitHub Repo",
+      link:"https://github.com/nMDaas/houdiniCapstone",
+      summary: "Houdini Tool to accelerate geographical landscape and urban landscape creation",
+      details: [
+        "This is a project I am currently working on as a part of my capstone project at Northeastern University",
+        " I'm building a tool for Houdini that helps with setting up a geographical and urban environment through an image with simple shapes and color codes",
+        "Through this project I have learned a lot and continue to learn a lot about Houdini, building tools using Python in Houdini and Vex scripting",
+      ],
+      video: '',
+      collaborators: '',
+      projectType: 'tools'  },
     { css: nickContent, 
       hoverImages: [nickHome, nickChar, nickSearch, nickSettings, nickLayout],
       height: 1730,
@@ -91,21 +93,23 @@ export default [
       video: '',
       collaborators: 'Summer 2024 NICKterns',
       projectType: 'SWE'}, 
-      { css: houdini1, 
-        hoverImages: [houdini2, houdini3, houdini1],
+      { css: plugin1, 
+        hoverImages: [plantgendemo1,plant1, plantgendemo2, plant2, plant3, plugin3, plugin1],
         height: 1730,
-        description: "Image to Terrain and City Generator", 
-        skills: "Houdini Tools | Python | Qt | Vex", 
+        description: "Maya Plugin for Rapid Plant Generation", 
+        skills: "Maya Tools | Python | Qt | MEL ", 
+        link:"https://github.com/nMDaas/PlantGeneratorPluginMaya",
         linkInfo: "View GitHub Repo",
-        link:"https://github.com/nMDaas/houdiniCapstone",
-        summary: "Houdini Tool to accelerate geographical landscape and urban landscape creation",
+        summary: "Maya Tool to streamline generation of stylized and customizable plants",
         details: [
-          "This is a project I am currently working on as a part of my capstone project at Northeastern University",
-          "Through this project I have learned a lot and continue to learn a lot about Houdini, building plugins in Houdini and Vex scripting",
+          "Developed this tool to reduce the time taken to model plants in Maya using Python and MEL scripting",
+          "Eliminated inefficient processes in plant part modeling by enabling one-click and bulk duplication, modification, and connection",
+          "Provided distortion, tilting and scaling options via a user-friendly GUI to allow customization over plant geometry",
+          "Enabled ability generate various plant varieties and arrangements through quick distribution plant parts around other plant parts or a concentrated location"
         ],
         video: '',
-        collaborators: '',
-        projectType: 'tools'  },
+        collaborators: '' ,
+        projectType: 'tools'},
     { css: substancePluginImage, 
       hoverImages: [substancePluginImage, substancePluginDemo1, substancePluginDemo2],
       height: 1730,

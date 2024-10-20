@@ -34,11 +34,13 @@ import v2 from '/animation/v2.jpg';
 import v3 from '/animation/v3.jpg';
 import v4 from '/animation/v4.jpg';
 import v5 from '/animation/v5.jpg';
-import v6 from '/animation/v6.jpg';
+import v6 from '/animation/v6.png';
+import v7 from '/animation/v7.png';
 import vRig from '/animation/vRig.png';
 
 import TaskBar from "./TaskBar2";
 import { Slide } from 'react-slideshow-image';
+import { Description } from '@mui/icons-material';
 
 interface Slide {
   src: string;
@@ -50,7 +52,7 @@ interface Slide {
   skills: string;
   link: string;
   paddingTop: any;
-  images: { src: string, alt: string, width: string, height: string }[];
+  images: { src: string, alt: string, width: string, height: string, description: string}[];
 }
 
 const slides: Slide[] = [
@@ -69,14 +71,15 @@ const slides: Slide[] = [
     link: '',
     paddingTop: 140,
     images: [
-      { src: v01, alt: 'Image 6', width: '220px', height: '112px' },
-      { src: v02, alt: 'Image 6', width: '220px', height: '112px'},
-      { src: v1, alt: 'Image 1', width: '220px', height: '112px' },
-      { src: v2, alt: 'Image 2', width: '220px', height: '112px' },
-      { src: v3, alt: 'Image 3', width: '220px', height: '112px' },
-      { src: v6, alt: 'Image 6', width: '220px', height: '112px' },
+      { src: v01, alt: 'Carriage Cart', width: '220px', height: '112px', description: "front and side profile concept art"},
+      { src: v02, alt: 'Carriage Cart', width: '220px', height: '112px', description: "rough perspective concept art"},
+      { src: v1, alt: 'Carriage Cart', width: '220px', height: '112px', description: "modeling, texturing and lighting in progress"},
+      { src: v2, alt: 'Carriage Cart', width: '220px', height: '112px', description: "modeling, texturing and lighting in progress" },
+      { src: v3, alt: 'Carriage Cart', width: '220px', height: '112px', description: "close up of modeling, texturing and lighting in progress" },
+      { src: v6, alt: 'Carriage Cart', width: '220px', height: '112px', description: "modeling and texturing in progress, test with darker lighting" },
+      { src: v7, alt: 'Carriage Cart', width: '220px', height: '112px', description: "close up of modeling, texturing and lighting in progress" },
+      { src: vRig, alt: 'Carriage Cart', width: '220px', height: '112px', description: "rig and lighting set up in Maya" },
       
-      { src: vRig, alt: 'Image 6', width: '220px', height: '112px' },
     ] 
   },
   {
@@ -94,12 +97,12 @@ const slides: Slide[] = [
     link: 'https://youtu.be/FACYoF7FNbU',
     paddingTop: 140,
     images: [
-      { src: ft1, alt: 'Image 1', width: '220px', height: '112px' },
-      { src: ft2, alt: 'Image 2', width: '220px', height: '112px' },
-      { src: ft3, alt: 'Image 3', width: '220px', height: '112px' },
-      { src: ft4, alt: 'Image 4', width: '220px', height: '112px' },
-      { src: ft5, alt: 'Image 5', width: '220px', height: '112px' },
-      { src: ft6, alt: 'Image 6', width: '220px', height: '112px' },
+      { src: ft1, alt: 'Image 1', width: '220px', height: '112px', description: "final close up shot of whiteboard"},
+      { src: ft2, alt: 'Image 2', width: '220px', height: '112px', description: "final shot of work desk" },
+      { src: ft3, alt: 'Image 3', width: '220px', height: '112px', description: "final shot of side table" },
+      { src: ft4, alt: 'Image 4', width: '220px', height: '112px', description: "final close up shot of whiteboard" },
+      { src: ft5, alt: 'Image 5', width: '220px', height: '112px', description: "desk modeling and texturing in progress" },
+      { src: ft6, alt: 'Image 6', width: '220px', height: '112px', description: "desk modeling and texturing in progress" },
     ] 
   },
   {
@@ -116,11 +119,11 @@ const slides: Slide[] = [
     link: 'https://www.youtube.com/watch?v=xH2mZjapZUA',
     paddingTop: 170,
     images: [
-      { src: toast1, alt: 'Image 1', width: '220px', height: '121px' },
-      { src: toast2, alt: 'Image 2', width: '220px', height: '121px' },
-      { src: toast3, alt: 'Image 3', width: '220px', height: '121px' },
-      { src: toast4, alt: 'Image 4', width: '220px', height: '121px' },
-      { src: toast5, alt: 'Image 5', width: '220px', height: '121px' },
+      { src: toast1, alt: 'Image 1', width: '220px', height: '121px', description: "still from closing scene of animation" },
+      { src: toast2, alt: 'Image 2', width: '220px', height: '121px', description: "still from final animation"  },
+      { src: toast3, alt: 'Image 3', width: '220px', height: '121px', description: "still from final animation"  },
+      { src: toast4, alt: 'Image 4', width: '220px', height: '121px', description: "still from final animation"  },
+      { src: toast5, alt: 'Image 5', width: '220px', height: '121px', description: "still from animation - kitchen environment"  },
     ]
   },
   {
@@ -140,10 +143,9 @@ const slides: Slide[] = [
     link: 'https://www.youtube.com/watch?v=zBDn8izuEAc',
     paddingTop: 60,
     images: [
-      { src: anim1c, alt: 'Image 1', width: '220px', height: '130px' },
-      { src: anim1e, alt: 'Image 3', width: '220px', height: '130px' },
-      { src: anim1b, alt: 'Image 2', width: '220px', height: '130px' },
-      { src: anim1a, alt: 'Image 3', width: '220px', height: '130px' },
+      { src: anim1a, alt: 'Image 3', width: '220px', height: '130px', description: "Todd rig testing through posing"  },
+      { src: anim1b, alt: 'Image 2', width: '220px', height: '130px', description: "testing Todd in room environment"  },
+      { src: anim1e, alt: 'Image 3', width: '220px', height: '130px', description: "Todd rig testing through posing"  },
     ]
   }
 ];
@@ -156,13 +158,13 @@ const isDesktop = () => {
 const AnimationPage: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [imageOpen, setImageOpen] = useState(false);
-  const [currentImage, setCurrentImage] = useState({ src: '', alt: '' });
+  const [currentImage, setCurrentImage] = useState({ src: '', alt: '', description: ''});
 
   const handleThumbnailClick = (index: number) => {
     setCurrentIndex(index);
   };
 
-  const handleImageClick = (image: { src: string, alt: string }) => {
+  const handleImageClick = (image: { src: string, alt: string, description: string}) => {
     setCurrentImage(image);
     setImageOpen(true);
   };
@@ -206,7 +208,7 @@ const AnimationPage: React.FC = () => {
                     alt={image.alt}
                     className='slideImg'
                     
-                    onClick={() => handleImageClick({ src: image.src, alt: image.alt })}
+                    onClick={() => handleImageClick({ src: image.src, alt: image.alt, description: image.description})}
                   />
                 ))}
               </div>
@@ -220,7 +222,7 @@ const AnimationPage: React.FC = () => {
            
           </div>
         ))}
-        <PopUpImage show={imageOpen} onClose={closeModal} imageSrc={currentImage.src} imageAlt={currentImage.alt} customSize={true} theCustomSize='800px'/>
+        <PopUpImage show={imageOpen} onClose={closeModal} imageSrc={currentImage.src} imageAlt={currentImage.alt} customSize={true} theCustomSize='800px' imageDescription={currentImage.description}/>
       </section>
     </div>
   );

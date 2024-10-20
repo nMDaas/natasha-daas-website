@@ -50,10 +50,12 @@ function Masonry() {
 
   const [imageOpen, setImageOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState("");
+  const [imageDescrip, setImageDescrip] = useState("");
 
-  const handleThumbnailClick = (src: string) => {
+  const handleThumbnailClick = (src: string, descrip: string) => {
     setCurrentImage(src);
     setImageOpen(true);
+    setImageDescrip(descrip)
   };
 
   const closeModal = () => {
@@ -73,7 +75,7 @@ function Masonry() {
                 backgroundImage: `url(${item.css}?auto=compress&dpr=2&h=500&w=500)`, 
                 borderRadius: '50%' 
                 }} 
-                onClick={() => handleThumbnailClick(item.css)}
+                onClick={() => handleThumbnailClick(item.css, item.description)}
             />
             </a.div>
         ))}
@@ -85,6 +87,7 @@ function Masonry() {
           imageAlt={currentImage} 
           customSize={true} 
           theCustomSize='500px'
+          imageDescription={imageDescrip}
         />
     </div>
   );

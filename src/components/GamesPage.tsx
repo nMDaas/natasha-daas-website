@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import TaskBar from "./TaskBar2";
 import useMedia from './useMedia';
 import { useTransition, a } from '@react-spring/web';
-import data from './data';
+import data from './dataGames';
 import styles from './gamesStyles.module.css';
 import useMeasure from 'react-use-measure';
 import { Slide } from 'react-slideshow-image';
@@ -15,11 +15,6 @@ function Masonry() {
   const [ref, { width }] = useMeasure();
   const [items, set] = useState(data);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
-
-  const handleSelect = (option: string | null) => {
-    setSelectedOption(option);
-    console.log(`Selected option: ${option}`);
-  };
 
   const filteredItems = useMemo(() => {
     console.log("Selected Option:", selectedOption);

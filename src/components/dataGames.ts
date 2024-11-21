@@ -9,7 +9,7 @@ export default [
      skills: "Unity | C# | Blender", 
      link:"https://youtu.be/ieZEHAfgGZY",
      summary: "3D Game Made In Unity",
-     linkInfo: "View Demo",
+     linkInfo: "View YouTube Demo",
      details: [
         "Implemented game mechanics, character animations, and character interactions in Unity",
         "Scripted a custom toon shader in Unity for cartoon cell shading",
@@ -25,9 +25,9 @@ export default [
         height: 1730, 
         description: "Lilypad Parkour",
         skills: "Unity | C# | Blender", 
-        link:"https://youtu.be/ieZEHAfgGZY",
+        link:"https://youtu.be/8phOvF6Lcuk",
         summary: "3D Parkour Game Built in Unity",
-        linkInfo: "View Demo",
+        linkInfo: "View YouTube Demo",
         details: [ 
             "Collaborated with a team to implement game mechanics, character controllers, and animator controllers using C# scripts in Unity",
             "Responsible for game concept, inspired by Subway Surfers, Crossy Road and Pocket Frogs",

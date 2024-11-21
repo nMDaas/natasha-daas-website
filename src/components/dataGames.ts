@@ -29,11 +29,11 @@ export default [
         summary: "3D Parkour Game Built in Unity",
         linkInfo: "View YouTube Demo",
         details: [ 
-            "Collaborated with a team to implement game mechanics, character controllers, and animator controllers using C# scripts in Unity",
-            "Responsible for game concept, inspired by Subway Surfers, Crossy Road and Pocket Frogs",
-            "Oversaw the design and creation of game environment, including scripting for moving water",
-            "Implemented lilypad spawning and particle system algorithms for game interactions using C#",
-            "Character animations and interactions implemented using vector math and linear algebra, including dot product, cross product and ray casting"
+            "Collaborated with a team over GitHub and Trello to develop game mechanics, character controllers, and animator controllers using C# in Unity",
+            "Conceptualized and designed the game, drawing inspiration from Subway Surfers, Crossy Road, and Pocket Frogs",
+            "Designed and scripted an interactive game environment, including dynamic moving water texture mechanics",
+            "Developed lilypad spawning algorithms and particle systems to enhance game interaction and functionality",
+            "Implemented character animations and interactions using vector math techniques such as dot products, cross products, and ray casting for precision-based gameplay"
         ],
         }
 ]

@@ -33,12 +33,14 @@ import nickSettings from '/code/nickPlusSettings.mp4'
 import nickLayout from '/code/nickPlusLayout.mp4'
 import nickContent from '/code/nickPlusContentPlayer.mp4'
 import nickSearch from '/code/nickPlusSearch.mp4'
-import houdini2 from '/code/houdini2.png'
-import houdini4 from '/code/houdini3.png'
-import houdini5 from '/code/houdini4.png'
-import houdini6 from '/code/houdini5.png'
-import houdini7 from '/code/houdini6.png'
-import houdini8 from '/code/houdini7.png'
+import houdini10 from '/code/houdini10.png'
+import houdini8 from '/code/houdini8.png'
+import houdini9 from '/code/houdini9.png'
+import houdini3 from '/code/houdini3.png'
+import houdini4 from '/code/houdini4.png'
+import houdini5 from '/code/houdini5.png'
+import houdini11 from '/code/houdini11.png'
+import houdini7 from '/code/houdini7.png'
 
 export default [
   { blank: blank,
@@ -60,8 +62,8 @@ export default [
     video: '',
     collaborators: '',
     projectType: 'graphics'},
-    { css: houdini5, 
-      hoverImages: [houdini6, houdini4, houdini7, houdini8, houdini5],
+    { css: houdini7, 
+      hoverImages: [houdini10, houdini8, houdini9, houdini3, houdini4, houdini5, houdini11, houdini7],
       height: 1730,
       description: "Image to Terrain and City Generator", 
       skills: "Houdini Tools | Python | Qt | Vex", 

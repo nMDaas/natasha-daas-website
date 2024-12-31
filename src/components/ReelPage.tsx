@@ -9,6 +9,7 @@ const ReelPage = () => {
       <div className="reels">
         <div>
             <div className="reelHeading">TD/Pipeline Tools & Computer Graphics Reel</div>
+            <div className="reelInfo">Reel Breakdown in the YouTube description</div>
             <iframe
                 width="900" 
                 height="500" 
@@ -21,10 +22,11 @@ const ReelPage = () => {
         </div>
         <div>
             <div className="reelHeading">3D Art Reel</div>
+            <div className="reelInfo">Reel Breakdown in the YouTube description</div>
             <iframe
                 width="900" 
                 height="500" 
-                src="https://www.youtube.com/embed/mxk5zg7ZksQ" 
+                src="https://www.youtube.com/embed/Wig9tsGtyDc" 
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -8,8 +8,14 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #3b3b3b;
     font-size: 20px;
-    padding-left: 20px;
+    padding-left: 35px;
     font-weight: 500;
+}
+
+.reelInfo {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #3b3b3b;
+    padding-left: 35px;
 }
 
 .reels iframe {

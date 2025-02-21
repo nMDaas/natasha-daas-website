@@ -126,7 +126,7 @@ const slides: Slide[] = [
       { src: toast5, alt: 'Image 5', width: '220px', height: '121px', description: "still from animation - kitchen environment"  },
     ]
   },
-  {
+  /*{
     src: anim1,
     alt: 'Todd vs Can',
     caption: 'Todd vs Can',
@@ -147,7 +147,7 @@ const slides: Slide[] = [
       { src: anim1b, alt: 'Image 2', width: '220px', height: '130px', description: "testing Todd in room environment"  },
       { src: anim1e, alt: 'Image 3', width: '220px', height: '130px', description: "Todd rig testing through posing"  },
     ]
-  }
+  }*/
 ];
 
 const isDesktop = () => {

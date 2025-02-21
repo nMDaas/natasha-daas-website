@@ -33,10 +33,10 @@ const Home = () => {
           <div className="detail">
             <div className="heading">SKILLS</div>
             <div className="info">
-              <em>Programming: </em>C++, Python, PyQt, Qt, OpenGL, SDL, Java, Javascript, Typescript, React, GLSL, SQL, MongoDB, HTML CSS
+              <em>Programming: </em>C++, Python, OpenGL, GLSL, SDL, MEL, VEX, Javascript, Java, Typescript, React.js, Node.js SQL, PyQt, Qt, MongoDB, HTML, CSS
             </div>
             <div className="info">
-              <em>Art/Animation: </em>Maya, Blender, Adobe Substance Painter, Adobe Illustrator, Adobe Photoshop, Adobe After Effects, Figma
+              <em>Art/Animation: </em>Maya, Houdini, Unity, Nuke, Adobe After Effects, Qt Designer, Shotgrid, Adobe Substance Painter, Blender
             </div>
           </div>
 
@@ -44,6 +44,9 @@ const Home = () => {
         
         <div className="detail">
             <div className="heading">EXPERIENCE</div>
+            <div className="info">
+              - <em>Walt Disney Imagineering: </em> Visual Effects Designer (Pipeline TD) Intern (Spring/Summer 2025)
+            </div>
             <div className="info">
               - <em>Northeastern University: </em> Teaching Assistant, Computer Graphics CS4300 (Fall 2024)
             </div>

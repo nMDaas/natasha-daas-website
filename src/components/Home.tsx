@@ -36,8 +36,7 @@ const Home = () => {
               <em>Programming: </em>C++, Python, OpenGL, GLSL, SDL, MEL, VEX, Javascript, Java, Typescript, React.js, Node.js SQL, PyQt, Qt, MongoDB, HTML, CSS
             </div>
             <div className="info">
-              <em>Art/Animation: </em>Maya, Houdini, Unity, Nuke, Adobe After Effects, Qt Designer, Shotgrid, Adobe Substance Painter, Blender
-            </div>
+              <em>Art/Animation: </em>Maya, Houdini, Unity, Nuke, Adobe After Effects, Qt Designer, ShotGrid, Adobe Substance Painter, Blender, Deadline             </div>
           </div>
 
         <div className="vl"></div>

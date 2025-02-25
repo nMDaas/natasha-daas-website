@@ -31,36 +31,51 @@ const Home = () => {
       <div className="home2-page">
 
           <div className="detail">
-            <div className="heading">SKILLS</div>
+            <div className="heading-heading">SKILLS</div>
+            <div className="heading">PROGRAMMING</div>
             <div className="info">
-              <em>Programming: </em>C++, Python, OpenGL, GLSL, SDL, MEL, VEX, Javascript, Java, Typescript, React.js, Node.js SQL, PyQt, Qt, MongoDB, HTML, CSS
+              C++, Python, OpenGL, GLSL, SDL, MEL, VEX, Javascript, Java, Typescript, React.js, Node.js SQL, PyQt, Qt, MongoDB, HTML, CSS
             </div>
+            <div className="heading">ART/ANIMATION</div>
             <div className="info">
-              <em>Art/Animation: </em>Maya, Houdini, Unity, Nuke, Adobe After Effects, Qt Designer, ShotGrid, Adobe Substance Painter, Blender, Deadline             </div>
+              Maya, Houdini, Unity, Nuke, Adobe After Effects, Blender, Adobe Substance Painter, Adobe Photoshop        
+            </div>
+            <div className="heading">MISC.</div>
+            <div className="info">
+              Deadline, Qt Designer, ShotGrid, Jira         
+            </div>
           </div>
 
-        <div className="vl"></div>
+        {/*<div className="vl"></div>*/}
         
         <div className="detail">
-            <div className="heading">EXPERIENCE</div>
-            <div className="info">
-              - <em>Walt Disney Imagineering: </em> Visual Effects Designer (Pipeline TD) Intern (Spring/Summer 2025)
-            </div>
-            <div className="info">
-              - <em>Northeastern University: </em> Teaching Assistant, Computer Graphics CS4300 (Fall 2024)
-            </div>
-            <div className="info">
-              - <em>Nickelodeon: </em> Internship, Data Strategy Intern (Summer 2024)
-            </div>
-            <div className="info">
-              - <em>Northeastern University: </em> Co-op, System Support Associate -  (Fall 2024)
-            </div>
-            <div className="info">
-              - <em>Northeastern University: </em> Teaching Assistant, Fundamentals of Computer Science 2 CS2510 (Spring 2023)
-            </div> 
-            <div className="info">
-              - <em>Social Alpha: </em> Internship, Digital Design Intern (Summer 2022)
-            </div>
+            <div className="heading-heading">EXPERIENCE</div>
+            <ul>
+              <li>
+                <div className="heading-experience">WALT DISNEY IMAGINEERING</div>
+                  <div className="info-experience">Visual Effects Designer (Pipeline TD) Intern (Spring/Summer 2025)</div>
+              </li>
+              <li>
+              <div className="heading-experience">NORTHEASTERN UNIVERSITY</div>
+                  <div className="info-experience">Teaching Assistant, Computer Graphics CS4300 (Fall 2024)</div>
+              </li>
+              <li>
+              <div className="heading-experience">NICKELODEON ANIMATION STUDIOS</div>
+                  <div className="info-experience">Data Strategy Intern (Summer 2024)</div>
+              </li>
+              <li>
+              <div className="heading-experience">NORTHEASTERN UNIVERSITY</div>
+                  <div className="info-experience">System Support Associate Intern (Fall 2024)</div>
+              </li>
+              <li>
+              <div className="heading-experience">NORTHEASTERN UNIVERSITY</div>
+                <div className="info-experience">Teaching Assistant, Fundamentals of Computer Science 2 CS2510 (Spring 2023)</div>
+              </li>
+              <li>
+              <div className="heading-experience">SOCIAL ALPHA</div>
+                <div className="info-experience">Internship, Digital Design Intern (Summer 2022)</div>
+              </li>
+            </ul>
           </div>
         </div>
     </div>

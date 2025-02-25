@@ -1,26 +1,16 @@
 import React, { useState } from 'react';
 import './AnimationPage.css';
 import PopUpImage from './PopUpImage'; 
-import anim1 from '/animation/anim1.mp4';
-import anim1tn from '/animation/anim1pic.jpeg';
 import flythrough from '/animation/flythrough.mp4';
 import flythroughtn from '/animation/flythroughpic.jpg';
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import basics from '/animation/basics.mp4';
-import basicstn from '/animation/basicpic.jpeg';
 import ft1 from '/animation/ft1.jpg';
 import ft2 from '/animation/ft2.jpg';
 import ft3 from '/animation/ft3.jpg';
 import ft4 from '/animation/ft4.jpg';
 import ft5 from '/animation/ft5.jpg';
 import ft6 from '/animation/ft6.jpg';
-import anim1a from '/animation/anim1a.jpg';
-import anim1b from '/animation/anim1b.jpg';
-import anim1c from '/animation/anim1c.jpg';
-import anim1d from '/animation/anim1d.jpg';
-import anim1e from '/animation/anim1e.jpg';
-import anim1f from '/animation/anim1f.jpg';
 import toast1 from '/animation/toast1.jpg';
 import toast2 from '/animation/toast2.jpg';
 import toast3 from '/animation/toast3.jpg';
@@ -32,15 +22,13 @@ import v02 from '/animation/v02.png';
 import v1 from '/animation/v1.jpg';
 import v2 from '/animation/v2.jpg';
 import v3 from '/animation/v3.jpg';
-import v4 from '/animation/v4.jpg';
-import v5 from '/animation/v5.jpg';
 import v6 from '/animation/v6.png';
 import v7 from '/animation/v7.png';
 import vRig from '/animation/vRig.png';
+import animationWork from '/animation/animationWork.mp4'
 
 import TaskBar from "./TaskBar2";
 import { Slide } from 'react-slideshow-image';
-import { Description } from '@mui/icons-material';
 
 interface Slide {
   src: string;
@@ -106,6 +94,24 @@ const slides: Slide[] = [
     ] 
   },
   {
+    src: animationWork,
+    alt: '3D Animation Exercises',
+    caption: '3D Animation Exercises',
+    credit: '',
+    thumbnail: toast3,
+    details: [
+      "Animated idle, walk and run cycle animation exercises for export into Unity",
+      "Model and textures from Mixamo",
+      "\"Remy\" model rigged by Professor William Stout using Advanced Skeleton",
+      "\"Space Girl\" model rigged by Milo Lin using Advanced Skeleton",
+    ],
+    skills: 'Maya | Unity | 3D Animation | Character Animation',
+    link: '',
+    paddingTop: 60,
+    images: [
+    ]
+  },
+  {
     src: basics,
     alt: 'Good Morning, I\'m Toast',
     caption: 'Good Morning, I\'m Toast',
@@ -125,29 +131,7 @@ const slides: Slide[] = [
       { src: toast4, alt: 'Image 4', width: '220px', height: '121px', description: "still from final animation"  },
       { src: toast5, alt: 'Image 5', width: '220px', height: '121px', description: "still from animation - kitchen environment"  },
     ]
-  },
-  /*{
-    src: anim1,
-    alt: 'Todd vs Can',
-    caption: 'Todd vs Can',
-    credit: '',
-    thumbnail: anim1tn,
-    details: [
-      "3D short created and animated in Maya and rendered using Arnold",
-      "Designed and modeled original character",
-      "Body rigged using Advanced Skeleton",
-      "Facial rigs created using Maya rigging tools",
-      "Used UV unwrapping and Adobe Substance painter for texturing"
-    ],
-    skills: 'Maya | Rigging | Character Design & Modeling | Adobe Substance Painter | Character Animation',
-    link: 'https://www.youtube.com/watch?v=zBDn8izuEAc',
-    paddingTop: 60,
-    images: [
-      { src: anim1a, alt: 'Image 3', width: '220px', height: '130px', description: "Todd rig testing through posing"  },
-      { src: anim1b, alt: 'Image 2', width: '220px', height: '130px', description: "testing Todd in room environment"  },
-      { src: anim1e, alt: 'Image 3', width: '220px', height: '130px', description: "Todd rig testing through posing"  },
-    ]
-  }*/
+  }
 ];
 
 const isDesktop = () => {
@@ -198,7 +182,10 @@ const AnimationPage: React.FC = () => {
               ))}
               </ul>
 
-              <div className='animationInstruction'>Click to View Image Renders Below!</div>
+              {slide.images.length > 0 && (
+                <div className="animationInstruction">Click to View Image Renders Below!</div>
+              )}
+
              
               <div className='animationStillImages'>
               {slide.images.map((image, index) => (
@@ -213,10 +200,11 @@ const AnimationPage: React.FC = () => {
                 ))}
               </div>
             
-              <div className="link">
-                <a href={slide.link} target="_blank" rel="noopener noreferrer">watch here!</a>
-              </div>
-            
+              {slide.link && (
+                <div className="link">
+                  <a href={slide.link} target="_blank" rel="noopener noreferrer">watch here!</a>
+                </div>
+              )}
             
               </div>
            

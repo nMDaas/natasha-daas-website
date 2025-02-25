@@ -35,5 +35,6 @@ export default [
             "Developed lilypad spawning algorithms and particle systems to enhance game interaction and functionality",
             "Implemented character animations and interactions using vector math techniques such as dot products, cross products, and ray casting for precision-based gameplay"
         ],
+        collaborators: 'Aiyan Jiang, Avery Corbin, Joshua Sun',
         }
 ]

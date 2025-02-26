@@ -81,13 +81,13 @@ const TaskBar: React.FC<TaskBarProps> = ({ currentPage }) => {
         <li><a href="#" onClick={() => navigate('/natasha-daas-website/contact')}  onMouseEnter={() => handleMouseEnter("Contact")} style={{ color: getLinkColor("Contact") }}>Contact</a></li>
         <li><a href={resume} target="_blank" rel="noopener noreferrer"  onMouseEnter={() => handleMouseEnter("Resume")} style={{ color: getLinkColor("Resume") }}>Resume</a></li>
         <a href="https://github.com/nMDaas" target="_blank" rel="noopener noreferrer">
-          <GitHub fontSize="large" sx={{width: "30px", height: "30px"}} />
+          <GitHub fontSize="large" sx={{width: "25px", height: "25px"}} />
         </a>
         <a href="mailto:daas.n@northeastern.edu">
-          <MailRounded sx={{width: "30px", height: "30px"}} />
+          <MailRounded sx={{width: "25px", height: "25px"}} />
         </a>
         <a href="https://www.linkedin.com/in/natashamishradaas/" target="_blank" rel="noopener noreferrer">
-          <LinkedIn sx={{width: "30px", height: "30px"}} />
+          <LinkedIn sx={{width: "25px", height: "25px"}} />
         </a>
       </ul>
     </div>

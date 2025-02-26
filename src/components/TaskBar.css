@@ -1,116 +1,108 @@
-  @font-face {
-    font-family: 'NatashaFont';
-    src: url('../assets/fonts/Natashafont-Regular.woff') format('woff');
-  }
-  
-  .menu-bar {
-    z-index: 1000 !important;
-    background-color: #b78a80;
-    font-family: 'NatashaFont';
-    font-size: 30px;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100% !important;
-  }
+@font-face {
+  font-family: 'NatashaFont';
+  src: url('../assets/fonts/Natashafont-Regular.woff') format('woff');
+}
 
-  .menu-bar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu-bar ul li {
-    display: inline-block;
-    vertical-align: middle;
-  }
-  
-  .menu-bar ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+.menu-bar {
+  z-index: 1000 !important;
+  background-color: #b78a80;
+  font-family: 'NatashaFont';
+  font-size: 30px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100% !important;
+}
 
-  .menu-bar ul li a:hover {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: #f2c9bf;
-  }
+.menu-bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-  ul {
-    vertical-align: middle;
-  }
+.menu-bar ul li {
+  display: inline-block;
+  vertical-align: middle;
+}
 
-  ul a {
-    color: white; /* Preserve the original color of the icon */
-    text-decoration: none; /* Remove underline */
-    padding-right: 14px;
-    padding-top: 15px;
-    float: right;
-  }
+.menu-bar ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-  ul a:hover {
-    color: #f2c9bf; /* Preserve the original color of the icon */
-    text-decoration: none; /* Remove underline */
-    padding-right: 14px;
-    padding-top: 15px;
-    float: right;
-    transition: color 0.3s ease-in-out, z-index 0s ease 0s; 
-  }
+.menu-bar ul li a:hover {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #f2c9bf;
+}
 
-    /* desktop */
-@media (min-width: 1501px) {
-  .home-icon {
-    width: 40px;
-    height: 35px;
-    vertical-align: middle !important;
-    transition: transform 0.6s;
-  }
- 
-  .home-icon:hover {
-    transform: rotateY(180deg);
-  }
+ul {
+  vertical-align: middle;
+}
+
+ul a {
+  color: white; /* Preserve the original color of the icon */
+  text-decoration: none; /* Remove underline */
+  padding-right: 14px;
+  padding-top: 15px;
+  float: right;
+}
+
+ul a:hover {
+  color: #f2c9bf; /* Preserve the original color of the icon */
+  text-decoration: none; /* Remove underline */
+  padding-right: 14px;
+  padding-top: 15px;
+  float: right;
+  transition: color 0.3s ease-in-out, z-index 0s ease 0s; 
 }
 
   /* desktop */
-@media (min-width: 1000px) and (max-width: 1500px) {
-  .home-icon {
-    width: 50px;
-    height: 45px;
-    vertical-align: middle !important;
-    transition: transform 0.6s;
-  }
- 
-  .home-icon:hover {
-    transform: rotateY(180deg);
-  }
+@media (min-width: 1501px) {
+.home-icon {
+  width: 40px;
+  height: 35px;
+  vertical-align: middle !important;
+  transition: transform 0.6s;
 }
 
-@media (min-width: 500px) and (max-width: 1499px) {
-  .home-icon {
-    width: 45px;
-    height: 40px;
-    vertical-align: middle !important;
-  }
+.home-icon:hover {
+  transform: rotateY(180deg);
+}
+}
 
-  .menu-bar {
-    font-size: 25px !important;
-  }
+/* desktop */
+@media (min-width: 1000px) and (max-width: 1500px) {
+.home-icon {
+  width: 50px;
+  height: 45px;
+  vertical-align: middle !important;
+  transition: transform 0.6s;
+}
+
+.home-icon:hover {
+  transform: rotateY(180deg);
+}
+}
+
+@media (min-width: 600px) and (max-width: 1499px) {
+.home-icon {
+  width: 45px;
+  height: 40px;
+  vertical-align: middle !important;
+}
 }
 
 /* mobile */
-@media (max-width: 499) {
-  .home-icon {
-    width: 45px;
-    height: 40px;
-    vertical-align: middle !important;
-  }
-
-  .menu-bar {
-    font-size: 25px !important;
-  }
+@media (max-width: 599px) {
+.home-icon {
+  width: 45px;
+  height: 40px;
+  vertical-align: middle !important;
+}
 }

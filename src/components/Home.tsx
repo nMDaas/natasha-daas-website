@@ -73,7 +73,7 @@ const Home = () => {
               </li>
               <li>
               <div className="heading-experience">SOCIAL ALPHA</div>
-                <div className="info-experience">Internship, Digital Design Intern (Summer 2022)</div>
+                <div className="info-experience">Digital Design Intern (Summer 2022)</div>
               </li>
             </ul>
           </div>

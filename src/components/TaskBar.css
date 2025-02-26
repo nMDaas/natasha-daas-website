@@ -90,16 +90,7 @@
   }
 }
 
-@media (min-width: 600px) and (max-width: 1499px) {
-  .home-icon {
-    width: 45px;
-    height: 40px;
-    vertical-align: middle !important;
-  }
-}
-
-/* mobile */
-@media (max-width: 599px) {
+@media (min-width: 500px) and (max-width: 1499px) {
   .home-icon {
     width: 45px;
     height: 40px;
@@ -108,5 +99,18 @@
 
   .menu-bar {
     font-size: 25px !important;
+  }
+}
+
+/* mobile */
+@media (max-width: 499) {
+  .home-icon {
+    width: 45px;
+    height: 40px;
+    vertical-align: middle !important;
+  }
+
+  .menu-bar {
+    font-size: 20px !important;
   }
 }

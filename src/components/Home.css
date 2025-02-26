@@ -218,7 +218,7 @@
 /* mobile */
 @media (max-width: 499px) {
     .threepage {
-        padding-top: 100px;
+        padding-top: 70px;
     }
 
     .hello {

@@ -105,4 +105,8 @@
     height: 40px;
     vertical-align: middle !important;
   }
+
+  .menu-bar {
+    font-size: 20px !important;
+  }
 }

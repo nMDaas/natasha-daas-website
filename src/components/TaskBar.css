@@ -7,7 +7,6 @@
   z-index: 1000 !important;
   background-color: #b78a80;
   font-family: 'NatashaFont';
-  font-size: 30px;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -77,20 +76,28 @@ ul a:hover {
 }
 
 /* desktop */
-@media (min-width: 1000px) and (max-width: 1500px) {
-.home-icon {
-  width: 50px;
-  height: 45px;
-  vertical-align: middle !important;
-  transition: transform 0.6s;
-}
+@media (min-width: 600px) and (max-width: 1500px) {
+  .menu-bar {
+    font-size: 30px !important;
+  }
+  .home-icon {
+    width: 50px;
+    height: 45px;
+    vertical-align: middle !important;
+    transition: transform 0.6s;
+  }
 
 .home-icon:hover {
   transform: rotateY(180deg);
 }
 }
 
-@media (min-width: 600px) and (max-width: 1499px) {
+@media (min-width: 500px) and (max-width: 599px) {
+
+  .menu-bar {
+    font-size: 20px;
+  }
+
 .home-icon {
   width: 45px;
   height: 40px;
@@ -100,9 +107,9 @@ ul a:hover {
 
 /* mobile */
 @media (max-width: 599px) {
-.home-icon {
-  width: 45px;
-  height: 40px;
-  vertical-align: middle !important;
-}
+  .home-icon {
+    width: 45px;
+    height: 40px;
+    vertical-align: middle !important;
+  }
 }

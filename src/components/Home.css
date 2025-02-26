@@ -19,7 +19,7 @@
     align-items: flex-start;
     color: #cb9f95;
     height: 200px;
-    /*background: linear-gradient(to bottom, white, #b78a80);*/
+    background: linear-gradient(to bottom, white, #b78a80);
 }
 
 
@@ -224,7 +224,6 @@
     .home2-page {
         font-size: 40px !important;
         height: 650px;
-        background-color: red;
     }
 
     .detail {

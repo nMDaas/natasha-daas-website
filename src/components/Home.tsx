@@ -51,27 +51,27 @@ const Home = () => {
         <div className="detail">
             <div className="heading-heading">EXPERIENCE</div>
             <ul>
-              <li>
+              <li className="li_Home">
                 <div className="heading-experience">WALT DISNEY IMAGINEERING</div>
                   <div className="info-experience">Visual Effects Designer (Pipeline TD) Intern (Spring/Summer 2025)</div>
               </li>
-              <li>
+              <li className="li_Home">
               <div className="heading-experience">NORTHEASTERN UNIVERSITY</div>
                   <div className="info-experience">Teaching Assistant, Computer Graphics CS4300 (Fall 2024)</div>
               </li>
-              <li>
+              <li className="li_Home">
               <div className="heading-experience">NICKELODEON ANIMATION STUDIOS</div>
                   <div className="info-experience">Data Strategy Intern (Summer 2024)</div>
               </li>
-              <li>
+              <li className="li_Home">
               <div className="heading-experience">NORTHEASTERN UNIVERSITY</div>
                   <div className="info-experience">System Support Associate Intern (Fall 2024)</div>
               </li>
-              <li>
+              <li className="li_Home">
               <div className="heading-experience">NORTHEASTERN UNIVERSITY</div>
                 <div className="info-experience">Teaching Assistant, Fundamentals of Computer Science 2 CS2510 (Spring 2023)</div>
               </li>
-              <li>
+              <li className="li_Home">
               <div className="heading-experience">SOCIAL ALPHA</div>
                 <div className="info-experience">Digital Design Intern (Summer 2022)</div>
               </li>

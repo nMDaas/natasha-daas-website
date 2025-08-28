@@ -34,7 +34,7 @@ const Home = () => {
             <div className="heading-heading">SKILLS</div>
             <div className="heading">PROGRAMMING</div>
             <div className="info">
-              C++, Python, OpenGL, GLSL, SDL, MEL, VEX, Javascript, Java, Typescript, React.js, Node.js SQL, PyQt, Qt, MongoDB, HTML, CSS
+               Java, C++, Python, Typescript,  Javascript, PyQt, Qt, OpenGL, C#, SDL, GLSL, React.js, Node.js, mySQL, MongoDB, CSS, Git, MEL, VEX, JSON, Rez, HTML, CSS
             </div>
             <div className="heading">ART/ANIMATION</div>
             <div className="info">
@@ -42,7 +42,7 @@ const Home = () => {
             </div>
             <div className="heading">MISC.</div>
             <div className="info">
-              Deadline, Qt Designer, ShotGrid, Jira         
+              Deadline Monitor, ShotGun API, ShotGrid, Jira, Qt Designer    
             </div>
           </div>
 

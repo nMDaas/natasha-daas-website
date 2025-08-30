@@ -41,6 +41,14 @@ import houdini4 from '/code/houdini4.png'
 import houdini5 from '/code/houdini5.png'
 import houdini11 from '/code/houdini11.png'
 import houdini7 from '/code/houdini7.png'
+import particlesim1 from '/code/particlesim/2D.mp4'
+import particlesim2 from '/code/particlesim/Fluid_Fall.mp4'
+import particlesim3 from '/code/particlesim/Containers.mp4'
+import particlesim4 from '/code/particlesim/Performance.mp4'
+import particlesim5 from '/code/particlesim/Raymarch_Breakdown.mp4'
+import particlesim6 from '/code/particlesim/Comparison1.mp4'
+import particlesim7 from '/code/particlesim/Comparison2.mp4'
+import particlesim8 from '/code/particlesim/closeup_shot.png'
 
 export default [
   { blank: blank,
@@ -62,22 +70,24 @@ export default [
     video: '',
     collaborators: '',
     projectType: 'graphics'},
-    { css: houdini7, 
-      hoverImages: [houdini10, houdini8, houdini9, houdini3, houdini4, houdini5, houdini11, houdini7],
-      height: 1730,
-      description: "Image to Terrain and City Generator", 
-      skills: "Houdini Tools | Python | Qt | Vex", 
-      linkInfo: "View GitHub Repo",
-      link:"https://github.com/nMDaas/houdiniCapstone",
-      summary: "Houdini Tool to accelerate geographical landscape and urban landscape creation",
-      details: [
-        "This is a project I am currently working on as a part of my capstone project at Northeastern University",
-        " I'm building a tool for Houdini that helps with setting up a geographical and urban environment through an image with simple shapes and color codes",
-        "Through this project I have learned a lot and continue to learn a lot about Houdini, building tools using Python in Houdini and Vex scripting",
-      ],
-      video: '',
-      collaborators: '',
-      projectType: 'tools'  },
+    { css: particlesim1,
+    hoverImages: [particlesim1, particlesim2, particlesim3, particlesim4, particlesim5, particlesim6, particlesim7, particlesim8], 
+    height: 1730, description: "Fluid Particle Simulation",
+     skills: "C++ | OpenGL | GLSL | Graphics Programming", 
+     link:"https://github.com/nMDaas/ParticleSimulation",
+     summary: "Particle Dynamics and Ray Marching Rendering Engine",
+     linkInfo: "View GitHub Repo",
+     details: [
+      "Developed a modular engine with both simulation and rendered previews, similar to industry-standard DCC software",
+      "Applied Verlet integration, particle-based interactions and neighborhood spatial searches (SPH-inspired), and velocity-dependent splashing effects modeled with the Weber number",
+      "Implemented a ray marching renderer with volumetric absorption (Beer–Lambert law), visualizing particle density and attenuation",
+      "Optimization with multithreading and spatial hashing, achieving 13× FPS",
+      "Exposed customizable simulation parameters for particles, obstacles, fluid physics, and rendering",
+      "Handled collisions, managed multithreading safely, and debugged anomalous particle interactions in large-scale simulations",
+     ],
+    video: '',
+    collaborators: '',
+    projectType: 'graphics'},
     { css: nickContent, 
       hoverImages: [nickHome, nickChar, nickSearch, nickSettings, nickLayout],
       height: 1730,
@@ -112,6 +122,22 @@ export default [
         video: '',
         collaborators: '' ,
         projectType: 'tools'},
+    { css: houdini7, 
+      hoverImages: [houdini10, houdini8, houdini9, houdini3, houdini4, houdini5, houdini11, houdini7],
+      height: 1730,
+      description: "Image to Terrain and City Generator", 
+      skills: "Houdini Tools | Python | Qt | Vex", 
+      linkInfo: "View GitHub Repo",
+      link:"https://github.com/nMDaas/houdiniCapstone",
+      summary: "Houdini Tool to accelerate geographical landscape and urban landscape creation",
+      details: [
+        "This is a project I am currently working on as a part of my capstone project at Northeastern University",
+        " I'm building a tool for Houdini that helps with setting up a geographical and urban environment through an image with simple shapes and color codes",
+        "Through this project I have learned a lot and continue to learn a lot about Houdini, building tools using Python in Houdini and Vex scripting",
+      ],
+      video: '',
+      collaborators: '',
+      projectType: 'tools'  },
     { css: substancePluginImage, 
       hoverImages: [substancePluginImage, substancePluginDemo1, substancePluginDemo2],
       height: 1730,

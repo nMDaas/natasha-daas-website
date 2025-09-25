@@ -131,9 +131,10 @@ export default [
       link:"https://github.com/nMDaas/houdiniCapstone",
       summary: "Houdini Tool to accelerate geographical landscape and urban landscape creation",
       details: [
-        "This is a project I am currently working on as a part of my capstone project at Northeastern University",
-        " I'm building a tool for Houdini that helps with setting up a geographical and urban environment through an image with simple shapes and color codes",
-        "Through this project I have learned a lot and continue to learn a lot about Houdini, building tools using Python in Houdini and Vex scripting",
+        "Developed a Houdini shelf tool to supplement Unity\’s Terrain Tools Package, enhancing customization while making the workflow accessible to non-Houdini users in game development pipelines.",
+        "Streamlined terrain prototyping and iteration by designing a step-by-step procedural workflow with image reload support and backtracking.",
+        "Integrated map inputs, enabling artists to define terrain elevation, surface characteristics, and water visualization for more deliberate, gameplay-driven terrain generation.",
+        "Prepared terrains for OBJ export with adjustable LOD, enabling seamless integration into Unity\’s Terrain Tools Package workflow."
       ],
       video: '',
       collaborators: '',

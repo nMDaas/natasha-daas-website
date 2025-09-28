@@ -33,14 +33,17 @@ import nickSettings from '/code/nickPlusSettings.mp4'
 import nickLayout from '/code/nickPlusLayout.mp4'
 import nickContent from '/code/nickPlusContentPlayer.mp4'
 import nickSearch from '/code/nickPlusSearch.mp4'
-import houdini10 from '/code/houdini10.png'
-import houdini8 from '/code/houdini8.png'
-import houdini9 from '/code/houdini9.png'
-import houdini3 from '/code/houdini3.png'
-import houdini4 from '/code/houdini4.png'
-import houdini5 from '/code/houdini5.png'
-import houdini11 from '/code/houdini11.png'
-import houdini7 from '/code/houdini7.png'
+import houdini1 from '/code/TG/TG_ToolResults.png'
+import houdini2 from '/code/TG/TG_ToolWorkflow.png'
+import houdini3 from '/code/TG/TG_Breakdown1.png'
+import houdini4 from '/code/TG/TG_Breakdown2.png'
+import houdini5 from '/code/TG/TG_TerrainElevation.png'
+import houdini6 from '/code/TG/TG_ElevationResults1.png'
+import houdini7 from '/code/TG/TG_ElevationResults2.png'
+import houdini8 from '/code/TG/TG_UnitySetup.png'
+//import houdini4 from '/code/TG/houdini4.png'
+//import houdini5 from '/code/TG/houdini5.png'
+import houdini11 from '/code/TG/houdini11.png'
 import particlesim1 from '/code/particlesim/2D.mp4'
 import particlesim2 from '/code/particlesim/Fluid_Fall.mp4'
 import particlesim3 from '/code/particlesim/Containers.mp4'
@@ -122,8 +125,8 @@ export default [
         video: '',
         collaborators: '' ,
         projectType: 'tools'},
-    { css: houdini7, 
-      hoverImages: [houdini10, houdini8, houdini9, houdini3, houdini4, houdini5, houdini11, houdini7],
+    { css: houdini8, 
+      hoverImages: [houdini1, houdini2, houdini3, houdini4, houdini5, houdini6, houdini7, houdini8],
       height: 1730,
       description: "Image-Guided Terrain Generator for Unity Export", 
       skills: "Houdini Tools | Python | Qt | Vex", 

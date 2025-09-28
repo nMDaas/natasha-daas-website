@@ -125,7 +125,7 @@ export default [
     { css: houdini7, 
       hoverImages: [houdini10, houdini8, houdini9, houdini3, houdini4, houdini5, houdini11, houdini7],
       height: 1730,
-      description: "Image to Terrain and City Generator", 
+      description: "Image-Guided Terrain Generator for Unity Export", 
       skills: "Houdini Tools | Python | Qt | Vex", 
       linkInfo: "View GitHub Repo",
       link:"https://github.com/nMDaas/houdiniCapstone",

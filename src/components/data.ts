@@ -33,14 +33,14 @@ import nickSettings from '/code/nickPlusSettings.mp4'
 import nickLayout from '/code/nickPlusLayout.mp4'
 import nickContent from '/code/nickPlusContentPlayer.mp4'
 import nickSearch from '/code/nickPlusSearch.mp4'
-import houdini1 from '/code/TG/TG_ToolResults.png'
-import houdini2 from '/code/TG/TG_ToolWorkflow.png'
-import houdini3 from '/code/TG/TG_Breakdown1.png'
-import houdini4 from '/code/TG/TG_Breakdown2.png'
-import houdini5 from '/code/TG/TG_TerrainElevation.png'
-import houdini6 from '/code/TG/TG_ElevationResults1.png'
-import houdini7 from '/code/TG/TG_ElevationResults2.png'
-import houdini8 from '/code/TG/TG_UnitySetup.png'
+import terrainGenerator1 from '/code/TG/TG_ToolResults.png'
+import terrainGenerator2 from '/code/TG/TG_ToolWorkflow.png'
+import terrainGenerator3 from '/code/TG/TG_Breakdown1.png'
+import terrainGenerator4 from '/code/TG/TG_Breakdown2.png'
+import terrainGenerator5 from '/code/TG/TG_TerrainElevation.png'
+import terrainGenerator6 from '/code/TG/TG_ElevationResults1.png'
+import terrainGenerator7 from '/code/TG/TG_ElevationResults2.png'
+import terrainGenerator8 from '/code/TG/TG_UnitySetup.png'
 import particlesim1 from '/code/particlesim/2D.mp4'
 import particlesim2 from '/code/particlesim/Fluid_Fall.mp4'
 import particlesim3 from '/code/particlesim/Containers.mp4'
@@ -122,8 +122,8 @@ export default [
         video: '',
         collaborators: '' ,
         projectType: 'tools'},
-    { css: houdini8, 
-      hoverImages: [houdini1, houdini2, houdini3, houdini4, houdini5, houdini6, houdini7, houdini8],
+    { css: terrainGenerator8, 
+      hoverImages: [terrainGenerator1, terrainGenerator2, terrainGenerator3, terrainGenerator4, terrainGenerator5, terrainGenerator6, terrainGenerator7, terrainGenerator8],
       height: 1730,
       description: "Image-Guided Terrain Generator for Unity Export", 
       skills: "Houdini Tools | Python | Qt | Vex", 

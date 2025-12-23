@@ -21,12 +21,12 @@ const ReelPage = () => {
             ></iframe>
         </div>
         <div>
-            <div className="reelHeading">3D Art Reel</div>
+            <div className="reelHeading">3D Generalist Reel</div>
             <div className="reelInfo">Reel Breakdown in the YouTube description</div>
             <iframe
                 width="900" 
                 height="500" 
-                src="https://www.youtube.com/embed/BSBK0GoIuXY?si=j-Z8IRFo1Z5Yp" 
+                src="https://www.youtube.com/embed/-52opkrqO3g" 
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -32,18 +32,58 @@ const Home = () => {
 
           <div className="detail">
             <div className="heading-heading">SKILLS</div>
-            <div className="heading">PROGRAMMING</div>
-            <div className="info">
-               Java, C++, Python, Typescript,  Javascript, PyQt, Qt, OpenGL, C#, SDL, GLSL, React.js, Node.js, mySQL, MongoDB, CSS, Git, MEL, VEX, JSON, Rez, HTML, CSS
+            <div className="skill-section">
+              <div className="heading">PROGRAMMING & DEVELOPMENT</div>
+              <div className="info">
+                C++, Python, Java, TypeScript, JavaScript, C#, Qt, PyQt, OpenGL, SDL, GLSL, VEX, MEL, React.js, Three.js, Node.js, HTML, CSS, JSON, Rez, GitHub, CI/CD, Agile, Jira
+              </div>
             </div>
-            <div className="heading">ART/ANIMATION</div>
+
+            <div className="skill-section">
+              <div className="heading">SOFTWARE & DATA SKILLS</div>
+              <div className="info">
+                Algorithms & Data Structures, Object-Oriented Programming (OOP), Database Design & Querying, MySQL, MongoDB
+              </div>
+            </div>
+
+            <div className="skill-section">
+              <div className="heading">DCC PROFICIENCIES</div>
+              <div className="info">
+                Maya, Houdini, Blender, Unity, Nuke, Adobe After Effects, Marvelous Designer, XGen, Adobe Substance Painter, Adobe Photoshop
+              </div>
+            </div>
+
+            <div className="skill-section">
+              <div className="heading">SYSTEMS</div>
+              <div className="info">
+                MacOS, Windows, Linux
+              </div>
+            </div>
+
+            <div className="skill-section">
+              <div className="heading">MISC.</div>
+              <div className="info">
+                ShotGrid / Shotgun API, Deadline Monitor, Qt Designer
+              </div>
+            </div>
+
+            {/*
+            <div className="heading">PROGRAMMING & DEVELOPMENT</div>
             <div className="info">
-              Maya, Houdini, Unity, Nuke, Adobe After Effects, Blender, Adobe Substance Painter, Adobe Photoshop        
+               Java, C++, Python, Typescript,  Javascript, PyQt, Qt, OpenGL, C#, SDL, GLSL, MEL, VEX, React.js, Three.js, Node.js, mySQL, MongoDB, GitHub, Jira, Agile, CI/CD, Wedb Development, JSON, Rez, HTML, CSS
+            </div>
+            <div className="heading">DCC PROFICIENCIES</div>
+            <div className="info">
+              Maya, Houdini, Unity, Nuke, Adobe After Effects, Marvelous Designer, Blender, XGen, Adobe Substance Painter, Adobe Photoshop        
+            </div>
+            <div className="heading">SOFTWARE & DATA SKILLS</div>
+            <div className="info">
+              Algorithms & Data Structures, Object-Oriented Programming (OOP), Database Design, Database Querying, MongoDB     
             </div>
             <div className="heading">MISC.</div>
             <div className="info">
-              Deadline Monitor, ShotGun API, ShotGrid, Jira, Qt Designer    
-            </div>
+              MacOS, Windows, Linux, Deadline Monitor, ShotGun API, ShotGrid, Qt Designer, 
+            </div>*/}
           </div>
 
         {/*<div className="vl"></div>*/}

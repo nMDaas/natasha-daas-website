@@ -26,6 +26,11 @@ import v6 from '/animation/v6.png';
 import v7 from '/animation/v7.png';
 import vRig from '/animation/vRig.png';
 import animationWork from '/animation/animationWork.mp4'
+// "Give Me The Britney" files
+import britney1 from '/animation/DudeBritney/BritneyTurnaround.mp4'
+import britney2 from '/animation/DudeBritney/BritneyBack.png'
+import britney3 from '/animation/DudeBritney/BritneyFront.png'
+import britney4 from '/animation/DudeBritney/BritneyPosed.png'
 
 import TaskBar from "./TaskBar2";
 import { Slide } from 'react-slideshow-image';
@@ -91,6 +96,26 @@ const slides: Slide[] = [
       { src: ft4, alt: 'Image 4', width: '220px', height: '112px', description: "final close up shot of whiteboard" },
       { src: ft5, alt: 'Image 5', width: '220px', height: '112px', description: "desk modeling and texturing in progress" },
       { src: ft6, alt: 'Image 6', width: '220px', height: '112px', description: "desk modeling and texturing in progress" },
+    ] 
+  },
+  {
+    src: britney1,
+    alt: '"Give Me The Britney"',
+    caption: '"Give Me The Britney"',
+    credit: '',
+    thumbnail: britney3,
+    details: [
+      "Individual hair grooming project using Maya's XGen",
+      "Responsible for hair grooming and lighting",
+      "'Dude' character model, textures and rig by Shalaby Rigs",
+    ],
+    skills: 'Maya | XGen | Adobe After Effects',
+    link: '',
+    paddingTop: 140,
+    images: [
+      { src: britney3, alt: 'BritneyBack.png', width: '220px', height: '112px', description: "Front view of hair groom with three-point lighting."},
+      { src: britney2, alt: 'BritneyBack.png', width: '220px', height: '112px', description: "Back view of hair groom with backlighting and wind."},
+      { src: britney4, alt: 'BritneyBack.png', width: '220px', height: '112px', description: "Posed character with hair groom and wind."},
     ] 
   },
   {

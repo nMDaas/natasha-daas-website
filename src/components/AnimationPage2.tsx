@@ -31,6 +31,15 @@ import britney1 from '/animation/DudeBritney/BritneyTurnaround.mp4'
 import britney2 from '/animation/DudeBritney/BritneyBack.png'
 import britney3 from '/animation/DudeBritney/BritneyFront.png'
 import britney4 from '/animation/DudeBritney/BritneyPosed.png'
+// "To: Jasmine From: Stitch" files
+import stitch1 from '/animation/StitchesForStitch/StitchesForStitch_Portfolio.mp4'
+import stitch2 from '/animation/StitchesForStitch/StitchModelWithGarment.png'
+import stitch3 from '/animation/StitchesForStitch/GarmentSideView.png'
+import stitch4 from '/animation/StitchesForStitch/StitchWithTurban.png'
+import stitch5 from '/animation/StitchesForStitch/Turban.png'
+import stitch6 from '/animation/StitchesForStitch/AnimationStill1.png'
+import stitch7 from '/animation/StitchesForStitch/AnimationStill2.png'
+import stitch8 from '/animation/StitchesForStitch/AnimationStill3.png'
 
 import TaskBar from "./TaskBar2";
 import { Slide } from 'react-slideshow-image';
@@ -49,6 +58,30 @@ interface Slide {
 }
 
 const slides: Slide[] = [
+  {
+    src: stitch1,
+    alt: 'To: Jasmine From: Stitch',
+    caption: 'To: Jasmine From: Stitch',
+    credit: '',
+    thumbnail: stitch2,
+    details: [
+      "Individual project using Maya and Marvelous Designer",
+      "Responsible for garment design and simulation, animation, lighting, composition and compositing",
+      "Stitch model, rig and textures by Gaethan Bracke"
+    ],
+    skills: 'Maya | Marvelous Designer | Adobe After Effects',
+    link: 'https://youtu.be/LesIvR-Zvjk',
+    paddingTop: 140,
+    images: [
+      { src: stitch2, alt: 'Stitch Model With Garment', width: '220px', height: '112px', description: "Stitch model with garment."},
+      { src: stitch3, alt: 'Garment Side View', width: '220px', height: '112px', description: "Stitch garment side view."},
+      { src: stitch4, alt: 'Stitch With Turban', width: '220px', height: '112px', description: "Stitch with turban."},
+      { src: stitch5, alt: 'Turban', width: '220px', height: '112px', description: "Rendered still of Turban." },
+      { src: stitch6, alt: 'Animation Still 1', width: '220px', height: '112px', description: "Still from animated short." },
+      { src: stitch8, alt: 'Animation Still 3', width: '220px', height: '112px', description: "Still from animated short." },
+      
+    ] 
+  },
   {
     src: vehicleVideo,
     alt: 'Carriage Cart',

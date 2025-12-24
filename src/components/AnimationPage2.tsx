@@ -69,7 +69,7 @@ const slides: Slide[] = [
       "Responsible for garment design and simulation, animation, lighting, composition and compositing",
       "Stitch model, rig and textures by Gaethan Bracke"
     ],
-    skills: 'Maya | Marvelous Designer | Adobe After Effects',
+    skills: 'Maya | Marvelous Designer | Adobe After Effects | Garment Design & Dynamics | Character Animation | Lighting | Composition | Compositing',
     link: 'https://youtu.be/LesIvR-Zvjk',
     paddingTop: 140,
     images: [
@@ -83,9 +83,32 @@ const slides: Slide[] = [
     ] 
   },
   {
+    src: flythrough,
+    alt: 'Bedroom Interior',
+    caption: 'Bedroom Interior',
+    credit: '',
+    thumbnail: flythroughtn,
+    details: [
+      "Room Environment created for individual animated short",
+      "Modeled all environment assets in scene in Maya",
+      "Textured assets using Adobe Substance Painter",
+    ],
+    skills: 'Maya | Adobe Substance Painter | Modeling | Texturing | Lighting | Composition',
+    link: 'https://youtu.be/FACYoF7FNbU',
+    paddingTop: 140,
+    images: [
+      { src: ft1, alt: 'Image 1', width: '220px', height: '112px', description: "final close up shot of whiteboard"},
+      { src: ft2, alt: 'Image 2', width: '220px', height: '112px', description: "final shot of work desk" },
+      { src: ft3, alt: 'Image 3', width: '220px', height: '112px', description: "final shot of side table" },
+      { src: ft4, alt: 'Image 4', width: '220px', height: '112px', description: "final close up shot of whiteboard" },
+      { src: ft5, alt: 'Image 5', width: '220px', height: '112px', description: "desk modeling and texturing in progress" },
+      { src: ft6, alt: 'Image 6', width: '220px', height: '112px', description: "desk modeling and texturing in progress" },
+    ] 
+  },
+  {
     src: vehicleVideo,
-    alt: 'Carriage Cart',
-    caption: 'Carriage Cart',
+    alt: 'Merchant Cart',
+    caption: 'Merchant Cart',
     credit: '',
     thumbnail: v6,
     details: [
@@ -93,7 +116,7 @@ const slides: Slide[] = [
       "Vehicle modeled in Maya and textured in Adobe Substance Painter",
       "Lighting and Rigging done in Maya"
     ],
-    skills: 'Maya | Vehicle | Adobe Substance Painter',
+    skills: 'Maya | Adobe Substance Painter | Modeling | Texturing | Lighting | Rigging',
     link: '',
     paddingTop: 140,
     images: [
@@ -109,29 +132,6 @@ const slides: Slide[] = [
     ] 
   },
   {
-    src: flythrough,
-    alt: 'Room Environment',
-    caption: 'Room Environment',
-    credit: '',
-    thumbnail: flythroughtn,
-    details: [
-      "Room Environment created for 'Todd vs Can' short",
-      "Modeled all environment assets in scene in Maya",
-      "Textured assets using Adobe Substance Painter",
-    ],
-    skills: 'Maya | Prop Modeling | Environments | Adobe Substance Painter',
-    link: 'https://youtu.be/FACYoF7FNbU',
-    paddingTop: 140,
-    images: [
-      { src: ft1, alt: 'Image 1', width: '220px', height: '112px', description: "final close up shot of whiteboard"},
-      { src: ft2, alt: 'Image 2', width: '220px', height: '112px', description: "final shot of work desk" },
-      { src: ft3, alt: 'Image 3', width: '220px', height: '112px', description: "final shot of side table" },
-      { src: ft4, alt: 'Image 4', width: '220px', height: '112px', description: "final close up shot of whiteboard" },
-      { src: ft5, alt: 'Image 5', width: '220px', height: '112px', description: "desk modeling and texturing in progress" },
-      { src: ft6, alt: 'Image 6', width: '220px', height: '112px', description: "desk modeling and texturing in progress" },
-    ] 
-  },
-  {
     src: britney1,
     alt: '"Give Me The Britney"',
     caption: '"Give Me The Britney"',
@@ -142,7 +142,7 @@ const slides: Slide[] = [
       "Responsible for hair grooming and lighting",
       "'Dude' character model, textures and rig by Shalaby Rigs",
     ],
-    skills: 'Maya | XGen | Adobe After Effects',
+    skills: 'Maya | XGen | Hair Grooming',
     link: '',
     paddingTop: 140,
     images: [
@@ -153,8 +153,8 @@ const slides: Slide[] = [
   },
   {
     src: animationWork,
-    alt: '3D Animation Exercises',
-    caption: '3D Animation Exercises',
+    alt: 'Idle/Walk/Run Cycle Exercises',
+    caption: 'Idle/Walk/Run Cycle Exercises',
     credit: '',
     thumbnail: toast3,
     details: [
@@ -163,7 +163,7 @@ const slides: Slide[] = [
       "\"Remy\" model rigged by Professor William Stout using Advanced Skeleton",
       "\"Space Girl\" model rigged by Milo Lin using Advanced Skeleton",
     ],
-    skills: 'Maya | Unity | 3D Animation | Character Animation',
+    skills: 'Maya | Unity | Character Animation',
     link: '',
     paddingTop: 60,
     images: [

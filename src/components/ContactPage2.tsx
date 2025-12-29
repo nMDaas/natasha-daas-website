@@ -26,7 +26,7 @@ const ContactPage = () => {
           <div className="links">
             <a href="mailto:daas.n@northeastern.edu">
               <MailRounded sx={{ width: "45px", height: "45px" }} />
-              <span className="linkDescrip">daas.n@northeastern.edu</span>
+              <span className="linkDescrip">natasha.mishra.daas@gmail.com</span>
             </a>
           </div>
           <div className="links">

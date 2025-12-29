@@ -1,6 +1,6 @@
 .reels {
     padding-top: 100px;
-    justify-content: center;
+    display: flex;
 }
 
 .reelHeading {
@@ -22,7 +22,23 @@
     margin: 20px;
 }
 
+.reel-div {
+    flex:1;
+    width: 600px;
+    height: auto;
+    margin: 20px;
+}
+
+@media (max-width: 768px) {
+  .reels {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+}
+
 iframe {
     border-radius: 15px;
     justify-content: center;
+    width: 600px;
+    height: 400px;
 }

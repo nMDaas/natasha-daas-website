@@ -7,12 +7,10 @@ const ReelPage = () => {
     <div>
       <TaskBar currentPage="Reel" />
       <div className="reels">
-        <div>
+        <div className="reel-div">
             <div className="reelHeading">TD/Pipeline Tools & Computer Graphics Reel</div>
             <div className="reelInfo">Reel Breakdown in the YouTube description</div>
             <iframe
-                width="900" 
-                height="500" 
                 src="https://www.youtube.com/embed/vBtEBHtUjZI?si=HYT8CqYVxjbsAwN2" 
                 title="YouTube video player"
                 frameBorder="0"
@@ -20,12 +18,10 @@ const ReelPage = () => {
                 allowFullScreen
             ></iframe>
         </div>
-        <div>
+        <div className="reel-div">
             <div className="reelHeading">3D Generalist Reel</div>
             <div className="reelInfo">Reel Breakdown in the YouTube description</div>
             <iframe
-                width="900" 
-                height="500" 
                 src="https://www.youtube.com/embed/-52opkrqO3g" 
                 title="YouTube video player"
                 frameBorder="0"

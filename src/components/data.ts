@@ -177,6 +177,18 @@ export default [
   collaborators: 'Natalie Potapov',
   projectType: 'graphics'
 },
+{ css: photoeditor, hoverImages: [photoeditor2, photoeditor3, photoeditor4, photoeditor], height: 1730, description: "Photo Editor", skills: "Java | Object-Oriented Programming (OOP)| MVC Pattern", link: "https://github.com/nMDaas/Photo-Editor",
+    details: [
+      "Designed and programmed a user-friendly GUI for a Photo Editor Application",
+      "Featured image manipulation tools such as blurring, sharpening, brightening, flipping, and filtering, including grayscale, sepia, and RGB filters",
+      "Applied object-oriented programming principles (OOP) and the model-view-controller (MVC) pattern to create a flexible, scalable and maintainable codebase",
+      "Enabled support for loading and saving images in multiple file formats, including PNG, JPG, JPEG, and PPM"    ],
+    video: '' ,
+    summary: "Photo Editor Application with image manipulation, format support, and MVC architecture",
+    linkInfo: "View GitHub Repo",
+    collaborators: '',
+    projectType: 'SWE'
+  },
 ]
 
 // Archiving Projects: 
@@ -194,18 +206,6 @@ export default [
       "Enhanced website performance, speed and loading time by debugging using DevTools and Web Inspector"
     ],
     video: '' ,
-    collaborators: '',
-    projectType: 'SWE'
-  },
-  { css: photoeditor, hoverImages: [photoeditor2, photoeditor3, photoeditor4, photoeditor], height: 1730, description: "Photo Editor", skills: "Java | Object-Oriented Programming (OOP)| MVC Pattern", link: "https://github.com/nMDaas/Photo-Editor",
-    details: [
-      "Designed and programmed a user-friendly GUI for a Photo Editor Application",
-      "Featured image manipulation tools such as blurring, sharpening, brightening, flipping, and filtering, including grayscale, sepia, and RGB filters",
-      "Applied object-oriented programming principles (OOP) and the model-view-controller (MVC) pattern to create a flexible, scalable and maintainable codebase",
-      "Enabled support for loading and saving images in multiple file formats, including PNG, JPG, JPEG, and PPM"    ],
-    video: '' ,
-    summary: "Photo Editor Application with image manipulation, format support, and MVC architecture",
-    linkInfo: "View GitHub Repo",
     collaborators: '',
     projectType: 'SWE'
   },*/

@@ -47,31 +47,31 @@ function App() {
         <ResetScroll />
         <Routes>
           <Route
-            path="natasha-daas-website/"
+            path="/"
             element={<HomePage />}
           />
           <Route
-            path="natasha-daas-website/reel"
+            path="/reel"
             element={<ReelPage />}
           />
           <Route
-            path="natasha-daas-website/code"
+            path="/code"
             element={<CodingPage />}
           />
           <Route
-            path="natasha-daas-website/art"
+            path="/art"
             element={<ArtPage />}
           />
           <Route
-            path="natasha-daas-website/animation"
+            path="/animation"
             element={<AnimationPage />}
           />
           <Route
-            path="natasha-daas-website/games"
+            path="/games"
             element={<GamesPage />}
           />
           <Route
-            path="natasha-daas-website/contact"
+            path="/contact"
             element={isMobile ? <ContactPageMobile /> : <ContactPage />}
           />
         </Routes>

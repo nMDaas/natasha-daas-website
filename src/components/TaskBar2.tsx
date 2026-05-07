@@ -65,7 +65,7 @@ const TaskBar: React.FC<TaskBarProps> = ({ currentPage }) => {
         <li>
           <a 
             href="#" 
-            onClick={() => navigate('/natasha-daas-website/')}
+            onClick={() => navigate('/')}
             onMouseEnter={() => handleMouseEnter("Home")}
             onMouseLeave={handleMouseLeave}
             style={{ color: getLinkColor("Home") }}
@@ -73,12 +73,12 @@ const TaskBar: React.FC<TaskBarProps> = ({ currentPage }) => {
             <img src={homeIcon} alt="Home Icon" className="home-icon" />
           </a>
         </li>
-        <li><a href="#" onClick={() => navigate('/natasha-daas-website/reel')}  onMouseEnter={() => handleMouseEnter("Reel")} style={{ color: getLinkColor("Reel") }}>Reels</a></li>
-        <li><a href="#" onClick={() => navigate('/natasha-daas-website/code')}  onMouseEnter={() => handleMouseEnter("Code")} style={{ color: getLinkColor("Code") }}>Code</a></li>
-        <li><a href="#" onClick={() => navigate('/natasha-daas-website/animation')}  onMouseEnter={() => handleMouseEnter("Animation")} style={{ color: getLinkColor("Animation") }}>Animation & 3D Modeling</a></li>
-        <li><a href="#" onClick={() => navigate('/natasha-daas-website/games')}  onMouseEnter={() => handleMouseEnter("Games")} style={{ color: getLinkColor("Games") }}>Games</a></li>
-        <li><a href="#" onClick={() => navigate('/natasha-daas-website/art')}  onMouseEnter={() => handleMouseEnter("Art")} style={{ color: getLinkColor("Art") }}>Art</a></li>
-        <li><a href="#" onClick={() => navigate('/natasha-daas-website/contact')}  onMouseEnter={() => handleMouseEnter("Contact")} style={{ color: getLinkColor("Contact") }}>Contact</a></li>
+        <li><a href="#" onClick={() => navigate('/reel')}  onMouseEnter={() => handleMouseEnter("Reel")} style={{ color: getLinkColor("Reel") }}>Reels</a></li>
+        <li><a href="#" onClick={() => navigate('/code')}  onMouseEnter={() => handleMouseEnter("Code")} style={{ color: getLinkColor("Code") }}>Code</a></li>
+        <li><a href="#" onClick={() => navigate('/animation')}  onMouseEnter={() => handleMouseEnter("Animation")} style={{ color: getLinkColor("Animation") }}>Animation & 3D Modeling</a></li>
+        <li><a href="#" onClick={() => navigate('/games')}  onMouseEnter={() => handleMouseEnter("Games")} style={{ color: getLinkColor("Games") }}>Games</a></li>
+        <li><a href="#" onClick={() => navigate('/art')}  onMouseEnter={() => handleMouseEnter("Art")} style={{ color: getLinkColor("Art") }}>Art</a></li>
+        <li><a href="#" onClick={() => navigate('/contact')}  onMouseEnter={() => handleMouseEnter("Contact")} style={{ color: getLinkColor("Contact") }}>Contact</a></li>
         <li><a href={resume} target="_blank" rel="noopener noreferrer"  onMouseEnter={() => handleMouseEnter("Resume")} style={{ color: getLinkColor("Resume") }}>Resume</a></li>
         <a href="https://github.com/nMDaas" target="_blank" rel="noopener noreferrer">
           <GitHub fontSize="large" sx={{width: "25px", height: "25px"}} />

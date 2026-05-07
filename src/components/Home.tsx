@@ -39,12 +39,16 @@ const Home = () => {
               <ul className="ul_Home">
                 <li className="li_Home">
                   <div className="heading-experience">WALT DISNEY IMAGINEERING</div>
-                    <div className="info-experience">Visual Effects Designer (Pipeline TD) Intern (Spring/Summer 2025)</div>
+                    <div className="info-experience">Pipeline TD Intern (Summer/Fall 2026)</div>
                 </li>
                 <li className="li_Home">
                 <div className="heading-experience">NORTHEASTERN UNIVERSITY</div>
-                    <div className="info-experience">Teaching Assistant, Computer Graphics CS4300 (Fall 2024)</div>
+                    <div className="info-experience">Teaching Assistant, Computer Graphics CS4300 (Fall 2025, Fall 2024)</div>
                 </li>
+                <li className="li_Home">
+                  <div className="heading-experience">WALT DISNEY IMAGINEERING</div>
+                    <div className="info-experience">Pipeline TD Intern (Spring/Summer 2025)</div>
+                </li>  
                 <li className="li_Home">
                 <div className="heading-experience">NICKELODEON ANIMATION STUDIOS</div>
                     <div className="info-experience">Data Strategy Intern (Summer 2024)</div>
@@ -52,14 +56,6 @@ const Home = () => {
                 <li className="li_Home">
                 <div className="heading-experience">NORTHEASTERN UNIVERSITY</div>
                     <div className="info-experience">System Support Associate Intern (Fall 2024)</div>
-                </li>
-                <li className="li_Home">
-                <div className="heading-experience">NORTHEASTERN UNIVERSITY</div>
-                  <div className="info-experience">Teaching Assistant, Fundamentals of Computer Science 2 CS2510 (Spring 2023)</div>
-                </li>
-                <li className="li_Home">
-                <div className="heading-experience">SOCIAL ALPHA</div>
-                  <div className="info-experience">Digital Design Intern (Summer 2022)</div>
                 </li>
               </ul>
             </div>
@@ -71,7 +67,7 @@ const Home = () => {
               <ul className="ul_Home">
                 <li className="li_Home">
                   <div className="heading-experience">PROGRAMMING & DEVELOPMENT</div>
-                    <div className="info-experience">C++, Python, Java, TypeScript, JavaScript, C#, Qt, PyQt, OpenGL, SDL, GLSL, VEX, MEL, React.js, Three.js, Node.js, HTML, CSS, JSON, Rez, GitHub, CI/CD, Agile, Jira</div>
+                    <div className="info-experience">C++, Python, Qt, PyQt, USD, C#, OpenGL, GLSL, VEX, MEL, Java, TypeScript, JavaScript, React.js, Three.js, Node.js, HTML, CSS, JSON, Rez, GitHub, CI/CD, Agile, Jira</div>
                 </li>
                 <li className="li_Home">
                 <div className="heading-experience">SOFTWARE & DATA SKILLS</div>

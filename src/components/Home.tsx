@@ -26,6 +26,11 @@ const Home = () => {
         <div>
           <img src="/art/homeImage.PNG" className="home-image"/>
         </div>
+        <div className="my-name">
+          <span className="my-name-top">Natasha M. Daas</span>
+          <span className="my-name-bottom">Natasha M. Daas</span>
+        </div>
+        <div className="PSA-text">(P.S. I Made This Website!)</div>
         <div className="skills-and-experience">
           <div className="content">
             <div className="detail">

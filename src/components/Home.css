@@ -16,6 +16,41 @@
     width: auto
 }
 
+.my-name {
+    font-family: 'NatashaFont';
+    position: relative;
+    font-size: 110px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.PSA-text{
+    font-family: 'NatashaFont';
+    position: relative;
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    color: rgb(189, 128, 115);
+    margin-top: 10px;
+}
+
+.my-name-top { 
+    color: rgba(255, 255, 255, 0.1);
+    -webkit-text-stroke: 0.4px rgb(77, 60, 62);
+    
+    position: absolute;
+    z-index: 2;
+    left: -1px;   /* horizontal offset */
+    top: 10px;
+}
+
+.my-name-bottom {
+    color: rgb(189, 128, 115);
+    
+    position: relative;
+    z-index: 1;
+}
+
 .skills-and-experience{
     background: linear-gradient(to bottom, white, #b78a80);
     width: 100%;

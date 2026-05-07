@@ -35,13 +35,18 @@
 }
 
 .my-name-top { 
-    color: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0);
     -webkit-text-stroke: 0.4px rgb(77, 60, 62);
+    transform: translateZ(0);
     
     position: absolute;
     z-index: 2;
     left: -1px;   /* horizontal offset */
     top: 10px;
+}
+
+.my-name-top.safari {
+    -webkit-text-stroke: 1.3px rgb(77,60,62);
 }
 
 .my-name-bottom {

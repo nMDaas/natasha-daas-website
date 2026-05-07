@@ -18,6 +18,7 @@ const Home = () => {
     }, []);
 
     const [pageName, setPageName] = useState("Home");
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
   return (
     <div>
@@ -27,7 +28,7 @@ const Home = () => {
           <img src="/art/homeImage.PNG" className="home-image"/>
         </div>
         <div className="my-name">
-          <span className="my-name-top">Natasha M. Daas</span>
+          <span className={`my-name-top ${isSafari ? "safari" : ""}`}>Natasha M. Daas</span>
           <span className="my-name-bottom">Natasha M. Daas</span>
         </div>
         <div className="PSA-text">(P.S. I Made This Website!)</div>

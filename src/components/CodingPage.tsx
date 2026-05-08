@@ -68,58 +68,63 @@ function Masonry() {
                 {item.collaborators && (
                   <p className={styles.collaborators}>Collaborators: {item.collaborators}</p>
                 )}  
+
+                <div className={styles.previewAndDetails}>
+                  <button className={styles.button} onClick={() => toggleDetails(item.css)}>
+                    {expandedItems[item.css] ? "▣ Preview" : "☰ Details"}
+                  </button>
+
+                  {/* visual samples of project*/}
+                  {!expandedItems[item.css] &&
+                  <div>
+                    {item.hoverImages.length > 1 ? (
+                      <Slide arrows={item.hoverImages.length > 1} autoplay={false}>
+                        {item.hoverImages.map((src, idx) => (
+                          <div key={idx} className="each-slide-effect" style={{ height: '300px' }}>
+                            {src.endsWith('.mp4') ? (
+                              <video src={src} autoPlay loop muted playsInline style={{ height: '80%', width: 'auto' }} />
+                            ) : (
+                              <div style={{ backgroundImage: `url(${src})`, height: '100%', width: 'auto', backgroundSize: 'cover' }} />
+                            )}
+                          </div>
+                        ))}
+                      </Slide>
+                    ) : (
+                      item.hoverImages.length === 1 && (
+                        <div style={{ height: '300px' }}>
+                          {item.hoverImages[0].endsWith('.mp4') ? (
+                            <video src={item.hoverImages[0]} autoPlay loop muted playsInline style={{ height: '80%', width: 'auto' }} />
+                          ) : (
+                            <div style={{ backgroundImage: `url(${item.hoverImages[0]})`, height: '100%', width: 'auto', backgroundSize: 'cover' }} />
+                          )}
+                        </div>
+                      )
+                    )}
+                  </div>}
+
+                  {/* bullet points for project*/}
+                  {expandedItems[item.css] &&
+                  <div className={styles.detail}>
+                    <br />
+                    <br />
+                    {Array.isArray(item.details) ? (
+                      <ul>
+                        {item.details.map((detail, index) => (
+                          <li key={index}>{detail}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p>{item.details}</p>
+                    )}
+                  </div>}
+                </div>
+
+                {/* GitHub Repo or YouTube Demo Link */}
                 <div className={styles.gridItemButtons}>
                   <div className={styles.link}>
                     <a href={item.link} target="_blank" rel="noopener noreferrer">{item.linkInfo}!</a>
                   </div>
-                  <div className={styles.link}>
-                    <button onClick={() => toggleDetails(item.css)}>
-                      {expandedItems[item.css] ? "Hide Details" : "View Details"}
-                    </button>
-                  </div>
                 </div>
-
-                {/* visual samples of project*/}
-                {!expandedItems[item.css] &&
-                <div>
-                  {item.hoverImages.length > 1 ? (
-                    <Slide arrows={item.hoverImages.length > 1} autoplay={false}>
-                      {item.hoverImages.map((src, idx) => (
-                        <div key={idx} className="each-slide-effect" style={{ height: '300px' }}>
-                          {src.endsWith('.mp4') ? (
-                            <video src={src} autoPlay loop muted playsInline style={{ height: '100%', width: '100%' }} />
-                          ) : (
-                            <div style={{ backgroundImage: `url(${src})`, height: '100%', width: 'auto', backgroundSize: 'cover' }} />
-                          )}
-                        </div>
-                      ))}
-                    </Slide>
-                  ) : (
-                    item.hoverImages.length === 1 && (
-                      <div style={{ height: '300px' }}>
-                        {item.hoverImages[0].endsWith('.mp4') ? (
-                          <video src={item.hoverImages[0]} autoPlay loop muted playsInline style={{ height: '100%', width: '100%' }} />
-                        ) : (
-                          <div style={{ backgroundImage: `url(${item.hoverImages[0]})`, height: '100%', width: 'auto', backgroundSize: 'cover' }} />
-                        )}
-                      </div>
-                    )
-                  )}
-                </div>}
-
-                {/* bullet points for project*/}
-                {expandedItems[item.css] &&
-                <div className={styles.detail}>
-                  {Array.isArray(item.details) ? (
-                    <ul>
-                      {item.details.map((detail, index) => (
-                        <li key={index}>{detail}</li>
-                      ))}
-                    </ul>
-                  ) : (
-                    <p>{item.details}</p>
-                  )}
-                </div>}
 
               </div>
             </a.div>

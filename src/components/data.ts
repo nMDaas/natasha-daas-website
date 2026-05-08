@@ -56,7 +56,7 @@ export default [
       height: 1250,
       description: "Image-Guided Terrain Generator for Unity Export", 
       skills: "Houdini Tools | Python | Qt | Vex", 
-      linkInfo: "View GitHub Repo",
+      linkInfo: "View GitHub Repo!",
       link:"https://github.com/nMDaas/houdiniCapstone",
       summary: "Houdini Tool to accelerate geographical landscape and urban landscape creation",
       details: [

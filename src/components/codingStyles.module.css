@@ -41,11 +41,17 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-left: 25px;
     padding-top: 10px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     background-color: #ebedf0;
     color: #4d4c4c;
     line-height: 1.1;
     font-weight: lighter !important;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .previewAndDetails{
+    position: relative;
   }
 
   .summary {
@@ -70,14 +76,15 @@
   }
 
   .gridItemButtons {
-    display: flex;
-    align-items: center;
+     display: flex;
+    justify-content: center;
+    align-items: center; 
   }
   
   .link {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     /*background-color: white;*/
   }
   
@@ -90,15 +97,19 @@
     border-radius: 20px;
   }
 
-   .link button {
+   .button {
     color: #5190f5 !important;
     text-decoration: none !important;
-    padding: 10px;
+    padding: 5px;
     color: #5190f5 !important;
     border: 1px solid #5190f5;
-    border-radius: 20px;
+    border-radius: 5px;
     cursor: pointer;
     background-color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;   /* change to left / center if needed */
+    z-index: 2;
   }
 
   .link a:hover {
@@ -108,20 +119,11 @@
     transition: color 0.3s ease-in-out, z-index 0s ease 0s; 
     transition: background-color 0.3s ease-in-out, z-index 0s ease 0s; 
   }
-
-  .link button:hover {
-    color:white !important;
-    border: 1px solid  #b78a80;
-    background-color: #b78a80;
-    transition: color 0.3s ease-in-out, z-index 0s ease 0s; 
-    transition: background-color 0.3s ease-in-out, z-index 0s ease 0s; 
-  }
   
   .detail {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-left: 25px;
     padding-bottom: 5px;
-    background-color: white;
+    background: linear-gradient(to top, white, #ebedf0);
     line-height: 1.1;
   }
   

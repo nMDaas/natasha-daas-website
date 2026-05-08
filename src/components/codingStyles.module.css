@@ -27,7 +27,7 @@
   .description {
     text-transform: uppercase;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-left: 25px;
+    padding-left: 10px;
     padding-top: 20px;
     padding-bottom: 21px;
     height: 3px;
@@ -39,7 +39,7 @@
   
   .skills {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-left: 25px;
+    padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 20px;
     background-color: #ebedf0;
@@ -57,7 +57,7 @@
   .summary {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-top: 15px;
-    padding-left: 25px;
+    padding-left: 10px;
     padding-right: 1px;
     background-color: #ebedf0;
     color: #3b3b3b;

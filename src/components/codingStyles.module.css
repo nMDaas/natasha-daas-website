@@ -107,7 +107,7 @@
     cursor: pointer;
     background-color: white;
     position: absolute;
-    top: 10px;
+    top: -50px;
     right: 10px;   /* change to left / center if needed */
     z-index: 2;
   }

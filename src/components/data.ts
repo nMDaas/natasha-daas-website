@@ -53,7 +53,7 @@ import particlesim8 from '/code/particlesim/closeup_shot.png'
 export default [
   { css: terrainGenerator8, 
       hoverImages: [terrainGenerator1, terrainGenerator2, terrainGenerator3, terrainGenerator4, terrainGenerator5, terrainGenerator6, terrainGenerator7, terrainGenerator8],
-      height: 1250,
+      height: 1200,
       description: "Image-Guided Terrain Generator for Unity Export", 
       skills: "Houdini Tools | Python | Qt | Vex", 
       linkInfo: "View GitHub Repo!",
@@ -70,7 +70,7 @@ export default [
       projectType: 'tools'  },
     { css: substancePluginImage, 
       hoverImages: [substancePluginImage, substancePluginDemo1, substancePluginDemo2],
-      height: 1250,
+      height: 1200,
       description: "Maya Adobe Substance Painter Plugin", 
       skills: "Maya Tools | Python | Qt | MEL ", 
       linkInfo: "View GitHub Repo",
@@ -87,7 +87,7 @@ export default [
       projectType: 'tools'  },
     { css: particlesim2,
     hoverImages: [particlesim2, particlesim3, particlesim4, particlesim5, particlesim6, particlesim7, particlesim8, particlesim1], 
-    height: 1250, description: "Fluid Particle Simulation",
+    height: 1200, description: "Fluid Particle Simulation",
      skills: "C++ | OpenGL | GLSL | Graphics Programming", 
      link:"https://github.com/nMDaas/ParticleSimulation",
      summary: "Particle Dynamics and Ray Marching Rendering Engine",
@@ -105,7 +105,7 @@ export default [
     projectType: 'graphics'},
       { css: plugin1, 
         hoverImages: [plantgendemo1,plant1, plantgendemo2, plant2, plant3, plugin3, plugin1],
-        height: 1250,
+        height: 1200,
         description: "Maya Plugin for Rapid Plant Generation", 
         skills: "Maya Tools | Python | Qt | MEL ", 
         link:"https://github.com/nMDaas/PlantGeneratorPluginMaya",
@@ -123,7 +123,7 @@ export default [
     { blank: blank,
     css: raytracer, 
     hoverImages: [raytracer2, raytracer3, raytracer4, raytracer], 
-    height: 1250, description: "Raytracer",
+    height: 1200, description: "Raytracer",
      skills: "C++ | OpenGL | Object-Oriented Programming (OOP)| Graphics Programming | MVC Pattern", 
      link:"https://github.com/nMDaas/raytracer",
      summary: "Ray Tracing Engine in C++",
@@ -141,7 +141,7 @@ export default [
     projectType: 'graphics'},
   { css: nickContent, 
       hoverImages: [nickHome, nickChar, nickSearch, nickSettings, nickLayout],
-      height: 1250,
+      height: 1200,
       description: "Nickelodeon+ Demo", 
       skills: "TypeScript | React | Node.js | JSON ", 
       linkInfo: "View YouTube Demo",
@@ -158,7 +158,7 @@ export default [
       projectType: 'SWE'}, 
   { css: opengl, 
     hoverImages: [opengl], 
-    height: 1250, 
+    height: 1200, 
     description: "Trackball, Lighting, Texturing and Animation in OpenGL",
     skills: "C++ | OpenGL | GLSL | Graphics Programming",
     link: "https://github.com/nMDaas/OpenGLProject",
@@ -177,7 +177,7 @@ export default [
   collaborators: 'Natalie Potapov',
   projectType: 'graphics'
 },
-{ css: photoeditor, hoverImages: [photoeditor2, photoeditor3, photoeditor4, photoeditor], height: 1250, description: "Photo Editor", skills: "Java | Object-Oriented Programming (OOP)| MVC Pattern", link: "https://github.com/nMDaas/Photo-Editor",
+{ css: photoeditor, hoverImages: [photoeditor2, photoeditor3, photoeditor4, photoeditor], height: 1200, description: "Photo Editor", skills: "Java | Object-Oriented Programming (OOP)| MVC Pattern", link: "https://github.com/nMDaas/Photo-Editor",
     details: [
       "Designed and programmed a user-friendly GUI for a Photo Editor Application",
       "Featured image manipulation tools such as blurring, sharpening, brightening, flipping, and filtering, including grayscale, sepia, and RGB filters",
@@ -195,7 +195,7 @@ export default [
 
 /*{ css: portfolio, 
     hoverImages: [portfolio2, portfolio], 
-    height: 1250, 
+    height: 1200, 
     description: "Personal Website", 
     linkInfo: "View GitHub Repo",
     skills: "Typescript | React | GSAP | Three.js | MUI | Software Development Life Cycle (SDLC)", link: "https://github.com/nMDaas/natasha-daas-website",
@@ -210,7 +210,7 @@ export default [
     projectType: 'SWE'
   },*/
   /*
-  { css: productionplan, hoverImages: [productionplan2, productionplan3, productionplan], height: 1250, description: "Animation Production Plan Generator", 
+  { css: productionplan, hoverImages: [productionplan2, productionplan3, productionplan], height: 1200, description: "Animation Production Plan Generator", 
     skills: "Javascript | Typescript | Generative AI | React | HCI | Software Development Life Cycle (SDLC)", link: "https://github.com/Abby-Dennin/Animation-Production-Plan-Generator",
     summary: "AI-powered web application to streamline animation production generation and management",
     details: [
@@ -229,7 +229,7 @@ export default [
   /*
   { css: spirograph,
     hoverImages: [spirograph], 
-    height: 1250, 
+    height: 1200, 
     description: "Spirograph Animation", 
     skills: "C++ | OpenGL | 2D Animation | Graphics Programming",
     link:"https://github.com/nMDaas/Spirograph/tree/main",
@@ -243,7 +243,7 @@ export default [
     projectType: 'graphics'},
   */
  /*
-  { css: bakeapp, hoverImages: [bakeryapp], height: 1250, description: "Bakery App", skills: "mySQL | Java | JDBC", link: "https://github.com/nMDaas/BakeryApp",
+  { css: bakeapp, hoverImages: [bakeryapp], height: 1200, description: "Bakery App", skills: "mySQL | Java | JDBC", link: "https://github.com/nMDaas/BakeryApp",
     summary: "Console based app to help users manage kitchen inventory and discover, save and post baking recipes",
     details: [
       "Designed the Conceptual and Logical Design of the database, including tables, relationships, and the User Activity Diagram, to establish the schema design and application flow from user perspective",

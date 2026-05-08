@@ -65,10 +65,6 @@ function Masonry() {
                 <div className={styles.description}>{item.description}</div>
                 <div className={styles.summary}>{item.summary}</div>
                 <div className={styles.skills}>{item.skills}</div>
-                {item.collaborators && (
-                  <p className={styles.collaborators}>Collaborators: {item.collaborators}</p>
-                )}  
-
                 <div className={styles.previewAndDetails}>
                   <button className={styles.button} onClick={() => toggleDetails(item.css)}>
                     {expandedItems[item.css] ? "▣ Preview" : "☰ Details"}
@@ -80,7 +76,7 @@ function Masonry() {
                     {item.hoverImages.length > 1 ? (
                       <Slide arrows={item.hoverImages.length > 1} autoplay={false}>
                         {item.hoverImages.map((src, idx) => (
-                          <div key={idx} className="each-slide-effect" style={{ height: '300px' }}>
+                          <div key={idx} className="each-slide-effect" style={{ height: '300px', backgroundColor: 'black' }}>
                             {src.endsWith('.mp4') ? (
                               <video src={src} autoPlay loop muted playsInline style={{ height: '80%', width: 'auto' }} />
                             ) : (
@@ -103,20 +99,24 @@ function Masonry() {
                   </div>}
 
                   {/* bullet points for project*/}
-                  {expandedItems[item.css] &&
-                  <div className={styles.detail}>
-                    <br />
-                    <br />
-                    {Array.isArray(item.details) ? (
-                      <ul>
-                        {item.details.map((detail, index) => (
-                          <li key={index}>{detail}</li>
-                        ))}
-                      </ul>
-                    ) : (
-                      <p>{item.details}</p>
-                    )}
-                  </div>}
+                  <div>
+                    {expandedItems[item.css] && item.collaborators && (
+                      <p className={styles.collaborators}>Collaborators: {item.collaborators}</p>
+                    )} 
+                    {expandedItems[item.css] && 
+                    <div className={styles.detail}>
+                      <br />
+                      {Array.isArray(item.details) ? (
+                        <ul>
+                          {item.details.map((detail, index) => (
+                            <li key={index}>{detail}</li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p>{item.details}</p>
+                      )}
+                    </div>}
+                    </div>
                 </div>
 
                 {/* GitHub Repo or YouTube Demo Link */}

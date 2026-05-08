@@ -7,7 +7,6 @@ import HomePage from "./components/Home";
 import ReelPage from "./components/ReelPage";
 import ArtPage from "./components/ArtPage2";
 import ContactPage from "./components/ContactPage2";
-import GamesPage from "./components/GamesPage";
 import ContactPageMobile from "./components/ContactPageMobile";
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
@@ -65,10 +64,6 @@ function App() {
           <Route
             path="/animation"
             element={<AnimationPage />}
-          />
-          <Route
-            path="/games"
-            element={<GamesPage />}
           />
           <Route
             path="/contact"

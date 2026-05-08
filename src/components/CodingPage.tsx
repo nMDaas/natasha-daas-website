@@ -76,9 +76,9 @@ function Masonry() {
                     {item.hoverImages.length > 1 ? (
                       <Slide arrows={item.hoverImages.length > 1} autoplay={false}>
                         {item.hoverImages.map((src, idx) => (
-                          <div key={idx} className="each-slide-effect" style={{ height: '300px', backgroundColor: 'black' }}>
+                          <div key={idx} className="each-slide-effect" style={{ height: '300px', backgroundColor: 'black'}}>
                             {src.endsWith('.mp4') ? (
-                              <video src={src} autoPlay loop muted playsInline style={{ height: '80%', width: 'auto' }} />
+                              <video src={src} autoPlay loop muted playsInline style={{ height: '80%', width: 'auto'}} />
                             ) : (
                               <div style={{ backgroundImage: `url(${src})`, height: '100%', width: 'auto', backgroundSize: 'cover' }} />
                             )}
@@ -89,7 +89,7 @@ function Masonry() {
                       item.hoverImages.length === 1 && (
                         <div style={{ height: '300px' }}>
                           {item.hoverImages[0].endsWith('.mp4') ? (
-                            <video src={item.hoverImages[0]} autoPlay loop muted playsInline style={{ height: '80%', width: 'auto' }} />
+                            <video src={item.hoverImages[0]} autoPlay loop muted playsInline style={{ height: '100%', width: 'auto' }} />
                           ) : (
                             <div style={{ backgroundImage: `url(${item.hoverImages[0]})`, height: '100%', width: 'auto', backgroundSize: 'cover' }} />
                           )}

@@ -49,6 +49,8 @@ import particlesim5 from '/code/particlesim/Raymarch_Breakdown.mp4'
 import particlesim6 from '/code/particlesim/Comparison1.mp4'
 import particlesim7 from '/code/particlesim/Comparison2.mp4'
 import particlesim8 from '/code/particlesim/closeup_shot.png'
+import psyduck from '/games/PsyduckHuntPreview.mp4';
+import lilypad from '/games/LilypadParkour.mp4';
 
 export default [
   { css: terrainGenerator8, 
@@ -71,7 +73,7 @@ export default [
     { css: substancePluginImage, 
       hoverImages: [substancePluginImage, substancePluginDemo1, substancePluginDemo2],
       height: 1200,
-      description: "Maya Adobe Substance Painter Plugin", 
+      description: "AI Standard Surface Pipeline Tool (Substance Painter → Maya)", 
       skills: "Maya Tools | Python | Qt | MEL ", 
       linkInfo: "View GitHub Repo",
       link:"https://github.com/nMDaas/AIStandardSurfaceSubstancePainterPluginMaya",
@@ -87,7 +89,7 @@ export default [
       projectType: 'tools'  },
     { css: particlesim2,
     hoverImages: [particlesim2, particlesim3, particlesim4, particlesim5, particlesim6, particlesim7, particlesim8, particlesim1], 
-    height: 1200, description: "Fluid Particle Simulation",
+    height: 1200, description: "Fluid Particle Simulation Engine",
      skills: "C++ | OpenGL | GLSL | Graphics Programming", 
      link:"https://github.com/nMDaas/ParticleSimulation",
      summary: "Particle Dynamics and Ray Marching Rendering Engine",
@@ -106,7 +108,7 @@ export default [
       { css: plugin1, 
         hoverImages: [plantgendemo1,plant1, plantgendemo2, plant2, plant3, plugin3, plugin1],
         height: 1200,
-        description: "Maya Plugin for Rapid Plant Generation", 
+        description: "Plant Generator Plugin", 
         skills: "Maya Tools | Python | Qt | MEL ", 
         link:"https://github.com/nMDaas/PlantGeneratorPluginMaya",
         linkInfo: "View GitHub Repo",
@@ -124,7 +126,7 @@ export default [
     css: raytracer, 
     hoverImages: [raytracer2, raytracer3, raytracer4, raytracer], 
     height: 1200, description: "Raytracer",
-     skills: "C++ | OpenGL | Object-Oriented Programming (OOP)| Graphics Programming | MVC Pattern", 
+     skills: "C++ | OpenGL | Graphics Programming ", 
      link:"https://github.com/nMDaas/raytracer",
      summary: "Ray Tracing Engine in C++",
      linkInfo: "View GitHub Repo",
@@ -142,7 +144,7 @@ export default [
   { css: nickContent, 
       hoverImages: [nickHome, nickChar, nickSearch, nickSettings, nickLayout],
       height: 1200,
-      description: "Nickelodeon+ Demo", 
+      description: "Nickelodeon+", 
       skills: "TypeScript | React | Node.js | JSON ", 
       linkInfo: "View YouTube Demo",
       link:"https://youtu.be/knGxsfaEQk4",
@@ -177,7 +179,7 @@ export default [
   collaborators: 'Natalie Potapov',
   projectType: 'graphics'
 },
-{ css: photoeditor, hoverImages: [photoeditor2, photoeditor3, photoeditor4, photoeditor], height: 1200, description: "Photo Editor", skills: "Java | Object-Oriented Programming (OOP)| MVC Pattern", link: "https://github.com/nMDaas/Photo-Editor",
+{ css: photoeditor, hoverImages: [photoeditor2, photoeditor3, photoeditor4, photoeditor], height: 1200, description: "Photo Editor", skills: "Java | Object-Oriented Programming (OOP)", link: "https://github.com/nMDaas/Photo-Editor",
     details: [
       "Designed and programmed a user-friendly GUI for a Photo Editor Application",
       "Featured image manipulation tools such as blurring, sharpening, brightening, flipping, and filtering, including grayscale, sepia, and RGB filters",
@@ -189,6 +191,39 @@ export default [
     collaborators: '',
     projectType: 'SWE'
   },
+  { css: psyduck, 
+    hoverImages: [psyduck], 
+    height: 1200, description: "Psyduck Hunt",
+     skills: "Unity | C# | Blender", 
+     link:"https://youtu.be/ieZEHAfgGZY",
+     summary: "3D Game Made In Unity",
+     linkInfo: "View YouTube Demo",
+     details: [
+        "Implemented game mechanics, character animations, and character interactions in Unity",
+        "Scripted a custom toon shader in Unity for cartoon cell shading",
+        "Animated characters and character interactions using 3D Math and Linear Algebra",
+        "Rigged characters and assets using Blender and Mixamo",
+        "Managed NPC navigations using NavMesh and camera movements using CineMachine",
+        //"Sculpted and textured terrain in Unity while importing assets from Polytope Studio and Free3D",
+     ],
+    },
+    {   css: lilypad, 
+        hoverImages: [lilypad], 
+        height: 1200, 
+        description: "Lilypad Parkour",
+        skills: "Unity | C# | Blender", 
+        link:"https://youtu.be/8phOvF6Lcuk",
+        summary: "3D Parkour Game Built in Unity",
+        linkInfo: "View YouTube Demo",
+        details: [ 
+            "Collaborated with a team over GitHub and Trello to develop game mechanics, character controllers, and animator controllers using C# in Unity",
+            "Conceptualized and designed the game, drawing inspiration from Subway Surfers, Crossy Road, and Pocket Frogs",
+            "Designed and scripted an interactive game environment, including dynamic moving water texture mechanics",
+            "Developed lilypad spawning algorithms and particle systems to enhance game interaction and functionality",
+            "Implemented character animations and interactions using vector math techniques such as dot products, cross products, and ray casting for precision-based gameplay"
+        ],
+        collaborators: 'Aiyan Jiang, Avery Corbin, Joshua Sun',
+        }
 ]
 
 // Archiving Projects: 

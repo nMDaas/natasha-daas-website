@@ -11,7 +11,7 @@
 .contact-grid {
   display: flex; /* Create a grid layout */
   gap: 50px; /* Space between the grid cells */
-  padding-top: 100px;
+  padding-top: 0px;
   align-items: center; /* Align items vertically in the center */
   background-color: #b78a80;
   height: 100vh;

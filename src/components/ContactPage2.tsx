@@ -3,15 +3,15 @@ import "./ContactPage.css";
 import { GitHub, MailRounded, LinkedIn } from "@mui/icons-material";
 import TaskBar from "./TaskBar2";
 import homeIcon from "/other/home2.png";
+import contactImage from "/art/contact-page-image.jpg"
 
 const ContactPage = () => {
   return (
     <div>
       <TaskBar currentPage="Contact" />
       <div className="contact-grid">
-        <img src={homeIcon} alt="Home Icon" className="contact-icon" />
+        <img src={contactImage} alt="Home Icon" className="contact-icon"/>
         <div className="contact-content">
-          <div className="thankyou">thank you for visiting!</div>
           <div className="contact_text">reach out to me @</div>
           <div className="links">
             <a

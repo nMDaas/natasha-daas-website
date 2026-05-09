@@ -15,10 +15,6 @@ import raytracer2 from '/code/rb.jpg';
 import raytracer3 from '/code/rc.jpg';
 import raytracer4 from '/code/rd.jpg';
 import bakeapp from '/code/bakeapp.jpg';
-import photoeditor from '/code/photoeditor.jpg';
-import photoeditor2 from '/code/re.jpg';
-import photoeditor3 from '/code/rf.jpg';
-import photoeditor4 from '/code/rg.jpg';
 import productionplan2 from '/code/rh.jpg';
 import productionplan3 from '/code/ri.jpg';
 import opengl from '/code/opengl.mp4';
@@ -179,18 +175,6 @@ export default [
   collaborators: 'Natalie Potapov',
   projectType: 'graphics'
 },
-{ css: photoeditor, hoverImages: [photoeditor2, photoeditor3, photoeditor4, photoeditor], height: 1200, description: "Photo Editor", skills: "Java | Object-Oriented Programming (OOP)", link: "https://github.com/nMDaas/Photo-Editor",
-    details: [
-      "Designed and programmed a user-friendly GUI for a Photo Editor Application",
-      "Featured image manipulation tools such as blurring, sharpening, brightening, flipping, and filtering, including grayscale, sepia, and RGB filters",
-      "Applied object-oriented programming principles (OOP) and the model-view-controller (MVC) pattern to create a flexible, scalable and maintainable codebase",
-      "Enabled support for loading and saving images in multiple file formats, including PNG, JPG, JPEG, and PPM"    ],
-    video: '' ,
-    summary: "Photo Editor Application with image manipulation, format support, and MVC architecture",
-    linkInfo: "View GitHub Repo",
-    collaborators: '',
-    projectType: 'SWE'
-  },
   { css: psyduck, 
     hoverImages: [psyduck], 
     height: 1200, description: "Psyduck Hunt",

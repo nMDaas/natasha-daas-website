@@ -1,4 +1,9 @@
-.list {
+  @font-face {
+    font-family: 'NatashaFont';
+    src: url('../assets/fonts/Natashafont-Regular.woff') format('woff');
+  }
+  
+  .list {
     position: relative;
     width: 100%;
     height: 100%;
@@ -83,9 +88,15 @@
   
   .link {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    font-size: 13px !important;
     /*background-color: white;*/
+  }
+
+  .linkOnDetails {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 15px;
+    font-size: 13px !important;
   }
   
   .link a {
@@ -97,11 +108,35 @@
     border-radius: 20px;
   }
 
-   .button {
+  .linkOnDetails a {
+    color: #5190f5 !important;
+    text-decoration: none !important;
+    padding: 10px;
+    color: #5190f5 !important;
+    border: 1px solid #5190f5;
+    border-radius: 20px;
+  }
+
+  .link a:hover {
+    color:white !important;
+    border: 1px solid  #5190f5;
+    background-color: #5190f5;
+    transition: color 0.3s ease-in-out, z-index 0s ease 0s; 
+    transition: background-color 0.3s ease-in-out, z-index 0s ease 0s; 
+  }
+
+  .linkOnDetails a:hover {
+    color:white !important;
+    border: 1px solid  #5190f5;
+    background-color: #5190f5;
+    transition: color 0.3s ease-in-out, z-index 0s ease 0s; 
+    transition: background-color 0.3s ease-in-out, z-index 0s ease 0s; 
+  }
+
+   .detailsButton {
     color: #5190f5 !important;
     text-decoration: none !important;
     padding: 5px;
-    color: #5190f5 !important;
     border: 1px solid #5190f5;
     border-radius: 5px;
     cursor: pointer;
@@ -112,10 +147,37 @@
     z-index: 2;
   }
 
-  .link a:hover {
-    color:white !important;
-    border: 1px solid  #b78a80;
+  .detailsButton:hover {
+    color: white !important;
     background-color: #b78a80;
+    border: 1px solid #b78a80;
+    transition: color 0.3s ease-in-out, z-index 0s ease 0s; 
+    transition: background-color 0.3s ease-in-out, z-index 0s ease 0s; 
+  }
+
+  .div_moreProjectsButton{
+    position: relative;
+    top: 100px;
+    right: -475px;
+    padding-bottom: 50px;
+    margin: 50px;
+  }
+
+  .moreProjectsButton {
+    font-family: 'NatashaFont';
+    color:  #b78a80 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+    padding: 12px;
+    background-color: white;
+    border: none;
+    font-size: 40px;
+    border-radius: 20px;
+  }
+
+  .moreProjectsButton:hover {
+    background-color: #b78a80;
+    color: white !important;
     transition: color 0.3s ease-in-out, z-index 0s ease 0s; 
     transition: background-color 0.3s ease-in-out, z-index 0s ease 0s; 
   }

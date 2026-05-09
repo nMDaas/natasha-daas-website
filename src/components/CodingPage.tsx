@@ -17,6 +17,7 @@ function Masonry() {
   const [archivedItems, setArchivedItems] = useState(data_archived);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({});
+  const [seeMoreProjects, setSeeMoreProjects] = useState<boolean>(false);
 
   /* calculate hights for gridItems */
   const [heights, gridItems] = useMemo(() => {
@@ -71,6 +72,10 @@ function Masonry() {
     }));
   };
 
+  const toggleSeeMoreProjects = () => {
+    setSeeMoreProjects(!seeMoreProjects);
+  }
+
   return (
     <div>
       <div>
@@ -83,7 +88,7 @@ function Masonry() {
                 <div className={styles.summary}>{item.summary}</div>
                 <div className={styles.skills}>{item.skills}</div>
                 <div className={styles.previewAndDetails}>
-                  <button className={styles.button} onClick={() => toggleDetails(item.css)}>
+                  <button className={styles.detailsButton} onClick={() => toggleDetails(item.css)}>
                     {expandedItems[item.css] ? "▣ Preview" : "☰ Details"}
                   </button>
 
@@ -138,7 +143,7 @@ function Masonry() {
 
                 {/* GitHub Repo or YouTube Demo Link */}
                 <div className={styles.gridItemButtons}>
-                  <div className={styles.link}>
+                  <div className={expandedItems[item.css] ? styles.linkOnDetails: styles.link }>
                     <a href={item.link} target="_blank" rel="noopener noreferrer">{item.linkInfo}!</a>
                   </div>
                 </div>
@@ -146,82 +151,90 @@ function Masonry() {
               </div>
             </a.div>
           ))}
+        </div>
+
+        <div className={styles.div_moreProjectsButton}>
+          <button className={styles.moreProjectsButton} onClick={() => toggleSeeMoreProjects()}>
+            {!seeMoreProjects ? "click for more projects" : "click for less projects"}
+          </button>
         </div>
 
         {/* Archived Projects */}
 
-        <div ref={ref} className={styles.list} style={{ height: Math.max(...heights_archived) }}>
-          {transitions_archived((style, item, t, index) => (
-            <a.div style={style} key={item.css} id={`grid-item-${index}`}>
-              <div className={styles.gridItem}>
-                <div className={styles.description}>{item.description}</div>
-                <div className={styles.summary}>{item.summary}</div>
-                <div className={styles.skills}>{item.skills}</div>
-                <div className={styles.previewAndDetails}>
-                  <button className={styles.button} onClick={() => toggleDetails(item.css)}>
-                    {expandedItems[item.css] ? "▣ Preview" : "☰ Details"}
-                  </button>
+        {seeMoreProjects && 
+          <div ref={ref} className={styles.list} style={{ height: Math.max(...heights_archived) }}>
+            {transitions_archived((style, item, t, index) => (
+              <a.div style={style} key={item.css} id={`grid-item-${index}`}>
+                <div className={styles.gridItem}>
+                  <div className={styles.description}>{item.description}</div>
+                  <div className={styles.summary}>{item.summary}</div>
+                  <div className={styles.skills}>{item.skills}</div>
+                  <div className={styles.previewAndDetails}>
+                    <button className={styles.detailsButton} onClick={() => toggleDetails(item.css)}>
+                      {expandedItems[item.css] ? "▣ Preview" : "☰ Details"}
+                    </button>
 
-                  {/* visual samples of project*/}
-                  {!expandedItems[item.css] &&
-                  <div>
-                    {item.hoverImages.length > 1 ? (
-                      <Slide arrows={item.hoverImages.length > 1} autoplay={false}>
-                        {item.hoverImages.map((src, idx) => (
-                          <div key={idx} className="each-slide-effect" style={{ height: '300px', backgroundColor: 'black'}}>
-                            {src.endsWith('.mp4') ? (
-                              <video src={src} autoPlay loop muted playsInline style={{ height: '80%', width: 'auto'}} />
+                    {/* visual samples of project*/}
+                    {!expandedItems[item.css] &&
+                    <div>
+                      {item.hoverImages.length > 1 ? (
+                        <Slide arrows={item.hoverImages.length > 1} autoplay={false}>
+                          {item.hoverImages.map((src, idx) => (
+                            <div key={idx} className="each-slide-effect" style={{ height: '300px', backgroundColor: 'black'}}>
+                              {src.endsWith('.mp4') ? (
+                                <video src={src} autoPlay loop muted playsInline style={{ height: '80%', width: 'auto'}} />
+                              ) : (
+                                <div style={{ backgroundImage: `url(${src})`, height: '100%', width: 'auto', backgroundSize: 'cover' }} />
+                              )}
+                            </div>
+                          ))}
+                        </Slide>
+                      ) : (
+                        item.hoverImages.length === 1 && (
+                          <div style={{ height: '300px' }}>
+                            {item.hoverImages[0].endsWith('.mp4') ? (
+                              <video src={item.hoverImages[0]} autoPlay loop muted playsInline style={{ height: '100%', width: 'auto' }} />
                             ) : (
-                              <div style={{ backgroundImage: `url(${src})`, height: '100%', width: 'auto', backgroundSize: 'cover' }} />
+                              <div style={{ backgroundImage: `url(${item.hoverImages[0]})`, height: '100%', width: 'auto', backgroundSize: 'cover' }} />
                             )}
                           </div>
-                        ))}
-                      </Slide>
-                    ) : (
-                      item.hoverImages.length === 1 && (
-                        <div style={{ height: '300px' }}>
-                          {item.hoverImages[0].endsWith('.mp4') ? (
-                            <video src={item.hoverImages[0]} autoPlay loop muted playsInline style={{ height: '100%', width: 'auto' }} />
-                          ) : (
-                            <div style={{ backgroundImage: `url(${item.hoverImages[0]})`, height: '100%', width: 'auto', backgroundSize: 'cover' }} />
-                          )}
-                        </div>
-                      )
-                    )}
-                  </div>}
-
-                  {/* bullet points for project*/}
-                  <div>
-                    {expandedItems[item.css] && item.collaborators && (
-                      <p className={styles.collaborators}>Collaborators: {item.collaborators}</p>
-                    )} 
-                    {expandedItems[item.css] && 
-                    <div className={styles.detail}>
-                      <br />
-                      {Array.isArray(item.details) ? (
-                        <ul>
-                          {item.details.map((detail, index) => (
-                            <li key={index}>{detail}</li>
-                          ))}
-                        </ul>
-                      ) : (
-                        <p>{item.details}</p>
+                        )
                       )}
                     </div>}
-                    </div>
-                </div>
 
-                {/* GitHub Repo or YouTube Demo Link */}
-                <div className={styles.gridItemButtons}>
-                  <div className={styles.link}>
-                    <a href={item.link} target="_blank" rel="noopener noreferrer">{item.linkInfo}!</a>
+                    {/* bullet points for project*/}
+                    <div>
+                      {expandedItems[item.css] && item.collaborators && (
+                        <p className={styles.collaborators}>Collaborators: {item.collaborators}</p>
+                      )} 
+                      {expandedItems[item.css] && 
+                      <div className={styles.detail}>
+                        <br />
+                        {Array.isArray(item.details) ? (
+                          <ul>
+                            {item.details.map((detail, index) => (
+                              <li key={index}>{detail}</li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <p>{item.details}</p>
+                        )}
+                      </div>}
+                      </div>
                   </div>
-                </div>
 
-              </div>
-            </a.div>
-          ))}
-        </div>
+                  {/* GitHub Repo or YouTube Demo Link */}
+                  <div className={styles.gridItemButtons}>
+                    <div className={styles.link}>
+                      <a href={item.link} target="_blank" rel="noopener noreferrer">{item.linkInfo}!</a>
+                    </div>
+                  </div>
+
+                </div>
+              </a.div>
+            ))}
+          </div>
+        }
       </div>
     </div>
   );

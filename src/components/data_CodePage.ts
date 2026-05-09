@@ -17,7 +17,6 @@ import raytracer4 from '/code/rd.jpg';
 import bakeapp from '/code/bakeapp.jpg';
 import productionplan2 from '/code/rh.jpg';
 import productionplan3 from '/code/ri.jpg';
-import opengl from '/code/opengl.mp4';
 import blank from '/code/blank.jpg';
 import spirograph from '/code/spirograph.mp4'
 import substancePluginImage from "/code/UVsFileStructureAndScene.jpg"
@@ -46,7 +45,6 @@ import particlesim6 from '/code/particlesim/Comparison1.mp4'
 import particlesim7 from '/code/particlesim/Comparison2.mp4'
 import particlesim8 from '/code/particlesim/closeup_shot.png'
 import psyduck from '/games/PsyduckHuntPreview.mp4';
-import lilypad from '/games/LilypadParkour.mp4';
 
 export default [
   { css: terrainGenerator8, 
@@ -137,44 +135,6 @@ export default [
     video: '',
     collaborators: '',
     projectType: 'graphics'},
-  { css: nickContent, 
-      hoverImages: [nickHome, nickChar, nickSearch, nickSettings, nickLayout],
-      height: 1200,
-      description: "Nickelodeon+", 
-      skills: "TypeScript | React | Node.js | JSON ", 
-      linkInfo: "View YouTube Demo",
-      link:"https://youtu.be/knGxsfaEQk4",
-      summary: "Nickelodeon+ demo developed as a part of my intern project at Nickelodeon",
-      details: [
-        "Served as a frontend developer and software engineer on the NICKtern project to build a working demo using  TypeScript, React, Node.js, and JSON",
-        "Collaborated with 17 interns from art, development, and marketing teams as well as HR and Studio Learning to incorporate ideas and feedback iteratively to deliver a final product with our vision and objectives",
-        "Implemented unique streaming platform features, including search functionality, email-based 2FA, a drag-and-drop sticker canvas, and an avatar customization interface, contributing to a successful pitch and positive feedback from 40+ people"
-
-      ],
-      video: '',
-      collaborators: 'Summer 2024 NICKterns',
-      projectType: 'SWE'}, 
-  { css: opengl, 
-    hoverImages: [opengl], 
-    height: 1200, 
-    description: "Trackball, Lighting, Texturing and Animation in OpenGL",
-    skills: "C++ | OpenGL | GLSL | Graphics Programming",
-    link: "https://github.com/nMDaas/OpenGLProject",
-    linkInfo: "View GitHub Repo",
-    summary: "Interactive OpenGL-based system for implementing trackball movement, camera control, lighting, and texturing in computer graphics",
-    details: [
-      "Implemented trackball effect as seen in applications like Maya and Blender",
-      "Programmed movements of a global camera, helicopter camera and first person camera",
-      "Applied the visitor pattern in C++ to implement hierarchical rendering of nodes in scene",
-      "Allows specification of ambient, diffuse and specular properties for lights and materials",
-      "Developed ability to create spotlights and texture objects"
-    ],
-  video: '',
-  vidHeight: "400px",
-  vidWidth: "400px",
-  collaborators: 'Natalie Potapov',
-  projectType: 'graphics'
-},
   { css: psyduck, 
     hoverImages: [psyduck], 
     height: 1200, description: "Psyduck Hunt",
@@ -191,23 +151,23 @@ export default [
         //"Sculpted and textured terrain in Unity while importing assets from Polytope Studio and Free3D",
      ],
     },
-    {   css: lilypad, 
-        hoverImages: [lilypad], 
-        height: 1200, 
-        description: "Lilypad Parkour",
-        skills: "Unity | C# | Blender", 
-        link:"https://youtu.be/8phOvF6Lcuk",
-        summary: "3D Parkour Game Built in Unity",
-        linkInfo: "View YouTube Demo",
-        details: [ 
-            "Collaborated with a team over GitHub and Trello to develop game mechanics, character controllers, and animator controllers using C# in Unity",
-            "Conceptualized and designed the game, drawing inspiration from Subway Surfers, Crossy Road, and Pocket Frogs",
-            "Designed and scripted an interactive game environment, including dynamic moving water texture mechanics",
-            "Developed lilypad spawning algorithms and particle systems to enhance game interaction and functionality",
-            "Implemented character animations and interactions using vector math techniques such as dot products, cross products, and ray casting for precision-based gameplay"
-        ],
-        collaborators: 'Aiyan Jiang, Avery Corbin, Joshua Sun',
-        }
+  { css: nickContent, 
+      hoverImages: [nickHome, nickChar, nickSearch, nickSettings, nickLayout],
+      height: 1200,
+      description: "Nickelodeon+", 
+      skills: "TypeScript | React | Node.js | JSON ", 
+      linkInfo: "View YouTube Demo",
+      link:"https://youtu.be/knGxsfaEQk4",
+      summary: "Nickelodeon+ demo developed as a part of my intern project at Nickelodeon",
+      details: [
+        "Served as a frontend developer and software engineer on the NICKtern project to build a working demo using  TypeScript, React, Node.js, and JSON",
+        "Collaborated with 17 interns from art, development, and marketing teams as well as HR and Studio Learning to incorporate ideas and feedback iteratively to deliver a final product with our vision and objectives",
+        "Implemented unique streaming platform features, including search functionality, email-based 2FA, a drag-and-drop sticker canvas, and an avatar customization interface, contributing to a successful pitch and positive feedback from 40+ people"
+
+      ],
+      video: '',
+      collaborators: 'Summer 2024 NICKterns',
+      projectType: 'SWE'}
 ]
 
 // Archiving Projects: 

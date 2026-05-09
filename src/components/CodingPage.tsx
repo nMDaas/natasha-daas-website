@@ -76,11 +76,23 @@ function Masonry() {
     setSeeMoreProjects(!seeMoreProjects);
   }
 
+  useEffect(() => {
+    if (seeMoreProjects) {
+      document
+        .getElementById("moreProjects")
+        ?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      document
+        .getElementById("moreProjectsButton")
+        ?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [seeMoreProjects]);
+
   return (
     <div>
       <div>
         <TaskBar currentPage="Code" />
-        <div ref={ref} className={styles.list} style={{ height: Math.max(...heights) }}>
+        <div ref={ref} id="lessProjects" className={styles.list} style={{ height: Math.max(...heights) }}>
           {transitions((style, item, t, index) => (
             <a.div style={style} key={item.css} id={`grid-item-${index}`}>
               <div className={styles.gridItem}>
@@ -153,7 +165,7 @@ function Masonry() {
           ))}
         </div>
 
-        <div className={styles.div_moreProjectsButton}>
+        <div className={styles.div_moreProjectsButton} id="moreProjects">
           <button className={styles.moreProjectsButton} onClick={() => toggleSeeMoreProjects()}>
             {!seeMoreProjects ? "click for more projects" : "click for less projects"}
           </button>
@@ -162,7 +174,7 @@ function Masonry() {
         {/* Archived Projects */}
 
         {seeMoreProjects && 
-          <div ref={ref} className={styles.list} style={{ height: Math.max(...heights_archived) }}>
+          <div ref={ref} className={styles.listArchived} style={{ height: Math.max(...heights_archived) }}>
             {transitions_archived((style, item, t, index) => (
               <a.div style={style} key={item.css} id={`grid-item-${index}`}>
                 <div className={styles.gridItem}>
@@ -224,7 +236,7 @@ function Masonry() {
                   </div>
 
                   {/* GitHub Repo or YouTube Demo Link */}
-                  <div className={styles.gridItemButtons}>
+                  <div className={styles.gridItemButtons} id="moreProjectsButton">
                     <div className={styles.link}>
                       <a href={item.link} target="_blank" rel="noopener noreferrer">{item.linkInfo}!</a>
                     </div>

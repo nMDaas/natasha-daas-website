@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { gsap } from "gsap";
-import TaskBar from "./TaskBar2";
+import TaskBar from "./TaskBar";
 import useMedia from './useMedia';
 import { useTransition, a } from '@react-spring/web';
 import data from './data_CodePage';

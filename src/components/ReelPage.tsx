@@ -1,5 +1,5 @@
 import React from "react";
-import TaskBar from "./TaskBar2";
+import TaskBar from "./TaskBar";
 import "./ReelPage.css"
 
 const ReelPage = () => {

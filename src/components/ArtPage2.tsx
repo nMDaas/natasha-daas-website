@@ -6,7 +6,7 @@ import data from './dataArt';
 import dataMobile from './dataArtMobile';
 import styles from './styles.module.css';
 import useMeasure from 'react-use-measure';
-import TaskBar from "./TaskBar2";
+import TaskBar from "./TaskBar";
 import PopUpImage from './PopUpImage'; 
 
 function Masonry() {

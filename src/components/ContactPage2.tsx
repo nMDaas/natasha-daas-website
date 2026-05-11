@@ -1,7 +1,7 @@
 import React from "react";
 import "./ContactPage.css";
 import { GitHub, MailRounded, LinkedIn } from "@mui/icons-material";
-import TaskBar from "./TaskBar2";
+import TaskBar from "./TaskBar";
 import homeIcon from "/other/home2.png";
 import contactImage from "/art/contact-page-image.jpg"
 

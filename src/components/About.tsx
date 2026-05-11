@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./About.css"
 import { gsap } from "gsap";
 import pic from "/other/pic.jpg"
-import TaskBar from "./TaskBar2";
+import TaskBar from "./TaskBar";
 
 const About = () => {
   return (

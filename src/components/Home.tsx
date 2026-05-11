@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Home.css"
 import { gsap } from "gsap";
-import TaskBar from "./TaskBar2";
+import TaskBar from "./TaskBar";
 
 const Home = () => {
 

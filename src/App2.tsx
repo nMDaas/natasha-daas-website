@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import TestPage from "./components/ThreeJSComponent";
-import TaskBar from "./components/TaskBar2";
+import TaskBar from "./components/TaskBar";
 import CodingPage from "./components/CodingPage";
 import AnimationPage from "./components/AnimationPage2";
 import HomePage from "./components/Home";

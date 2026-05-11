@@ -41,7 +41,7 @@ import stitch6 from '/animation/StitchesForStitch/AnimationStill1.png'
 import stitch7 from '/animation/StitchesForStitch/AnimationStill2.png'
 import stitch8 from '/animation/StitchesForStitch/AnimationStill3.png'
 
-import TaskBar from "./TaskBar2";
+import TaskBar from "./TaskBar";
 import { Slide } from 'react-slideshow-image';
 
 interface Slide {

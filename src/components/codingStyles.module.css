@@ -208,13 +208,17 @@
   
   .detail {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-bottom: 5px;
     background: linear-gradient(to top, white, #ebedf0);
     line-height: 1.1;
   }
+
+  .detail ul {
+    padding-right: 3px;
+  }
   
   .detail ul li {
-    padding: 3px !important;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
   }
   
   .video {

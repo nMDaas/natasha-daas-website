@@ -154,11 +154,12 @@ function Masonry() {
                 </div>
 
                 {/* GitHub Repo or YouTube Demo Link */}
+                {!expandedItems[item.css] &&
                 <div className={styles.gridItemButtons}>
                   <div className={expandedItems[item.css] ? styles.linkOnDetails: styles.link }>
                     <a href={item.link} target="_blank" rel="noopener noreferrer">{item.linkInfo}!</a>
                   </div>
-                </div>
+                </div>}
 
               </div>
             </a.div>
@@ -236,11 +237,12 @@ function Masonry() {
                   </div>
 
                   {/* GitHub Repo or YouTube Demo Link */}
+                  {!expandedItems[item.css] &&
                   <div className={styles.gridItemButtons} id="moreProjectsButton">
                     <div className={styles.link}>
                       <a href={item.link} target="_blank" rel="noopener noreferrer">{item.linkInfo}!</a>
                     </div>
-                  </div>
+                  </div>}
 
                 </div>
               </a.div>

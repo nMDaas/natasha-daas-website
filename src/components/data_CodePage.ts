@@ -44,13 +44,43 @@ import particlesim5 from '/code/particlesim/Raymarch_Breakdown.mp4'
 import particlesim6 from '/code/particlesim/Comparison1.mp4'
 import particlesim7 from '/code/particlesim/Comparison2.mp4'
 import particlesim8 from '/code/particlesim/closeup_shot.png'
+/* Psyduck */
 import psyduck from '/games/PsyduckHuntPreview.mp4';
+/* Renderstack */
 import Renderstack from '/code/renderstack/orbitControlsAndHyperLinks.mp4';
 import R_gallery from '/code/renderstack/gallery.png';
 import R_galleryPost from '/code/renderstack/galleryPost.png';
 import R_hyperlink from '/code/renderstack/hyperlink.png';
+/* Maya USD Variant Author Toolkit */
+import VariantAuthorToolkit from '/code/variantAuthorToolkit/toolkitVisual.mp4'
+import VAT_demo from '/code/variantAuthorToolkit/demo.mp4'
+import VAT_docs from '/code/variantAuthorToolkit/documentation.png'
+import VAT_writtenWalkthrough from '/code/variantAuthorToolkit/writtenWalkthrough.png'
+import VAT_videoWalkthrough from '/code/variantAuthorToolkit/videoWalkthrough.png'
+import VAT_overview from '/code/variantAuthorToolkit/toolkitOverview.png'
+
 
 export default [
+  { css: VariantAuthorToolkit, 
+    hoverImages: [VariantAuthorToolkit, VAT_demo, VAT_docs, VAT_writtenWalkthrough, VAT_videoWalkthrough, VAT_overview],
+    height: 1200,
+    description: "Maya USD Variant Author Toolkit", 
+    skills: "Maya | USD | Python | PySide | Qt", 
+    linkInfo: "View GitHub Repo",
+    link:"https://github.com/nMDaas/Maya-USD-Variant-Manager",
+    summary: "An open-source custom shelf to support variant set authoring and editing within Maya",
+    details: [
+      "Developed a custom shelf toolkit in Maya for authoring and editing USD variant sets in Maya",
+      "Addressed pipeline usability issues including paywalled tools, limited documentation, and complexity of the Bifrost Graph Editor",
+      "Implemented 3 tools supporting modeling, transform, and material variants, handling deeply nested variant workflows",
+      "Designed modular, object-oriented architecture using the command design pattern to separate UI and Maya/USD logic layers",
+      "Conducted 7 rounds of user testing and iteration with Maya and technical users, leading to bug fixes, improved input validation, clearer UI feedback, and UX improvements",
+      "Implemented robust error handling for missing inputs, invalid selections, prim type validation, and variant naming rules",
+      "Authored beginner-friendly documentation teaching USD concepts and toolkit usage, including a written walkthrough and 10-minute video guide",
+    ],
+    video: '',
+    collaborators: '',
+    projectType: 'tools'  },
   { css: terrainGenerator8, 
       hoverImages: [terrainGenerator1, terrainGenerator2, terrainGenerator3, terrainGenerator4, terrainGenerator5, terrainGenerator6, terrainGenerator7, terrainGenerator8],
       height: 1200,

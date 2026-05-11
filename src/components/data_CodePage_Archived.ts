@@ -1,8 +1,11 @@
+/* Photo Editor */
 import PhotoEditor from '/code/photoeditor/gui.jpg';
 import PE_blur_sharp from '/code/photoeditor/blur_sharp_example.jpg';
 import PE_brightness from '/code/photoeditor/brightness_example.jpg';
 import PE_filters from '/code/photoeditor/filters_example.jpg';
+/* Lilypad Parkout */
 import LilypadParkour from '/code/lilypadParkour/LilypadParkour.mp4';
+/* OpenGL Projects */
 import OpenGLProjects from '/code/openGL/opengl.mp4';
 
 export default [

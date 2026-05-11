@@ -45,6 +45,10 @@ import particlesim6 from '/code/particlesim/Comparison1.mp4'
 import particlesim7 from '/code/particlesim/Comparison2.mp4'
 import particlesim8 from '/code/particlesim/closeup_shot.png'
 import psyduck from '/games/PsyduckHuntPreview.mp4';
+import Renderstack from '/code/renderstack/orbitControlsAndHyperLinks.mp4';
+import R_gallery from '/code/renderstack/gallery.png';
+import R_galleryPost from '/code/renderstack/galleryPost.png';
+import R_hyperlink from '/code/renderstack/hyperlink.png';
 
 export default [
   { css: terrainGenerator8, 
@@ -151,6 +155,25 @@ export default [
         //"Sculpted and textured terrain in Unity while importing assets from Polytope Studio and Free3D",
      ],
     },
+  { css: Renderstack, 
+      hoverImages: [Renderstack, R_gallery, R_galleryPost, R_hyperlink],
+      height: 1200,
+      description: "Renderstack", 
+      skills: "TypeScript | Three.js | React | MongoDB | CI/CD", 
+      linkInfo: "View GitHub Repo",
+      link:"https://github.com/neu-cs4530/fall25-project-group-201",
+      summary: "A collaborative, interactive forum for 3D artists and graphics programmers, inspired by Stack Overflow",
+      details: [
+        "Developed a full-stack web application using Scrum/Agile practices",
+        "Created RESTful API endpoints supporting CRUD operations for questions, answers, gallery posts, comments, and media content",
+        "Developed media asset management features, including upload, download, and permission controls for 3D files and other user-generated content",
+        "Spearheaded 3D viewport interactivity, implementing orbit controls and orthographic/perspective view toggling", 
+        "Implemented camera hyperlinking functionality for question and answer posts, enabling direct navigation to specific camera viewpoints within the 3D scene",
+        "Built CI/CD pipelines for automated end-to-end testing, utilizing Jest for backend testing and Cypress for frontend testing",
+      ],
+      video: '',
+      collaborators: 'Catherine Azelby, Erika Ding, Meredith Scott',
+      projectType: 'SWE'},
   { css: nickContent, 
       hoverImages: [nickHome, nickChar, nickSearch, nickSettings, nickLayout],
       height: 1200,
@@ -166,7 +189,7 @@ export default [
 
       ],
       video: '',
-      collaborators: 'Summer 2024 NICKterns',
+      collaborators: 'Osewanne Uwadiale, Frenchie Mariñas, Allison Bailey, Tianna Belcher, Charlie Humbert, Rebe Chen, Sami Shanman, Jordan Miles, Nicole Concepcion, Sophia Spagna, Griffin Jones, Ramón Aquino, Jewel Millan, Brisa Parra, Milly Watson, Ariana Kanchuger, Daniel Crane',
       projectType: 'SWE'}
 ]
 

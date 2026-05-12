@@ -74,7 +74,7 @@ const TaskBar: React.FC<TaskBarProps> = ({ currentPage }) => {
         </li>
         <li><a onClick={() => navigate('/reel')}  onMouseEnter={() => handleMouseEnter("Reel")} style={{ color: getLinkColor("Reel") }}>Reels</a></li>
         <li><a onClick={() => navigate('/code')}  onMouseEnter={() => handleMouseEnter("Code")} style={{ color: getLinkColor("Code") }}>Code</a></li>
-        <li><a onClick={() => navigate('/animation')}  onMouseEnter={() => handleMouseEnter("Animation")} style={{ color: getLinkColor("Animation") }}>Animation & 3D Modeling</a></li>
+        <li><a onClick={() => navigate('/animation')}  onMouseEnter={() => handleMouseEnter("Animation")} style={{ color: getLinkColor("Animation") }}>Animation & VFX</a></li>
         <li><a onClick={() => navigate('/art')}  onMouseEnter={() => handleMouseEnter("Art")} style={{ color: getLinkColor("Art") }}>Art</a></li>
         <li><a onClick={() => navigate('/contact')}  onMouseEnter={() => handleMouseEnter("Contact")} style={{ color: getLinkColor("Contact") }}>Contact</a></li>
         <li><a href={resume} target="_blank" rel="noopener noreferrer"  onMouseEnter={() => handleMouseEnter("Resume")} style={{ color: getLinkColor("Resume") }}>Resume</a></li>

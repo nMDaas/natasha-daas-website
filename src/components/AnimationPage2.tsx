@@ -16,22 +16,22 @@ import toast2 from '/animation/toast2.jpg';
 import toast3 from '/animation/toast3.jpg';
 import toast4 from '/animation/toast4.jpg';
 import toast5 from '/animation/toast5.jpg';
-import vehicleVideo from '/animation/vehiclePreview.mp4';
-import v01 from '/animation/v01.png';
-import v02 from '/animation/v02.png';
-import v1 from '/animation/v1.jpg';
-import v2 from '/animation/v2.jpg';
-import v3 from '/animation/v3.jpg';
-import v6 from '/animation/v6.png';
-import v7 from '/animation/v7.png';
-import vRig from '/animation/vRig.png';
+/* Merchant Cart */
+import MerchantCart from '/animation/merchantCart/vehiclePreview.mp4';
+import MC_profiles from '/animation/merchantCart/profiles.png';
+import MC_conceptArt from '/animation/merchantCart/conceptArt.png';
+import MC_1 from '/animation/merchantCart/MC_1.jpg';
+import MC_2 from '/animation/merchantCart/MC_2.jpg';
+import MC_3 from '/animation/merchantCart/MC_3.jpg';
+import MC_4 from '/animation/merchantCart/MC_4.png';
+import MC_5 from '/animation/merchantCart/MC_5.png';
 import animationWork from '/animation/animationWork.mp4'
-// "Give Me The Britney" files
+/* Give Me The Britney */
 import britney1 from '/animation/DudeBritney/BritneyTurnaround.mp4'
 import britney2 from '/animation/DudeBritney/BritneyBack.png'
 import britney3 from '/animation/DudeBritney/BritneyFront.png'
 import britney4 from '/animation/DudeBritney/BritneyPosed.png'
-// "To: Jasmine From: Stitch" files
+/* To: Jasmine From: Stitch */
 import stitch1 from '/animation/StitchesForStitch/StitchesForStitch_Portfolio.mp4'
 import stitch2 from '/animation/StitchesForStitch/StitchModelWithGarment.png'
 import stitch3 from '/animation/StitchesForStitch/GarmentSideView.png'
@@ -106,29 +106,26 @@ const slides: Slide[] = [
     ] 
   },
   {
-    src: vehicleVideo,
+    src: MerchantCart,
     alt: 'Merchant Cart',
     caption: 'Merchant Cart',
     credit: '',
-    thumbnail: v6,
+    thumbnail: MC_4,
     details: [
-      "Responsible for concept art and vehicle profiles",
+      "Responsible for all aspects, including concept art and vehicle profiles",
       "Vehicle modeled in Maya and textured in Adobe Substance Painter",
-      "Lighting and Rigging done in Maya"
     ],
-    skills: 'Maya | Adobe Substance Painter | Modeling | Texturing | Lighting | Rigging',
+    skills: 'Maya | Adobe Substance Painter | Modeling | Texturing',
     link: '',
     paddingTop: 140,
     images: [
-      { src: v01, alt: 'Carriage Cart', width: '220px', height: '112px', description: "front and side profile concept art"},
-      { src: v02, alt: 'Carriage Cart', width: '220px', height: '112px', description: "rough perspective concept art"},
-      { src: v1, alt: 'Carriage Cart', width: '220px', height: '112px', description: "modeling, texturing and lighting in progress"},
-      { src: v2, alt: 'Carriage Cart', width: '220px', height: '112px', description: "modeling, texturing and lighting in progress" },
-      { src: v3, alt: 'Carriage Cart', width: '220px', height: '112px', description: "close up of modeling, texturing and lighting in progress" },
-      { src: v6, alt: 'Carriage Cart', width: '220px', height: '112px', description: "modeling and texturing in progress, test with darker lighting" },
-      { src: v7, alt: 'Carriage Cart', width: '220px', height: '112px', description: "close up of modeling, texturing and lighting in progress" },
-      { src: vRig, alt: 'Carriage Cart', width: '220px', height: '112px', description: "rig and lighting set up in Maya" },
-      
+      { src: MC_profiles, alt: 'Carriage Cart', width: '220px', height: '112px', description: "front and side profile concept art"},
+      { src: MC_conceptArt, alt: 'Carriage Cart', width: '220px', height: '112px', description: "rough perspective concept art"},
+      { src: MC_1, alt: 'Carriage Cart', width: '220px', height: '112px', description: "modeling, texturing and lighting in progress"},
+      { src: MC_2, alt: 'Carriage Cart', width: '220px', height: '112px', description: "modeling, texturing and lighting in progress" },
+      { src: MC_3, alt: 'Carriage Cart', width: '220px', height: '112px', description: "close up of modeling, texturing and lighting in progress" },
+      { src: MC_4, alt: 'Carriage Cart', width: '220px', height: '112px', description: "modeling and texturing in progress, test with darker lighting" },
+      { src: MC_5, alt: 'Carriage Cart', width: '220px', height: '112px', description: "close up of modeling, texturing and lighting in progress" },      
     ] 
   },
   {

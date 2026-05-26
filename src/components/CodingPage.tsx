@@ -106,60 +106,55 @@ function Masonry() {
 
                   {/* visual samples of project*/}
                   {!expandedItems[item.css] &&
-                  <div>
-                    {item.hoverImages.length > 1 ? (
-                      <Slide arrows={item.hoverImages.length > 1} autoplay={false}>
-                        {item.hoverImages.map((src, idx) => (
-                          <div key={idx} className="each-slide-effect" style={{ height: '300px', backgroundColor: 'black'}}>
-                            {src.endsWith('.mp4') ? (
-                              <video src={src} autoPlay loop muted playsInline style={{ height: '80%', width: 'auto'}} />
-                            ) : (
-                              <div style={{ backgroundImage: `url(${src})`, height: '100%', width: 'auto', backgroundSize: 'cover' }} />
-                            )}
-                          </div>
-                        ))}
-                      </Slide>
-                    ) : (
-                      item.hoverImages.length === 1 && (
-                        <div style={{ height: '300px' }}>
-                          {item.hoverImages[0].endsWith('.mp4') ? (
-                            <video src={item.hoverImages[0]} autoPlay loop muted playsInline style={{ height: '100%', width: 'auto' }} />
-                          ) : (
-                            <div style={{ backgroundImage: `url(${item.hoverImages[0]})`, height: '100%', width: 'auto', backgroundSize: 'cover' }} />
-                          )}
-                        </div>
-                      )
-                    )}
+                  <div style={{
+                      aspectRatio: '16 / 9',
+                    }}>
+                    <iframe
+                      src="https://player.vimeo.com/video/488970422?badge=0&autopause=0&player_id=0&app_id=58479"
+                      frameBorder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                      title="Browser History Demo"
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        border: 'none',
+                        borderRadius: '12px',
+                        display: 'block',
+                      }}
+                    />
                   </div>}
 
                   {/* bullet points for project*/}
                   <div>
-                    {expandedItems[item.css] && item.collaborators && (
+                    {item.collaborators && (
                       <p className={styles.collaborators}>Collaborators: {item.collaborators}</p>
                     )} 
-                    {expandedItems[item.css] && 
-                    <div className={styles.detail}>
-                      <br />
-                      {Array.isArray(item.details) ? (
-                        <ul>
-                          {item.details.map((detail, index) => (
-                            <li key={index}>{detail}</li>
-                          ))}
-                        </ul>
-                      ) : (
-                        <p>{item.details}</p>
-                      )}
-                    </div>}
+                    <div className={styles.scrollSection}>
+                      {expandedItems[item.css] && 
+                      <div className={styles.detail}>
+                        <br />
+                        {Array.isArray(item.details) ? (
+                          <ul>
+                            {item.details.map((detail, index) => (
+                              <li key={index}>{detail}</li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <p>{item.details}</p>
+                        )}
+                      </div>}
+                    </div>
                     </div>
                 </div>
 
                 {/* GitHub Repo or YouTube Demo Link */}
-                {!expandedItems[item.css] &&
                 <div className={styles.gridItemButtons}>
                   <div className={expandedItems[item.css] ? styles.linkOnDetails: styles.link }>
                     <a href={item.link} target="_blank" rel="noopener noreferrer">{item.linkInfo}!</a>
                   </div>
-                </div>}
+                </div>
 
               </div>
             </a.div>
@@ -217,7 +212,7 @@ function Masonry() {
 
                     {/* bullet points for project*/}
                     <div>
-                      {expandedItems[item.css] && item.collaborators && (
+                      {item.collaborators && (
                         <p className={styles.collaborators}>Collaborators: {item.collaborators}</p>
                       )} 
                       {expandedItems[item.css] && 

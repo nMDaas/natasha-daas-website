@@ -63,7 +63,7 @@ import VAT_overview from '/code/variantAuthorToolkit/toolkitOverview.png'
 export default [
   { css: VariantAuthorToolkit, 
     hoverImages: [VariantAuthorToolkit, VAT_demo, VAT_docs, VAT_writtenWalkthrough, VAT_videoWalkthrough, VAT_overview],
-    height: 1200,
+    height: 1100,
     description: "Maya USD Variant Author Toolkit", 
     skills: "Maya | USD | Python | PySide | Qt", 
     linkInfo: "View GitHub Repo",
@@ -83,7 +83,7 @@ export default [
     projectType: 'tools'  },
   { css: terrainGenerator8, 
       hoverImages: [terrainGenerator1, terrainGenerator2, terrainGenerator3, terrainGenerator4, terrainGenerator5, terrainGenerator6, terrainGenerator7, terrainGenerator8],
-      height: 1200,
+      height: 1100,
       description: "Image-Guided Terrain Generator for Unity Export", 
       skills: "Houdini Tools | Python | Qt | Vex", 
       linkInfo: "View GitHub Repo",
@@ -100,7 +100,7 @@ export default [
       projectType: 'tools'  },
     { css: substancePluginDemo1, 
       hoverImages: [substancePluginDemo1, substancePluginDemo2, substancePluginImage],
-      height: 1200,
+      height: 1100,
       description: "AI Standard Surface Pipeline Tool (Substance Painter → Maya)", 
       skills: "Maya Tools | Python | Qt | MEL ", 
       linkInfo: "View GitHub Repo",
@@ -117,7 +117,7 @@ export default [
       projectType: 'tools'  },
     { css: particlesim6,
     hoverImages: [particlesim6, particlesim3, particlesim4, particlesim5, particlesim2, particlesim7, particlesim8, particlesim1], 
-    height: 1200, description: "Fluid Particle Simulation Engine",
+    height: 1100, description: "Fluid Particle Simulation Engine",
      skills: "C++ | OpenGL | GLSL | Graphics Programming", 
      link:"https://github.com/nMDaas/ParticleSimulation",
      summary: "Particle Dynamics and Ray Marching Rendering Engine",
@@ -135,7 +135,7 @@ export default [
     projectType: 'graphics'},
       { css: plugin1, 
         hoverImages: [plantgendemo1,plant1, plantgendemo2, plant2, plant3, plugin3, plugin1],
-        height: 1200,
+        height: 1100,
         description: "Plant Generator Plugin", 
         skills: "Maya Tools | Python | Qt | MEL ", 
         link:"https://github.com/nMDaas/PlantGeneratorPluginMaya",
@@ -153,7 +153,7 @@ export default [
     { blank: blank,
     css: raytracer, 
     hoverImages: [raytracer, raytracer3, raytracer4, raytracer2], 
-    height: 1200, description: "Raytracer",
+    height: 1100, description: "Raytracer",
      skills: "C++ | OpenGL | Graphics Programming ", 
      link:"https://github.com/nMDaas/raytracer",
      summary: "Ray Tracing Engine in C++",
@@ -171,7 +171,7 @@ export default [
     projectType: 'graphics'},
   { css: psyduck, 
     hoverImages: [psyduck], 
-    height: 1200, description: "Psyduck Hunt",
+    height: 1100, description: "Psyduck Hunt",
      skills: "Unity | C# | Blender", 
      link:"https://youtu.be/ieZEHAfgGZY",
      summary: "3D Game Made In Unity",
@@ -187,7 +187,7 @@ export default [
     },
   { css: Renderstack, 
       hoverImages: [Renderstack, R_gallery, R_galleryPost, R_hyperlink],
-      height: 1200,
+      height: 1100,
       description: "Renderstack", 
       skills: "TypeScript | Three.js | React | MongoDB | CI/CD", 
       linkInfo: "View GitHub Repo",
@@ -206,7 +206,7 @@ export default [
       projectType: 'SWE'},
   { css: nickContent, 
       hoverImages: [nickHome, nickChar, nickSearch, nickSettings, nickLayout],
-      height: 1200,
+      height: 1100,
       description: "Nickelodeon+", 
       skills: "TypeScript | React | Node.js | JSON ", 
       linkInfo: "View YouTube Demo",
@@ -219,7 +219,7 @@ export default [
 
       ],
       video: '',
-      collaborators: 'Osewanne Uwadiale, Frenchie Mariñas, Allison Bailey, Tianna Belcher, Charlie Humbert, Rebe Chen, Sami Shanman, Jordan Miles, Nicole Concepcion, Sophia Spagna, Griffin Jones, Ramón Aquino, Jewel Millan, Brisa Parra, Milly Watson, Ariana Kanchuger, Daniel Crane',
+      collaborators: '2024 NICKterns',
       projectType: 'SWE'}
 ]
 
@@ -227,7 +227,7 @@ export default [
 
 /*{ css: portfolio, 
     hoverImages: [portfolio2, portfolio], 
-    height: 1200, 
+    height: 1100, 
     description: "Personal Website", 
     linkInfo: "View GitHub Repo",
     skills: "Typescript | React | GSAP | Three.js | MUI | Software Development Life Cycle (SDLC)", link: "https://github.com/nMDaas/natasha-daas-website",
@@ -242,7 +242,7 @@ export default [
     projectType: 'SWE'
   },*/
   /*
-  { css: productionplan, hoverImages: [productionplan2, productionplan3, productionplan], height: 1200, description: "Animation Production Plan Generator", 
+  { css: productionplan, hoverImages: [productionplan2, productionplan3, productionplan], height: 1100, description: "Animation Production Plan Generator", 
     skills: "Javascript | Typescript | Generative AI | React | HCI | Software Development Life Cycle (SDLC)", link: "https://github.com/Abby-Dennin/Animation-Production-Plan-Generator",
     summary: "AI-powered web application to streamline animation production generation and management",
     details: [
@@ -261,7 +261,7 @@ export default [
   /*
   { css: spirograph,
     hoverImages: [spirograph], 
-    height: 1200, 
+    height: 1100, 
     description: "Spirograph Animation", 
     skills: "C++ | OpenGL | 2D Animation | Graphics Programming",
     link:"https://github.com/nMDaas/Spirograph/tree/main",
@@ -275,7 +275,7 @@ export default [
     projectType: 'graphics'},
   */
  /*
-  { css: bakeapp, hoverImages: [bakeryapp], height: 1200, description: "Bakery App", skills: "mySQL | Java | JDBC", link: "https://github.com/nMDaas/BakeryApp",
+  { css: bakeapp, hoverImages: [bakeryapp], height: 1100, description: "Bakery App", skills: "mySQL | Java | JDBC", link: "https://github.com/nMDaas/BakeryApp",
     summary: "Console based app to help users manage kitchen inventory and discover, save and post baking recipes",
     details: [
       "Designed the Conceptual and Logical Design of the database, including tables, relationships, and the User Activity Diagram, to establish the schema design and application flow from user perspective",

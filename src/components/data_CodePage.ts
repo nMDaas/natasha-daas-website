@@ -28,13 +28,6 @@ import nickSettings from '/code/nickPlusSettings.mp4'
 import nickLayout from '/code/nickPlusLayout.mp4'
 import nickContent from '/code/nickPlusContentPlayer.mp4'
 import nickSearch from '/code/nickPlusSearch.mp4'
-import terrainGenerator1 from '/code/TG/TG_ToolResults.png'
-import terrainGenerator2 from '/code/TG/TG_ToolWorkflow.png'
-import terrainGenerator3 from '/code/TG/TG_Breakdown1.png'
-import terrainGenerator4 from '/code/TG/TG_Breakdown2.png'
-import terrainGenerator5 from '/code/TG/TG_TerrainElevation.png'
-import terrainGenerator6 from '/code/TG/TG_ElevationResults1.png'
-import terrainGenerator7 from '/code/TG/TG_ElevationResults2.png'
 import terrainGenerator8 from '/code/TG/TG_UnitySetup.png'
 import particlesim1 from '/code/particlesim/2D.mp4'
 import particlesim2 from '/code/particlesim/Fluid_Fall.mp4'
@@ -53,17 +46,11 @@ import R_galleryPost from '/code/renderstack/galleryPost.png';
 import R_hyperlink from '/code/renderstack/hyperlink.png';
 /* Maya USD Variant Author Toolkit */
 import VariantAuthorToolkit from '/code/variantAuthorToolkit/toolkitVisual.mp4'
-import VAT_demo from '/code/variantAuthorToolkit/demo.mp4'
-import VAT_docs from '/code/variantAuthorToolkit/documentation.png'
-import VAT_writtenWalkthrough from '/code/variantAuthorToolkit/writtenWalkthrough.png'
-import VAT_videoWalkthrough from '/code/variantAuthorToolkit/videoWalkthrough.png'
-import VAT_overview from '/code/variantAuthorToolkit/toolkitOverview.png'
 
 
 export default [
   { css: VariantAuthorToolkit, 
-    hoverImages: [VariantAuthorToolkit, VAT_demo, VAT_docs, VAT_writtenWalkthrough, VAT_videoWalkthrough, VAT_overview],
-    vimVideo: "https://player.vimeo.com/video/1195622007?title=0&byline=0&portrait=0&controls=1&background=0",
+    vimVideo: "https://player.vimeo.com/video/1195622007?title=0&byline=0&portrait=0&controls=1&background=0&loop=1",
     height: 1100,
     description: "Maya USD Variant Author Toolkit", 
     skills: "Maya | USD | Python | PySide | Qt", 
@@ -83,7 +70,7 @@ export default [
     collaborators: '',
     projectType: 'tools'  },
   { css: terrainGenerator8, 
-      hoverImages: [terrainGenerator1, terrainGenerator2, terrainGenerator3, terrainGenerator4, terrainGenerator5, terrainGenerator6, terrainGenerator7, terrainGenerator8],
+      vimVideo: "https://player.vimeo.com/video/1195642365?title=0&byline=0&portrait=0&controls=1&background=0&loop=1",
       height: 1100,
       description: "Image-Guided Terrain Generator for Unity Export", 
       skills: "Houdini Tools | Python | Qt | Vex", 

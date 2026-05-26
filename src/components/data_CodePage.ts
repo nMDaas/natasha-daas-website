@@ -19,16 +19,16 @@ import productionplan2 from '/code/rh.jpg';
 import productionplan3 from '/code/ri.jpg';
 import blank from '/code/blank.jpg';
 import spirograph from '/code/spirograph.mp4'
-import substancePluginImage from "/code/UVsFileStructureAndScene.jpg"
-import substancePluginDemo1 from '/code/SubstancePluginDemo1.mp4'
-import substancePluginDemo2 from '/code/SubstancePluginDemo2.mp4'
+import substancePluginImage from "/code/substancePlugin/SB_Image.jpg"
+import substancePluginDemo1 from '/code/substancePlugin/SB_Demo1.mp4'
+import substancePluginDemo2 from '/code/substancePlugin/SB_Demo2.mp4'
 import nickHome from '/code/NickPlusHome.mp4'
 import nickChar from '/code/nickPlusNickSona.mp4'
 import nickSettings from '/code/nickPlusSettings.mp4'
 import nickLayout from '/code/nickPlusLayout.mp4'
 import nickContent from '/code/nickPlusContentPlayer.mp4'
 import nickSearch from '/code/nickPlusSearch.mp4'
-import terrainGenerator8 from '/code/TG/TG_UnitySetup.png'
+import terrainGenerator8 from '/code/terrainGenerator/TG_UnitySetup.png'
 import particlesim1 from '/code/particlesim/2D.mp4'
 import particlesim2 from '/code/particlesim/Fluid_Fall.mp4'
 import particlesim3 from '/code/particlesim/Containers.mp4'
@@ -87,7 +87,7 @@ export default [
       collaborators: '',
       projectType: 'tools'  },
     { css: substancePluginDemo1, 
-      hoverImages: [substancePluginDemo1, substancePluginDemo2, substancePluginImage],
+      vimVideo: "https://player.vimeo.com/video/1195703326?title=0&byline=0&portrait=0&controls=1&background=0&loop=1",
       height: 1100,
       description: "AI Standard Surface Pipeline Tool (Substance Painter → Maya)", 
       skills: "Maya Tools | Python | Qt | MEL ", 

@@ -63,6 +63,7 @@ import VAT_overview from '/code/variantAuthorToolkit/toolkitOverview.png'
 export default [
   { css: VariantAuthorToolkit, 
     hoverImages: [VariantAuthorToolkit, VAT_demo, VAT_docs, VAT_writtenWalkthrough, VAT_videoWalkthrough, VAT_overview],
+    vimVideo: "https://player.vimeo.com/video/1195622007?title=0&byline=0&portrait=0&controls=1&background=0",
     height: 1100,
     description: "Maya USD Variant Author Toolkit", 
     skills: "Maya | USD | Python | PySide | Qt", 

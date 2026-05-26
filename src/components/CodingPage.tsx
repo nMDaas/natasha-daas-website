@@ -110,7 +110,7 @@ function Masonry() {
                       aspectRatio: '16 / 9',
                     }}>
                     <iframe
-                      src="https://player.vimeo.com/video/488970422?badge=0&autopause=0&player_id=0&app_id=58479"
+                      src={item.vimVideo}
                       frameBorder="0"
                       allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                       referrerPolicy="strict-origin-when-cross-origin"

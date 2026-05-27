@@ -29,14 +29,7 @@ import nickLayout from '/code/nickPlusLayout.mp4'
 import nickContent from '/code/nickPlusContentPlayer.mp4'
 import nickSearch from '/code/nickPlusSearch.mp4'
 import terrainGenerator8 from '/code/terrainGenerator/TG_UnitySetup.png'
-import particlesim1 from '/code/particlesim/2D.mp4'
-import particlesim2 from '/code/particlesim/Fluid_Fall.mp4'
-import particlesim3 from '/code/particlesim/Containers.mp4'
-import particlesim4 from '/code/particlesim/Performance.mp4'
-import particlesim5 from '/code/particlesim/Raymarch_Breakdown.mp4'
-import particlesim6 from '/code/particlesim/Comparison1.mp4'
-import particlesim7 from '/code/particlesim/Comparison2.mp4'
-import particlesim8 from '/code/particlesim/closeup_shot.png'
+import particlesim6 from '/code/particleSimulation/PS_Comparison1.mp4'
 /* Psyduck */
 import psyduck from '/games/PsyduckHuntPreview.mp4';
 /* Renderstack */
@@ -104,7 +97,7 @@ export default [
       collaborators: '',
       projectType: 'tools'  },
     { css: particlesim6,
-    hoverImages: [particlesim6, particlesim3, particlesim4, particlesim5, particlesim2, particlesim7, particlesim8, particlesim1], 
+    vimVideo: "https://player.vimeo.com/video/1195715560?title=0&byline=0&portrait=0&controls=1&background=0&loop=1",
     height: 1100, description: "Fluid Particle Simulation Engine",
      skills: "C++ | OpenGL | GLSL | Graphics Programming", 
      link:"https://github.com/nMDaas/ParticleSimulation",

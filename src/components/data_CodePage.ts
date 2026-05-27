@@ -1,14 +1,8 @@
 import raytracer from '/code/raytracer.jpg';
 import productionplan from '/code/productionplanner.jpg';
 import bakeryapp from '/code/bakeapp.jpg';
-import plugin1 from '/code/plantGen.jpg';
 import plugin2 from '/code/plugin2.jpg';
-import plugin3 from '/code/plugin3.jpg';
-import plantgendemo1 from '/code/plantgendemo1.mp4';
-import plant1 from '/code/plant1.jpg';
-import plantgendemo2 from '/code/plantgendemo2.mp4';
-import plant2 from '/code/plant2.jpg';
-import plant3 from '/code/plant3.jpg';
+import plugin3 from '/code/plantPlugin/PP_plugin3.jpg';
 import portfolio from '/code/portfolio.jpg';
 import portfolio2 from '/code/portfolio2.jpg';
 import raytracer2 from '/code/rb.jpg';
@@ -114,8 +108,8 @@ export default [
     video: '',
     collaborators: '',
     projectType: 'graphics'},
-      { css: plugin1, 
-        hoverImages: [plantgendemo1,plant1, plantgendemo2, plant2, plant3, plugin3, plugin1],
+      { css: plugin3, 
+        vimVideo: "https://player.vimeo.com/video/1195963857?title=0&byline=0&portrait=0&controls=1&background=0&loop=1",
         height: 1100,
         description: "Plant Generator Plugin", 
         skills: "Maya Tools | Python | Qt | MEL ", 

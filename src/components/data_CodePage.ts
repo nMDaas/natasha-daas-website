@@ -13,21 +13,13 @@ import spirograph from '/code/spirograph.mp4'
 import substancePluginImage from "/code/substancePlugin/SB_Image.jpg"
 import substancePluginDemo1 from '/code/substancePlugin/SB_Demo1.mp4'
 import substancePluginDemo2 from '/code/substancePlugin/SB_Demo2.mp4'
-import nickHome from '/code/NickPlusHome.mp4'
-import nickChar from '/code/nickPlusNickSona.mp4'
-import nickSettings from '/code/nickPlusSettings.mp4'
-import nickLayout from '/code/nickPlusLayout.mp4'
-import nickContent from '/code/nickPlusContentPlayer.mp4'
-import nickSearch from '/code/nickPlusSearch.mp4'
+import nickHome from '/code/Nickelodeon+/N_homePage.mp4'
 import terrainGenerator8 from '/code/terrainGenerator/TG_UnitySetup.png'
 import particlesim6 from '/code/particleSimulation/PS_Comparison1.mp4'
 /* Psyduck */
 import psyduck from '/code/psyduckHunt/PH_preview.mp4';
 /* Renderstack */
-import Renderstack from '/code/renderstack/orbitControlsAndHyperLinks.mp4';
-import R_gallery from '/code/renderstack/gallery.png';
-import R_galleryPost from '/code/renderstack/galleryPost.png';
-import R_hyperlink from '/code/renderstack/hyperlink.png';
+import Renderstack from '/code/renderstack/RS_orbitControlsAndHyperLinks.mp4';
 /* Maya USD Variant Author Toolkit */
 import VariantAuthorToolkit from '/code/variantAuthorToolkit/toolkitVisual.mp4'
 
@@ -158,7 +150,7 @@ export default [
      ],
     },
   { css: Renderstack, 
-      hoverImages: [Renderstack, R_gallery, R_galleryPost, R_hyperlink],
+    vimVideo: "https://player.vimeo.com/video/1196202846?title=0&byline=0&portrait=0&controls=1&background=0&loop=1&muted=1",
       height: 1100,
       description: "Renderstack", 
       skills: "TypeScript | Three.js | React | MongoDB | CI/CD", 
@@ -176,8 +168,7 @@ export default [
       video: '',
       collaborators: 'Catherine Azelby, Erika Ding, Meredith Scott',
       projectType: 'SWE'},
-  { css: nickContent, 
-      hoverImages: [nickHome, nickChar, nickSearch, nickSettings, nickLayout],
+  { css: nickHome, 
       height: 1100,
       description: "Nickelodeon+", 
       skills: "TypeScript | React | Node.js | JSON ", 

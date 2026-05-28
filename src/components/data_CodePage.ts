@@ -169,6 +169,7 @@ export default [
       collaborators: 'Catherine Azelby, Erika Ding, Meredith Scott',
       projectType: 'SWE'},
   { css: nickHome, 
+        vimVideo: "https://player.vimeo.com/video/1196294747?title=0&byline=0&portrait=0&controls=1&background=0&loop=1&muted=1",
       height: 1100,
       description: "Nickelodeon+", 
       skills: "TypeScript | React | Node.js | JSON ", 

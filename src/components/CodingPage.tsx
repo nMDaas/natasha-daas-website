@@ -122,6 +122,8 @@ function Masonry() {
                         border: 'none',
                         borderRadius: '12px',
                         display: 'block',
+                        boxShadow: "0px 10px 20px  #dbdada",
+                        overflow: "hidden"
                       }}
                     />
                   </div>}
@@ -200,6 +202,8 @@ function Masonry() {
                           border: 'none',
                           borderRadius: '12px',
                           display: 'block',
+                          boxShadow: "0 20px 50px  #dbdada",
+                          overflow: "hidden"
                         }}
                       />
                     </div>}

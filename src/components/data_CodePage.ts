@@ -1,13 +1,10 @@
-import raytracer from '/code/raytracer.jpg';
+import raytracer from '/code/raytracer/RT_finalRender.jpg';
 import productionplan from '/code/productionplanner.jpg';
 import bakeryapp from '/code/bakeapp.jpg';
 import plugin2 from '/code/plugin2.jpg';
 import plugin3 from '/code/plantPlugin/PP_plugin3.jpg';
 import portfolio from '/code/portfolio.jpg';
 import portfolio2 from '/code/portfolio2.jpg';
-import raytracer2 from '/code/rb.jpg';
-import raytracer3 from '/code/rc.jpg';
-import raytracer4 from '/code/rd.jpg';
 import bakeapp from '/code/bakeapp.jpg';
 import productionplan2 from '/code/rh.jpg';
 import productionplan3 from '/code/ri.jpg';
@@ -25,7 +22,7 @@ import nickSearch from '/code/nickPlusSearch.mp4'
 import terrainGenerator8 from '/code/terrainGenerator/TG_UnitySetup.png'
 import particlesim6 from '/code/particleSimulation/PS_Comparison1.mp4'
 /* Psyduck */
-import psyduck from '/games/PsyduckHuntPreview.mp4';
+import psyduck from '/code/psyduckHunt/PH_preview.mp4';
 /* Renderstack */
 import Renderstack from '/code/renderstack/orbitControlsAndHyperLinks.mp4';
 import R_gallery from '/code/renderstack/gallery.png';
@@ -127,7 +124,7 @@ export default [
         projectType: 'tools'},
     { blank: blank,
     css: raytracer, 
-    hoverImages: [raytracer, raytracer3, raytracer4, raytracer2], 
+    vimVideo: "https://player.vimeo.com/video/1196189469?title=0&byline=0&portrait=0&controls=1&background=0&loop=1",
     height: 1100, description: "Raytracer",
      skills: "C++ | OpenGL | Graphics Programming ", 
      link:"https://github.com/nMDaas/raytracer",
@@ -145,7 +142,7 @@ export default [
     collaborators: '',
     projectType: 'graphics'},
   { css: psyduck, 
-    hoverImages: [psyduck], 
+    vimVideo: "https://player.vimeo.com/video/1196190758?title=0&byline=0&portrait=0&controls=1&background=0&loop=1",
     height: 1100, description: "Psyduck Hunt",
      skills: "Unity | C# | Blender", 
      link:"https://youtu.be/ieZEHAfgGZY",

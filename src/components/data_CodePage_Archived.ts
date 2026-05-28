@@ -1,17 +1,15 @@
 /* Photo Editor */
-import PhotoEditor from '/code/photoeditor/gui.jpg';
-import PE_blur_sharp from '/code/photoeditor/blur_sharp_example.jpg';
-import PE_brightness from '/code/photoeditor/brightness_example.jpg';
-import PE_filters from '/code/photoeditor/filters_example.jpg';
+import PhotoEditor from '/code/photoeditor/PE_gui.jpg';
 /* Lilypad Parkout */
-import LilypadParkour from '/code/lilypadParkour/LilypadParkour.mp4';
+import LilypadParkour from '/code/lilypadParkour/LP_preview.mp4';
 /* OpenGL Projects */
-import OpenGLProjects from '/code/openGL/opengl.mp4';
+import OpenGLProjects from '/code/openGL/OG_opengl.mp4';
 
 export default [
     { 
         css: OpenGLProjects, 
         hoverImages: [OpenGLProjects], 
+        vimVideo: "https://player.vimeo.com/video/1196305898?title=0&byline=0&portrait=0&controls=1&background=0&loop=1",
         height: 1200, 
         description: "Trackball, Lighting, Texturing and Animation in OpenGL",
         skills: "C++ | OpenGL | GLSL | Graphics Programming",
@@ -33,7 +31,7 @@ export default [
     },
     {   
         css: LilypadParkour, 
-        hoverImages: [LilypadParkour], 
+        vimVideo: "https://player.vimeo.com/video/1196309656?title=0&byline=0&portrait=0&controls=1&background=0&loop=1",
         height: 1200, 
         description: "Lilypad Parkour",
         skills: "Unity | C# | Blender", 
@@ -51,7 +49,7 @@ export default [
     },
     { 
         css: PhotoEditor, 
-        hoverImages: [PhotoEditor, PE_blur_sharp, PE_brightness, PE_filters], 
+        vimVideo: "https://player.vimeo.com/video/1196310867?title=0&byline=0&portrait=0&controls=1&background=0&loop=1",
         height: 1200, 
         description: "Photo Editor", 
         skills: "Java | Object-Oriented Programming (OOP)", 

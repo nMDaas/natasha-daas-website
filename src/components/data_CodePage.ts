@@ -1,69 +1,33 @@
-import raytracer from '/code/raytracer.jpg';
+import raytracer from '/code/raytracer/RT_finalRender.jpg';
 import productionplan from '/code/productionplanner.jpg';
 import bakeryapp from '/code/bakeapp.jpg';
-import plugin1 from '/code/plantGen.jpg';
 import plugin2 from '/code/plugin2.jpg';
-import plugin3 from '/code/plugin3.jpg';
-import plantgendemo1 from '/code/plantgendemo1.mp4';
-import plant1 from '/code/plant1.jpg';
-import plantgendemo2 from '/code/plantgendemo2.mp4';
-import plant2 from '/code/plant2.jpg';
-import plant3 from '/code/plant3.jpg';
+import plugin3 from '/code/plantPlugin/PP_plugin3.jpg';
 import portfolio from '/code/portfolio.jpg';
 import portfolio2 from '/code/portfolio2.jpg';
-import raytracer2 from '/code/rb.jpg';
-import raytracer3 from '/code/rc.jpg';
-import raytracer4 from '/code/rd.jpg';
 import bakeapp from '/code/bakeapp.jpg';
 import productionplan2 from '/code/rh.jpg';
 import productionplan3 from '/code/ri.jpg';
 import blank from '/code/blank.jpg';
 import spirograph from '/code/spirograph.mp4'
-import substancePluginImage from "/code/UVsFileStructureAndScene.jpg"
-import substancePluginDemo1 from '/code/SubstancePluginDemo1.mp4'
-import substancePluginDemo2 from '/code/SubstancePluginDemo2.mp4'
-import nickHome from '/code/NickPlusHome.mp4'
-import nickChar from '/code/nickPlusNickSona.mp4'
-import nickSettings from '/code/nickPlusSettings.mp4'
-import nickLayout from '/code/nickPlusLayout.mp4'
-import nickContent from '/code/nickPlusContentPlayer.mp4'
-import nickSearch from '/code/nickPlusSearch.mp4'
-import terrainGenerator1 from '/code/TG/TG_ToolResults.png'
-import terrainGenerator2 from '/code/TG/TG_ToolWorkflow.png'
-import terrainGenerator3 from '/code/TG/TG_Breakdown1.png'
-import terrainGenerator4 from '/code/TG/TG_Breakdown2.png'
-import terrainGenerator5 from '/code/TG/TG_TerrainElevation.png'
-import terrainGenerator6 from '/code/TG/TG_ElevationResults1.png'
-import terrainGenerator7 from '/code/TG/TG_ElevationResults2.png'
-import terrainGenerator8 from '/code/TG/TG_UnitySetup.png'
-import particlesim1 from '/code/particlesim/2D.mp4'
-import particlesim2 from '/code/particlesim/Fluid_Fall.mp4'
-import particlesim3 from '/code/particlesim/Containers.mp4'
-import particlesim4 from '/code/particlesim/Performance.mp4'
-import particlesim5 from '/code/particlesim/Raymarch_Breakdown.mp4'
-import particlesim6 from '/code/particlesim/Comparison1.mp4'
-import particlesim7 from '/code/particlesim/Comparison2.mp4'
-import particlesim8 from '/code/particlesim/closeup_shot.png'
+import substancePluginImage from "/code/substancePlugin/SB_Image.jpg"
+import substancePluginDemo1 from '/code/substancePlugin/SB_Demo1.mp4'
+import substancePluginDemo2 from '/code/substancePlugin/SB_Demo2.mp4'
+import nickHome from '/code/Nickelodeon+/N_homePage.mp4'
+import terrainGenerator8 from '/code/terrainGenerator/TG_UnitySetup.png'
+import particlesim6 from '/code/particleSimulation/PS_Comparison1.mp4'
 /* Psyduck */
-import psyduck from '/games/PsyduckHuntPreview.mp4';
+import psyduck from '/code/psyduckHunt/PH_preview.mp4';
 /* Renderstack */
-import Renderstack from '/code/renderstack/orbitControlsAndHyperLinks.mp4';
-import R_gallery from '/code/renderstack/gallery.png';
-import R_galleryPost from '/code/renderstack/galleryPost.png';
-import R_hyperlink from '/code/renderstack/hyperlink.png';
+import Renderstack from '/code/renderstack/RS_orbitControlsAndHyperLinks.mp4';
 /* Maya USD Variant Author Toolkit */
 import VariantAuthorToolkit from '/code/variantAuthorToolkit/toolkitVisual.mp4'
-import VAT_demo from '/code/variantAuthorToolkit/demo.mp4'
-import VAT_docs from '/code/variantAuthorToolkit/documentation.png'
-import VAT_writtenWalkthrough from '/code/variantAuthorToolkit/writtenWalkthrough.png'
-import VAT_videoWalkthrough from '/code/variantAuthorToolkit/videoWalkthrough.png'
-import VAT_overview from '/code/variantAuthorToolkit/toolkitOverview.png'
 
 
 export default [
   { css: VariantAuthorToolkit, 
-    hoverImages: [VariantAuthorToolkit, VAT_demo, VAT_docs, VAT_writtenWalkthrough, VAT_videoWalkthrough, VAT_overview],
-    height: 1200,
+    vimVideo: "https://player.vimeo.com/video/1195622007?title=0&byline=0&portrait=0&controls=1&background=0&loop=1",
+    height: 1100,
     description: "Maya USD Variant Author Toolkit", 
     skills: "Maya | USD | Python | PySide | Qt", 
     linkInfo: "View GitHub Repo",
@@ -82,8 +46,8 @@ export default [
     collaborators: '',
     projectType: 'tools'  },
   { css: terrainGenerator8, 
-      hoverImages: [terrainGenerator1, terrainGenerator2, terrainGenerator3, terrainGenerator4, terrainGenerator5, terrainGenerator6, terrainGenerator7, terrainGenerator8],
-      height: 1200,
+      vimVideo: "https://player.vimeo.com/video/1195642365?title=0&byline=0&portrait=0&controls=1&background=0&loop=1",
+      height: 1100,
       description: "Image-Guided Terrain Generator for Unity Export", 
       skills: "Houdini Tools | Python | Qt | Vex", 
       linkInfo: "View GitHub Repo",
@@ -99,8 +63,8 @@ export default [
       collaborators: '',
       projectType: 'tools'  },
     { css: substancePluginDemo1, 
-      hoverImages: [substancePluginDemo1, substancePluginDemo2, substancePluginImage],
-      height: 1200,
+      vimVideo: "https://player.vimeo.com/video/1195703326?title=0&byline=0&portrait=0&controls=1&background=0&loop=1",
+      height: 1100,
       description: "AI Standard Surface Pipeline Tool (Substance Painter → Maya)", 
       skills: "Maya Tools | Python | Qt | MEL ", 
       linkInfo: "View GitHub Repo",
@@ -116,8 +80,8 @@ export default [
       collaborators: '',
       projectType: 'tools'  },
     { css: particlesim6,
-    hoverImages: [particlesim6, particlesim3, particlesim4, particlesim5, particlesim2, particlesim7, particlesim8, particlesim1], 
-    height: 1200, description: "Fluid Particle Simulation Engine",
+    vimVideo: "https://player.vimeo.com/video/1195715560?title=0&byline=0&portrait=0&controls=1&background=0&loop=1",
+    height: 1100, description: "Fluid Particle Simulation Engine",
      skills: "C++ | OpenGL | GLSL | Graphics Programming", 
      link:"https://github.com/nMDaas/ParticleSimulation",
      summary: "Particle Dynamics and Ray Marching Rendering Engine",
@@ -133,9 +97,9 @@ export default [
     video: '',
     collaborators: '',
     projectType: 'graphics'},
-      { css: plugin1, 
-        hoverImages: [plantgendemo1,plant1, plantgendemo2, plant2, plant3, plugin3, plugin1],
-        height: 1200,
+      { css: plugin3, 
+        vimVideo: "https://player.vimeo.com/video/1195963857?title=0&byline=0&portrait=0&controls=1&background=0&loop=1",
+        height: 1100,
         description: "Plant Generator Plugin", 
         skills: "Maya Tools | Python | Qt | MEL ", 
         link:"https://github.com/nMDaas/PlantGeneratorPluginMaya",
@@ -152,8 +116,8 @@ export default [
         projectType: 'tools'},
     { blank: blank,
     css: raytracer, 
-    hoverImages: [raytracer, raytracer3, raytracer4, raytracer2], 
-    height: 1200, description: "Raytracer",
+    vimVideo: "https://player.vimeo.com/video/1196189469?title=0&byline=0&portrait=0&controls=1&background=0&loop=1",
+    height: 1100, description: "Raytracer",
      skills: "C++ | OpenGL | Graphics Programming ", 
      link:"https://github.com/nMDaas/raytracer",
      summary: "Ray Tracing Engine in C++",
@@ -170,8 +134,8 @@ export default [
     collaborators: '',
     projectType: 'graphics'},
   { css: psyduck, 
-    hoverImages: [psyduck], 
-    height: 1200, description: "Psyduck Hunt",
+    vimVideo: "https://player.vimeo.com/video/1196190758?title=0&byline=0&portrait=0&controls=1&background=0&loop=1",
+    height: 1100, description: "Psyduck Hunt",
      skills: "Unity | C# | Blender", 
      link:"https://youtu.be/ieZEHAfgGZY",
      summary: "3D Game Made In Unity",
@@ -186,8 +150,8 @@ export default [
      ],
     },
   { css: Renderstack, 
-      hoverImages: [Renderstack, R_gallery, R_galleryPost, R_hyperlink],
-      height: 1200,
+    vimVideo: "https://player.vimeo.com/video/1196202846?title=0&byline=0&portrait=0&controls=1&background=0&loop=1&muted=1",
+      height: 1100,
       description: "Renderstack", 
       skills: "TypeScript | Three.js | React | MongoDB | CI/CD", 
       linkInfo: "View GitHub Repo",
@@ -204,9 +168,9 @@ export default [
       video: '',
       collaborators: 'Catherine Azelby, Erika Ding, Meredith Scott',
       projectType: 'SWE'},
-  { css: nickContent, 
-      hoverImages: [nickHome, nickChar, nickSearch, nickSettings, nickLayout],
-      height: 1200,
+  { css: nickHome, 
+        vimVideo: "https://player.vimeo.com/video/1196294747?title=0&byline=0&portrait=0&controls=1&background=0&loop=1&muted=1",
+      height: 1100,
       description: "Nickelodeon+", 
       skills: "TypeScript | React | Node.js | JSON ", 
       linkInfo: "View YouTube Demo",
@@ -219,7 +183,7 @@ export default [
 
       ],
       video: '',
-      collaborators: 'Osewanne Uwadiale, Frenchie Mariñas, Allison Bailey, Tianna Belcher, Charlie Humbert, Rebe Chen, Sami Shanman, Jordan Miles, Nicole Concepcion, Sophia Spagna, Griffin Jones, Ramón Aquino, Jewel Millan, Brisa Parra, Milly Watson, Ariana Kanchuger, Daniel Crane',
+      collaborators: '2024 NICKterns',
       projectType: 'SWE'}
 ]
 
@@ -227,7 +191,7 @@ export default [
 
 /*{ css: portfolio, 
     hoverImages: [portfolio2, portfolio], 
-    height: 1200, 
+    height: 1100, 
     description: "Personal Website", 
     linkInfo: "View GitHub Repo",
     skills: "Typescript | React | GSAP | Three.js | MUI | Software Development Life Cycle (SDLC)", link: "https://github.com/nMDaas/natasha-daas-website",
@@ -242,7 +206,7 @@ export default [
     projectType: 'SWE'
   },*/
   /*
-  { css: productionplan, hoverImages: [productionplan2, productionplan3, productionplan], height: 1200, description: "Animation Production Plan Generator", 
+  { css: productionplan, hoverImages: [productionplan2, productionplan3, productionplan], height: 1100, description: "Animation Production Plan Generator", 
     skills: "Javascript | Typescript | Generative AI | React | HCI | Software Development Life Cycle (SDLC)", link: "https://github.com/Abby-Dennin/Animation-Production-Plan-Generator",
     summary: "AI-powered web application to streamline animation production generation and management",
     details: [
@@ -261,7 +225,7 @@ export default [
   /*
   { css: spirograph,
     hoverImages: [spirograph], 
-    height: 1200, 
+    height: 1100, 
     description: "Spirograph Animation", 
     skills: "C++ | OpenGL | 2D Animation | Graphics Programming",
     link:"https://github.com/nMDaas/Spirograph/tree/main",
@@ -275,7 +239,7 @@ export default [
     projectType: 'graphics'},
   */
  /*
-  { css: bakeapp, hoverImages: [bakeryapp], height: 1200, description: "Bakery App", skills: "mySQL | Java | JDBC", link: "https://github.com/nMDaas/BakeryApp",
+  { css: bakeapp, hoverImages: [bakeryapp], height: 1100, description: "Bakery App", skills: "mySQL | Java | JDBC", link: "https://github.com/nMDaas/BakeryApp",
     summary: "Console based app to help users manage kitchen inventory and discover, save and post baking recipes",
     details: [
       "Designed the Conceptual and Logical Design of the database, including tables, relationships, and the User Activity Diagram, to establish the schema design and application flow from user perspective",

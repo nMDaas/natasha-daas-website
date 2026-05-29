@@ -107,12 +107,13 @@
      display: flex;
     justify-content: center;
     align-items: center; 
+    margin-top: 20px;
   }
   
   .link {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-top: 40px;
     font-size: 13px !important;
+    padding-top: 15px;
     /*background-color: white;*/
   }
 
@@ -157,13 +158,13 @@
   }
 
    .detailsButton {
-    color: #5190f5 !important;
     text-decoration: none !important;
     padding: 5px;
-    border: 1px solid #5190f5;
+    color: white !important;
+    border: 1px solid #b78a80;
+    background-color: #b78a80;
     border-radius: 5px;
     cursor: pointer;
-    background-color: white;
     position: absolute;
     top: -50px;
     right: 10px;   /* change to left / center if needed */
@@ -171,8 +172,8 @@
   }
 
   .detailsButton:hover {
-    color: white !important;
-    background-color: #b78a80;
+    color: #b78a80 !important;
+    background-color: white;
     border: 1px solid #b78a80;
     transition: color 0.3s ease-in-out, z-index 0s ease 0s; 
     transition: background-color 0.3s ease-in-out, z-index 0s ease 0s; 
@@ -205,11 +206,41 @@
     transition: color 0.3s ease-in-out, z-index 0s ease 0s; 
     transition: background-color 0.3s ease-in-out, z-index 0s ease 0s; 
   }
+
+  .scrollSection {
+    max-height: 250px;
+  overflow-y: scroll;
+  }
+
+  /* width */
+.scrollSection::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* track */
+.scrollSection::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* handle */
+.scrollSection::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 999px;
+}
+
+  /* handle hover */
+  .scrollSection::-webkit-scrollbar-thumb:hover {
+    background:  #b78a80 !important;
+  }
   
   .detail {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background: linear-gradient(to top, white, #ebedf0);
     line-height: 1.1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 10px;
   }
 
   .detail ul {

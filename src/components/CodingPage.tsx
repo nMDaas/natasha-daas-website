@@ -210,9 +210,10 @@ function Masonry() {
 
                     {/* bullet points for project*/}
                     <div>
-                      {item.collaborators && (
-                        <p className={styles.collaborators}>Collaborators: {item.collaborators}</p>
-                      )} 
+                    {item.collaborators && (
+                      <p className={styles.collaborators}>Collaborators: {item.collaborators}</p>
+                    )} 
+                    <div className={styles.scrollSection}>
                       {expandedItems[item.css] && 
                       <div className={styles.detail}>
                         <br />
@@ -226,7 +227,8 @@ function Masonry() {
                           <p>{item.details}</p>
                         )}
                       </div>}
-                      </div>
+                    </div>
+                    </div>
                   </div>
 
                   {/* GitHub Repo or YouTube Demo Link */}

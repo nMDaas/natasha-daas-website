@@ -228,10 +228,10 @@
   border-radius: 999px;
 }
 
-/* handle hover */
-.scrollSection::-webkit-scrollbar-thumb:hover {
-  background: red !important;
-}
+  /* handle hover */
+  .scrollSection::-webkit-scrollbar-thumb:hover {
+    background:  #b78a80 !important;
+  }
   
   .detail {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

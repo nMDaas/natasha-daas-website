@@ -3,6 +3,11 @@
     display: flex;
 }
 
+.reel-page {
+  background-color: white;
+  min-height: 100vh;
+}
+
 .reelHeading {
     text-transform: uppercase;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

@@ -4,7 +4,7 @@ import "./ReelPage.css"
 
 const ReelPage = () => {
   return (
-    <div>
+    <div className="reel-page">
       <TaskBar currentPage="Reel" />
       <div className="reels">
         <div className="reel-div">

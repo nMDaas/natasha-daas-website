@@ -8,6 +8,11 @@
   height: auto;
 }
 
+.animation-page {
+  background-color: white;
+  min-height: 100vh;
+}
+
 .video-container {
   width: 800px;
   position: relative; /* Relative positioning to allow content alignment */

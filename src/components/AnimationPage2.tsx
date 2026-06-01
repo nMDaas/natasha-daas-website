@@ -207,7 +207,7 @@ const AnimationPage: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="animation-page">
       <TaskBar currentPage="Animation" />
       <section className="animsec">
         {slides.map((slide, idx) => (

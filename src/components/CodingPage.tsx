@@ -138,7 +138,7 @@ function Masonry() {
   }, [seeMoreProjects]);
 
   return (
-    <div>
+    <div className={styles.codePage}>
       <div>
         <TaskBar currentPage="Code" />
         <div ref={ref} id="lessProjects" className={styles.list} style={{ height: Math.max(...heights) }}>

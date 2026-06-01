@@ -42,3 +42,30 @@ iframe {
     width: 600px;
     height: 400px;
 }
+
+@media (max-width: 499px) {
+  .reels {
+    margin-top: 100px;
+  }
+
+  .reel-div {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .reelHeading {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .reelInfo {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  iframe {
+    width: calc(100% - 40px) !important;
+    height: 210px !important;
+    margin: 10px 20px;
+  }
+}

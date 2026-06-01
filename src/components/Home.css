@@ -229,6 +229,17 @@
         width: auto;
     }
 
+    .my-name {
+        font-size: 46px;
+        white-space: nowrap;
+    }
+
+    .my-name-top {
+        top: 4px;
+        left: 0px;
+        -webkit-text-stroke: 0.5px rgb(77, 60, 62) !important;
+    }
+
     .PSA-text {
         font-size: 24px;
     }

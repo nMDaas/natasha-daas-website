@@ -80,6 +80,7 @@
   .previewAndDetails{
     position: relative;
     background-color: #ebedf0;
+    padding-top: 8px;
   }
 
   .summary {
@@ -103,6 +104,7 @@
     line-height: 1.1;
     font-style: italic;
     background-color: #ebedf0;
+    border-top: 7px solid white;
   }
 
   .gridItemButtons {
@@ -179,7 +181,7 @@
 
   .detailsButtonInline {
     display: block;
-    margin: 10px 0 4px 8px;
+    margin: 0 4px 4px 8px;
     padding: 5px 10px;
     color: #5190f5 !important;
     border: 1px solid #5190f5;

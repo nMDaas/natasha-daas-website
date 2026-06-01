@@ -64,6 +64,10 @@ ul a:hover {
 
   /* desktop */
 @media (min-width: 1501px) {
+.menu-bar {
+  font-size: 35px;
+}
+
 .home-icon {
   width: 40px;
   height: 35px;

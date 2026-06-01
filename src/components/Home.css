@@ -220,8 +220,12 @@
 
 /* mobile */
 @media (max-width: 499px) {
+    .home-page {
+        padding-top: 130px;
+    }
+
     .home-image {
-        height: 180px;
+        height: 250px;
         width: auto;
     }
 
@@ -238,31 +242,31 @@
     }
 
     .heading {
-        font-size: 14px !important;
+        font-size: 16px !important;
         padding-bottom: 10px;
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
 
     .heading-experience {
-        font-size: 14px !important;
+        font-size: 16px !important;
         padding-bottom: 10px;
     }
 
     .info {
-        font-size: 14px !important;
+        font-size: 16px !important;
         padding-bottom: 5px;
         padding-right: 10px !important;
     }
 
     .info-company {
-        font-size: 14px !important;
+        font-size: 16px !important;
         padding-bottom: 5px;
         padding-right: 10px !important;
     }
 
     .info-experience {
-        font-size: 14px !important;
+        font-size: 16px !important;
         padding-bottom: 5px;
     }
 }

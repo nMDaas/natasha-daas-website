@@ -100,15 +100,12 @@ function Masonry() {
                 <div className={styles.summary}>{item.summary}</div>
                 <div className={styles.skills}>{item.skills}</div>
                 <div className={styles.previewAndDetails}>
-                  <button className={styles.detailsButton} onClick={() => toggleDetails(item.css)}>
-                    {expandedItems[item.css] ? "▣ Preview" : "☰ Details"}
-                  </button>
-
-                  {/* visual samples of project*/}
+                  {/* visual samples of project — button overlaid on image */}
                   {!expandedItems[item.css] &&
-                  <div style={{
-                      aspectRatio: '16 / 9',
-                    }}>
+                  <div style={{ position: 'relative', aspectRatio: '16 / 9' }}>
+                    <button className={styles.detailsButton} onClick={() => toggleDetails(item.css)}>
+                      ☰ Details
+                    </button>
                     <iframe
                       src={item.vimVideo}
                       frameBorder="0"
@@ -128,15 +125,19 @@ function Masonry() {
                     />
                   </div>}
 
-                  {/* bullet points for project*/}
+                  {/* bullet points for project — button flows above collaborators */}
                   <div>
+                    {expandedItems[item.css] && (
+                      <button className={styles.detailsButtonInline} onClick={() => toggleDetails(item.css)}>
+                        ▣ Preview
+                      </button>
+                    )}
                     {item.collaborators && (
                       <p className={styles.collaborators}>Collaborators: {item.collaborators}</p>
-                    )} 
+                    )}
                     <div className={styles.scrollSection}>
-                      {expandedItems[item.css] && 
+                      {expandedItems[item.css] &&
                       <div className={styles.detail}>
-                        <br />
                         {Array.isArray(item.details) ? (
                           <ul>
                             {item.details.map((detail, index) => (
@@ -151,7 +152,7 @@ function Masonry() {
                     </div>
                 </div>
 
-                {/* GitHub Repo or YouTube Demo Link */}
+                {/* GitHub Repo / YouTube Demo Link */}
                 <div className={styles.gridItemButtons}>
                   <div className={expandedItems[item.css] ? styles.linkOnDetails: styles.link }>
                     <a href={item.link} target="_blank" rel="noopener noreferrer">{item.linkInfo}!</a>
@@ -180,15 +181,12 @@ function Masonry() {
                   <div className={styles.summary}>{item.summary}</div>
                   <div className={styles.skills}>{item.skills}</div>
                   <div className={styles.previewAndDetails}>
-                    <button className={styles.detailsButton} onClick={() => toggleDetails(item.css)}>
-                      {expandedItems[item.css] ? "▣ Preview" : "☰ Details"}
-                    </button>
-
-                    {/* visual samples of project*/}
+                    {/* visual samples of project — button overlaid on image */}
                     {!expandedItems[item.css] &&
-                    <div style={{
-                        aspectRatio: '16 / 9',
-                      }}>
+                    <div style={{ position: 'relative', aspectRatio: '16 / 9' }}>
+                      <button className={styles.detailsButton} onClick={() => toggleDetails(item.css)}>
+                        ☰ Details
+                      </button>
                       <iframe
                         src={item.vimVideo}
                         frameBorder="0"
@@ -208,15 +206,19 @@ function Masonry() {
                       />
                     </div>}
 
-                    {/* bullet points for project*/}
+                    {/* bullet points for project — button flows above collaborators */}
                     <div>
+                    {expandedItems[item.css] && (
+                      <button className={styles.detailsButtonInline} onClick={() => toggleDetails(item.css)}>
+                        ▣ Preview
+                      </button>
+                    )}
                     {item.collaborators && (
                       <p className={styles.collaborators}>Collaborators: {item.collaborators}</p>
-                    )} 
+                    )}
                     <div className={styles.scrollSection}>
-                      {expandedItems[item.css] && 
+                      {expandedItems[item.css] &&
                       <div className={styles.detail}>
-                        <br />
                         {Array.isArray(item.details) ? (
                           <ul>
                             {item.details.map((detail, index) => (
@@ -231,13 +233,12 @@ function Masonry() {
                     </div>
                   </div>
 
-                  {/* GitHub Repo or YouTube Demo Link */}
-                  {!expandedItems[item.css] &&
+                  {/* GitHub Repo / YouTube Demo Link */}
                   <div className={styles.gridItemButtons} id="moreProjectsButton">
-                    <div className={styles.link}>
+                    <div className={expandedItems[item.css] ? styles.linkOnDetails : styles.link}>
                       <a href={item.link} target="_blank" rel="noopener noreferrer">{item.linkInfo}!</a>
                     </div>
-                  </div>}
+                  </div>
 
                 </div>
               </a.div>

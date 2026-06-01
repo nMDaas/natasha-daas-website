@@ -1,51 +1,44 @@
 .contactPageMobile {
-    gap: 50px; /* Space between the grid cells */
-    align-items: center; /* Align items vertically in the center */
     background-color: #b78a80;
     height: 100vh;
-    justify-content: center;
-  }
-
-  .contact-icon-mobile {
-    padding-top: 50px !important;
-    width: auto;
-    max-width: 70%; /* Limit the image width */
-    height: auto;
-    padding-left: 30px !important;
   }
 
   .contact-content-mobile {
-    padding-top: 200px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 155px;
+    gap: 4px;
   }
 
+  .contact-icon-mobile {
+    width: auto;
+    max-width: 70%;
+    height: auto;
+  }
 
 .thankyou-mobile {
   font-family: 'PeachBlossom';
   font-size: 2.0rem;
   font-weight: bold;
   color: #3b3b3b;
-  justify-content: center;
-  align-items: center;
-  padding-left: 30px !important;
+  text-align: center;
 }
 
 .contact_text-mobile {
   font-size: 2.0rem;
   font-family: 'NatashaFont';
   color: #f2c9bf;
-  padding: 2px;
-  justify-content: center;
-  align-items: center;
-  padding-left: 30px !important;
+  text-align: center;
 }
 
 .links-mobile {
   font-size: 20px;
   font-family: 'NatashaFont';
-  display: flex; /* Display icons in a row */
-  gap: 10px; /* Space between icons */
+  display: flex;
+  gap: 10px;
   text-decoration: none !important;
-  padding-left: 30px !important;
+  justify-content: center;
 }
 
 .links-mobile a {

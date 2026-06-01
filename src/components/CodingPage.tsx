@@ -226,7 +226,7 @@ function Masonry() {
                       </button>
                     )}
                     {item.collaborators && (
-                      <p className={styles.collaborators}>Collaborators: {item.collaborators}</p>
+                      <p className={expandedItems[item.css] ? styles.collaboratorsOnDetails: styles.collaborators }>Collaborators: {item.collaborators}</p>
                     )}
                     <div className={styles.scrollSection}>
                       {expandedItems[item.css] &&

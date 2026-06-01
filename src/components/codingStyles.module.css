@@ -103,7 +103,18 @@
     color: #3b3b3b;
     line-height: 1.1;
     font-style: italic;
-    background-color: #ebedf0;
+    background-color: white !important;
+    border-top: 7px solid white;
+  }
+
+  .collaboratorsOnDetails {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    margin: 0;
+    color: #3b3b3b;
+    line-height: 1.1;
+    font-style: italic;
+    background-color: #ebedf0 !important;
     border-top: 7px solid white;
   }
 

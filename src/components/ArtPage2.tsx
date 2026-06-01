@@ -77,7 +77,7 @@ function Masonry() {
                 backgroundImage: `url(${item.css}?auto=compress&dpr=2&h=500&w=500)`, 
                 borderRadius: '50%' 
                 }} 
-                onClick={() => handleThumbnailClick(item.css, item.description)}
+                /*onClick={() => handleThumbnailClick(item.css, item.description)}*/
             />
             </a.div>
         ))}

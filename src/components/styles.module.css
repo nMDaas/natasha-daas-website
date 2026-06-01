@@ -39,12 +39,13 @@ html, body {
     z-index: 5 !important;
   }
   
+  /*
   .list div:hover {
-    transform: scale(1.7); /* Slightly less aggressive scale for smoother feel */
-    z-index: 20 !important; /* Bring the hovered element to the front */
-    transition: transform 0.3s ease-in-out, z-index 0s ease 0s; /* Immediate z-index change */
+    transform: scale(1.7); 
+    z-index: 20 !important; 
+    transition: transform 0.3s ease-in-out, z-index 0s ease 0s; 
     cursor: pointer;
-  }
+  }*/
 
 
 /* 2560x1440 */
@@ -66,12 +67,13 @@ html, body {
     background: linear-gradient(to bottom, white, #f2c9bf);
   }
 
+   /*
   .list div:hover {
-    transform: scale(1); /* No transform! */
-    z-index: 20 !important; /* Bring the hovered element to the front */
-    transition: transform 0.3s ease-in-out, z-index 0s ease 0s; /* Immediate z-index change */
+    transform: scale(1);
+    z-index: 20 !important;
+    transition: transform 0.3s ease-in-out, z-index 0s ease 0s;
     cursor: pointer;
-  }
+  }*/
 }
   
   

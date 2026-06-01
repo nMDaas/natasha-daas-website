@@ -123,8 +123,9 @@
   .animsec {
     padding-top: 180px;
     display: flex;
-    flex-wrap: wrap; /* Allows content to wrap to the next line if there's not enough space */
-    justify-content: space-between; /* Adjust as needed to add spacing between items */
+    flex-wrap: wrap;
+    justify-content: space-between;
     flex-direction: column;
+    padding-right: 30px;
   }
 }

@@ -96,8 +96,7 @@
 
   .collaborators {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding-left: 25px;
-    padding-bottom: 6px;
+    padding: 3px;
     margin: 0;
     color: #3b3b3b;
     line-height: 1.1;
@@ -263,7 +262,6 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background: linear-gradient(to top, white, #ebedf0);
     line-height: 1.1;
-    padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 10px;
@@ -271,6 +269,7 @@
 
   .detail ul {
     padding-right: 3px;
+    margin: 0;
   }
   
   .detail ul li {

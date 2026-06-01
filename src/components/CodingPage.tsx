@@ -213,18 +213,20 @@ function Masonry() {
           ))}
         </div>
 
-        <div className={styles.sectionDivider}>
-          <span className={styles.sectionDividerDiamond}>◆</span>
-        </div>
+        <div className={styles.dividerButtonSection}>
+          <div className={styles.sectionDivider}>
+            <span className={styles.sectionDividerDiamond}>◆</span>
+          </div>
 
-        <div className={styles.div_moreProjectsButton} id="moreProjects">
-          <button className={styles.moreProjectsButton} onClick={() => toggleSeeMoreProjects()}>
-            {!seeMoreProjects ? "click for more projects" : "click for less projects"}
-          </button>
-        </div>
+          <div className={styles.div_moreProjectsButton} id="moreProjects">
+            <button className={styles.moreProjectsButton} onClick={() => toggleSeeMoreProjects()}>
+              {!seeMoreProjects ? "click for more projects" : "click for less projects"}
+            </button>
+          </div>
 
-        <div className={styles.sectionDividerBelow}>
-          <span className={styles.sectionDividerDiamond}>◆</span>
+          <div className={styles.sectionDividerBelow}>
+            <span className={styles.sectionDividerDiamond}>◆</span>
+          </div>
         </div>
 
         {/* Archived Projects */}

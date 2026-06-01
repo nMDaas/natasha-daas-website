@@ -116,6 +116,10 @@ ul a:hover {
 }
 
 @media (max-width: 499px) {
+  .menu-bar {
+    font-size: 25px;
+  }
+
   ul a {
     float: none;
     display: inline-block;

@@ -169,8 +169,8 @@
     z-index: 2;
     text-decoration: none !important;
     padding: 5px 10px;
-    color: #5190f5 !important;
-    border: 1px solid #5190f5;
+    color: #b78a80 !important;
+    border: 1px solid #b78a80;
     background-color: white;
     border-radius: 20px;
     cursor: pointer;
@@ -183,9 +183,9 @@
     display: block;
     margin: 0 4px 4px 8px;
     padding: 5px 10px;
-    color: #5190f5 !important;
-    border: 1px solid #5190f5;
-    background-color: #ebedf0 !important;
+    color: #b78a80 !important;
+    border: 1px solid #b78a80;
+    background-color: white !important;
     border-radius: 20px;
     cursor: pointer;
     white-space: nowrap;
@@ -195,15 +195,15 @@
 
   .detailsButtonInline:hover {
     color: white !important;
-    background-color: #5190f5;
-    border: 1px solid #5190f5;
+    background-color: #b78a80 !important;
+    border: 1px solid #b78a80 !important;
     transition: background-color 0.3s ease-in-out;
   }
 
   .detailsButton:hover {
     color: white !important;
-    background-color: #5190f5;
-    border: 1px solid #5190f5;
+    background-color: #b78a80;
+    border: 1px solid #b78a80;
     transition: background-color 0.3s ease-in-out;
   }
 

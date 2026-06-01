@@ -114,3 +114,18 @@ ul a:hover {
     vertical-align: middle !important;
   }
 }
+
+@media (max-width: 499px) {
+  ul a {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 10px;
+  }
+
+  ul a:hover {
+    float: none;
+  }
+}

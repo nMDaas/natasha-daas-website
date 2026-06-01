@@ -4,8 +4,8 @@
   }
 
   .codePage {
-    background-color: white;
-    min-height: 100vh;
+    background-color: white !important;
+    min-height: 100vh !important;
   }
   
   .list {

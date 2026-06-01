@@ -39,7 +39,7 @@
     border: 10px solid white;
     padding: 10px;
   }
-  
+
   .listArchived > div > div {
     position: relative;
     width: 100%;
@@ -79,6 +79,7 @@
 
   .previewAndDetails{
     position: relative;
+    background-color: #ebedf0;
   }
 
   .summary {
@@ -178,7 +179,7 @@
 
   .detailsButtonInline {
     display: block;
-    margin: 8px 0 4px 8px;
+    margin: 10px 0 4px 8px;
     padding: 5px 10px;
     color: #5190f5 !important;
     border: 1px solid #5190f5;

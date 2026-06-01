@@ -19,28 +19,40 @@ function Masonry() {
   const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({});
   const [seeMoreProjects, setSeeMoreProjects] = useState<boolean>(false);
 
-  /* calculate hights for gridItems */
+  /* calculate heights for gridItems */
   const [heights, gridItems] = useMemo(() => {
     let heights = new Array(columns).fill(0);
     let gridItems = items.map((child, i) => {
       const itemWidth = child.customWidth || width / columns;
+      // Dynamically compute card height based on actual card width
+      // Card inner content width: subtract slot padding (15px*2), border (10px*2), card padding (10px*2)
+      const cardInnerWidth = itemWidth - 70;
+      const videoHeight = cardInnerWidth * (9 / 16);
+      const headerHeight = 160; // description + summary + skills
+      const buttonHeight = 130;  // link button row
+      const itemHeight = headerHeight + videoHeight + buttonHeight;
       const column = heights.indexOf(Math.min(...heights));
       const x = (width / columns) * column;
-      const y = (heights[column] += child.height / 2) - child.height / 2;
-      return { ...child, x, y, width: itemWidth, height: child.height / 2 };
+      const y = (heights[column] += itemHeight) - itemHeight;
+      return { ...child, x, y, width: itemWidth, height: itemHeight };
     });
     return [heights, gridItems];
   }, [columns, items, width]);
 
-  /* calculate hights for archived gridItems */
+  /* calculate heights for archived gridItems */
   const [heights_archived, gridItems_archived] = useMemo(() => {
     let heights = new Array(columns).fill(0);
     let gridItems = archivedItems.map((child, i) => {
       const itemWidth = child.customWidth || width / columns;
+      const cardInnerWidth = itemWidth - 70;
+      const videoHeight = cardInnerWidth * (9 / 16);
+      const headerHeight = 160;
+      const buttonHeight = 140;
+      const itemHeight = headerHeight + videoHeight + buttonHeight;
       const column = heights.indexOf(Math.min(...heights));
       const x = (width / columns) * column;
-      const y = (heights[column] += child.height / 2) - child.height / 2;
-      return { ...child, x, y, width: itemWidth, height: child.height / 2 };
+      const y = (heights[column] += itemHeight) - itemHeight;
+      return { ...child, x, y, width: itemWidth, height: itemHeight };
     });
     return [heights, gridItems];
   }, [columns, archivedItems, width]);

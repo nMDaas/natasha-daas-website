@@ -34,7 +34,7 @@ const Modal: React.FC<ModalProps> = ({ show, onClose, imageSrc, imageAlt, custom
         
       </div>
       {/*<div className='popUpTitle'>{imageAlt} </div> */}
-      <div>
+      <div className='popUpDescriptionWrapper'>
         <div className='popUpTitle'> Description</div>
         <hr className='horizontalLine'></hr>
         <div className='popUpDescription'> {imageDescription}</div>

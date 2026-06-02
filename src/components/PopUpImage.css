@@ -68,3 +68,33 @@
     font-size: 15px;
     color: white;
   }
+
+  @media (max-width: 600px) {
+    .modal-overlay {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-overlay > div:first-child {
+      width: 100%;
+    }
+
+    .popUpDescriptionWrapper {
+      margin-top: 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .popUpDescriptionWrapper .popUpTitle {
+      padding-left: 0;
+    }
+
+    .popUpDescriptionWrapper .horizontalLine {
+      margin-left: 0 !important;
+    }
+
+    .popUpDescriptionWrapper .popUpDescription {
+      padding-left: 0;
+    }
+  }

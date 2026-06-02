@@ -6,7 +6,7 @@ import AnimationPage from "./components/AnimationPage";
 import HomePage from "./components/Home";
 import ReelPage from "./components/ReelPage";
 import ArtPage from "./components/ArtPage2";
-import ContactPage from "./components/ContactPage2";
+import ContactPage from "./components/ContactPage";
 import ContactPageMobile from "./components/ContactPageMobile";
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 

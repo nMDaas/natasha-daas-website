@@ -65,11 +65,10 @@ const slides: Slide[] = [
     credit: '',
     thumbnail: stitch2,
     details: [
-      "Individual project using Maya and Marvelous Designer",
-      "Responsible for garment design and simulation, animation, lighting, composition and compositing",
+      "Responsible for garment design and simulation, character animation, lighting, and compositing",
       "Stitch model, rig and textures by Gaethan Bracke"
     ],
-    skills: 'Maya | Marvelous Designer | Adobe After Effects | Garment Design & Dynamics | Character Animation | Lighting | Composition | Compositing',
+    skills: 'Maya | Marvelous Designer | Adobe After Effects | Garment Design & Dynamics | Compositing',
     link: 'https://youtu.be/LesIvR-Zvjk',
     paddingTop: 140,
     images: [
@@ -89,9 +88,7 @@ const slides: Slide[] = [
     credit: '',
     thumbnail: flythroughtn,
     details: [
-      "Room Environment created for individual animated short",
-      "Modeled all environment assets in scene in Maya",
-      "Textured assets using Adobe Substance Painter",
+      "Responsible for all aspects"
     ],
     skills: 'Maya | Adobe Substance Painter | Modeling | Texturing | Lighting | Composition',
     link: 'https://youtu.be/FACYoF7FNbU',
@@ -112,8 +109,7 @@ const slides: Slide[] = [
     credit: '',
     thumbnail: MC_4,
     details: [
-      "Responsible for all aspects, including concept art and vehicle profiles",
-      "Vehicle modeled in Maya and textured in Adobe Substance Painter",
+      "Responsible for all aspects",
     ],
     skills: 'Maya | Adobe Substance Painter | Modeling | Texturing',
     link: '',
@@ -135,7 +131,6 @@ const slides: Slide[] = [
     credit: '',
     thumbnail: britney3,
     details: [
-      "Individual hair grooming project using Maya's XGen",
       "Responsible for hair grooming and lighting",
       "'Dude' character model, textures and rig by Shalaby Rigs",
     ],
@@ -155,7 +150,7 @@ const slides: Slide[] = [
     credit: '',
     thumbnail: toast3,
     details: [
-      "Animated idle, walk and run cycle animation exercises for export into Unity",
+      "Responsible for character animation, including export and integration into Unity environment",
       "Model and textures from Mixamo",
       "\"Remy\" model rigged by Professor William Stout using Advanced Skeleton",
       "\"Space Girl\" model rigged by Milo Lin using Advanced Skeleton",
@@ -173,10 +168,9 @@ const slides: Slide[] = [
     credit: '',
     thumbnail: toast3,
     details: [
-      "2D animation created using Adobe Animate",
-      "Compositing and editing done using Adobe After Effects and Adobe Premiere Pro"
+      "Responsible for all aspects"
     ],
-    skills: '2D Animation | Adobe Animate | Adobe After Effects | Adobe Premiere Pro',
+    skills: 'Adobe Animate | Adobe After Effects | Adobe Premiere Pro',
     link: 'https://www.youtube.com/watch?v=xH2mZjapZUA',
     paddingTop: 170,
     images: [
@@ -213,7 +207,7 @@ const AnimationPage: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="animation-page">
       <TaskBar currentPage="Animation" />
       <section className="animsec">
         {slides.map((slide, idx) => (

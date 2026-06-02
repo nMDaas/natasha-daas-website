@@ -1,6 +1,5 @@
 html, body {
   margin: 0;
-  
 }
 
 .list {
@@ -9,7 +8,7 @@ html, body {
     position: relative;
     width: 100%;
     height: 100%;
-    min-height: 190vh;
+    min-height: unset;
     background: linear-gradient(to bottom, white, #f2c9bf);
   }
   
@@ -39,13 +38,21 @@ html, body {
     z-index: 5 !important;
   }
   
+  /*
   .list div:hover {
-    transform: scale(1.7); /* Slightly less aggressive scale for smoother feel */
-    z-index: 20 !important; /* Bring the hovered element to the front */
-    transition: transform 0.3s ease-in-out, z-index 0s ease 0s; /* Immediate z-index change */
+    transform: scale(1.7); 
+    z-index: 20 !important; 
+    transition: transform 0.3s ease-in-out, z-index 0s ease 0s; 
     cursor: pointer;
-  }
+  }*/
 
+
+/* 2560x1440 */
+@media (min-width: 2400px) {
+  .list > div {
+    padding: 10px;
+  }
+}
 
 /* mobile */
 @media (max-width: 599px) {
@@ -55,16 +62,17 @@ html, body {
     position: relative;
     width: 100%;
     height: 100%;
-    min-height: 300vh;
+    min-height: unset;
     background: linear-gradient(to bottom, white, #f2c9bf);
   }
 
+   /*
   .list div:hover {
-    transform: scale(1); /* No transform! */
-    z-index: 20 !important; /* Bring the hovered element to the front */
-    transition: transform 0.3s ease-in-out, z-index 0s ease 0s; /* Immediate z-index change */
+    transform: scale(1);
+    z-index: 20 !important;
+    transition: transform 0.3s ease-in-out, z-index 0s ease 0s;
     cursor: pointer;
-  }
+  }*/
 }
   
   

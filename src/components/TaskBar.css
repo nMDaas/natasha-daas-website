@@ -64,6 +64,10 @@ ul a:hover {
 
   /* desktop */
 @media (min-width: 1501px) {
+.menu-bar {
+  font-size: 35px;
+}
+
 .home-icon {
   width: 40px;
   height: 35px;
@@ -112,5 +116,24 @@ ul a:hover {
     width: 45px;
     height: 40px;
     vertical-align: middle !important;
+  }
+}
+
+@media (max-width: 499px) {
+  .menu-bar {
+    font-size: 25px;
+  }
+
+  ul a {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 10px;
+  }
+
+  ul a:hover {
+    float: none;
   }
 }

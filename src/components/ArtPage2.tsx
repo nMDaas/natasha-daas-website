@@ -26,17 +26,19 @@ function Masonry() {
     }
   }, [isMobile]);
 
+  const scaleFactor = width >= 2400 ? 1.5 : 1;
+
   const [heights, gridItems] = useMemo(() => {
     let heights = new Array(columns).fill(0);
     let gridItems = items.map((child, i) => {
       const column = heights.indexOf(Math.min(...heights));
-      const size = child.size || 50; // Assuming each item has a size property or default to 50
-      const x = (width / columns) * column + (width / columns - size) / 2; // Centering the circle
+      const size = (child.size || 50) * scaleFactor;
+      const x = (width / columns) * column + (width / columns - size) / 2;
       const y = (heights[column] += size) - size;
       return { ...child, x, y, width: size, height: size };
     });
     return [heights, gridItems];
-  }, [columns, items, width]);
+  }, [columns, items, width, scaleFactor]);
 
   const transitions = useTransition(gridItems, {
     key: (item) => item.css,
@@ -67,7 +69,7 @@ function Masonry() {
        <div className="artPageNavbar">
         <TaskBar currentPage="Art" />
         </div>
-        <div ref={ref} className={styles.list} style={{ height: Math.max(...heights) }}>
+        <div ref={ref} className={styles.list} style={{ height: Math.max(...heights) + 40 }}>
         {transitions((style, item) => (
             <a.div style={{ ...style, borderRadius: '50%' }}>
             <div 
@@ -75,7 +77,7 @@ function Masonry() {
                 backgroundImage: `url(${item.css}?auto=compress&dpr=2&h=500&w=500)`, 
                 borderRadius: '50%' 
                 }} 
-                onClick={() => handleThumbnailClick(item.css, item.description)}
+                /*onClick={() => handleThumbnailClick(item.css, item.description)}*/
             />
             </a.div>
         ))}

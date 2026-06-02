@@ -3,6 +3,11 @@
     display: flex;
 }
 
+.reel-page {
+  background-color: white;
+  min-height: 100vh;
+}
+
 .reelHeading {
     text-transform: uppercase;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -23,10 +28,22 @@
 }
 
 .reel-div {
-    flex:1;
-    width: 600px;
+    flex: 1;
+    min-width: 0;
     height: auto;
     margin: 20px;
+}
+
+@media (min-width: 769px) {
+  .reels {
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 2000px) {
+  iframe {
+    height: 600px !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -39,6 +56,33 @@
 iframe {
     border-radius: 15px;
     justify-content: center;
-    width: 600px;
+    width: 100%;
     height: 400px;
+}
+
+@media (max-width: 499px) {
+  .reels {
+    margin-top: 100px;
+  }
+
+  .reel-div {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .reelHeading {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .reelInfo {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  iframe {
+    width: calc(100% - 40px) !important;
+    height: 210px !important;
+    margin: 10px 20px;
+  }
 }

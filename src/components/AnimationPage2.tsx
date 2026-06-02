@@ -17,22 +17,22 @@ import toast3 from '/animation/toast3.jpg';
 import toast4 from '/animation/toast4.jpg';
 import toast5 from '/animation/toast5.jpg';
 /* Merchant Cart */
-import MerchantCart from '/animation/merchantCart/vehiclePreview.mp4';
+import MerchantCart from '/animation/merchantCart/Portfolio_COMP.mp4';
 import MC_profiles from '/animation/merchantCart/profiles.png';
 import MC_conceptArt from '/animation/merchantCart/conceptArt.png';
 import MC_1 from '/animation/merchantCart/MC_1.jpg';
 import MC_2 from '/animation/merchantCart/MC_2.jpg';
 import MC_3 from '/animation/merchantCart/MC_3.jpg';
 import MC_4 from '/animation/merchantCart/MC_4.png';
-import MC_5 from '/animation/merchantCart/MC_5.png';
-import animationWork from '/animation/animationWork.mp4'
+import MC_5 from '/animation/merchantCart/MC_5.jpeg';
+import animationWork from '/animation/AnimationExercises/Portfolio_COMP.mp4'
 /* Give Me The Britney */
 import britney1 from '/animation/DudeBritney/BritneyTurnaround.mp4'
 import britney2 from '/animation/DudeBritney/BritneyBack.png'
 import britney3 from '/animation/DudeBritney/BritneyFront.png'
 import britney4 from '/animation/DudeBritney/BritneyPosed.png'
 /* To: Jasmine From: Stitch */
-import stitch1 from '/animation/StitchesForStitch/StitchesForStitch_Portfolio.mp4'
+import stitch1 from '/animation/StitchesForStitch/Portfolio_COMP.mp4'
 import stitch2 from '/animation/StitchesForStitch/StitchModelWithGarment.png'
 import stitch3 from '/animation/StitchesForStitch/GarmentSideView.png'
 import stitch4 from '/animation/StitchesForStitch/StitchWithTurban.png'
@@ -53,6 +53,7 @@ interface Slide {
   details: string[];
   skills: string;
   link: string;
+  linkDescription: string;
   paddingTop: any;
   images: { src: string, alt: string, width: string, height: string, description: string}[];
 }
@@ -60,16 +61,17 @@ interface Slide {
 const slides: Slide[] = [
   {
     src: stitch1,
-    alt: 'To: Jasmine From: Stitch',
-    caption: 'To: Jasmine From: Stitch',
+    alt: 'To Jasmine, From Stitch',
+    caption: 'To Jasmine, From Stitch',
     credit: '',
     thumbnail: stitch2,
     details: [
       "Responsible for garment design and simulation, character animation, lighting, and compositing",
-      "Stitch model, rig and textures by Gaethan Bracke"
+      "See project YouTube link below for the complete list of credits, including models, rigs, textures, sound design, and other assets"
     ],
     skills: 'Maya | Marvelous Designer | Adobe After Effects | Garment Design & Dynamics | Compositing',
     link: 'https://youtu.be/LesIvR-Zvjk',
+    linkDescription: 'WATCH HERE ON YOUTUBE',
     paddingTop: 140,
     images: [
       { src: stitch2, alt: 'Stitch Model With Garment', width: '220px', height: '112px', description: "Stitch model with garment."},
@@ -77,6 +79,7 @@ const slides: Slide[] = [
       { src: stitch4, alt: 'Stitch With Turban', width: '220px', height: '112px', description: "Stitch with turban."},
       { src: stitch5, alt: 'Turban', width: '220px', height: '112px', description: "Rendered still of Turban." },
       { src: stitch6, alt: 'Animation Still 1', width: '220px', height: '112px', description: "Still from animated short." },
+      { src: stitch7, alt: 'Animation Still 1', width: '220px', height: '112px', description: "Still from animated short." },
       { src: stitch8, alt: 'Animation Still 3', width: '220px', height: '112px', description: "Still from animated short." },
       
     ] 
@@ -91,7 +94,8 @@ const slides: Slide[] = [
       "Responsible for all aspects"
     ],
     skills: 'Maya | Adobe Substance Painter | Modeling | Texturing | Lighting | Composition',
-    link: 'https://youtu.be/FACYoF7FNbU',
+    link: '',
+    linkDescription: '',
     paddingTop: 140,
     images: [
       { src: ft1, alt: 'Image 1', width: '220px', height: '112px', description: "final close up shot of whiteboard"},
@@ -113,6 +117,7 @@ const slides: Slide[] = [
     ],
     skills: 'Maya | Adobe Substance Painter | Modeling | Texturing',
     link: '',
+    linkDescription: '',
     paddingTop: 140,
     images: [
       { src: MC_profiles, alt: 'Carriage Cart', width: '220px', height: '112px', description: "front and side profile concept art"},
@@ -136,6 +141,7 @@ const slides: Slide[] = [
     ],
     skills: 'Maya | XGen | Hair Grooming',
     link: '',
+    linkDescription: '',
     paddingTop: 140,
     images: [
       { src: britney3, alt: 'BritneyBack.png', width: '220px', height: '112px', description: "Front view of hair groom with three-point lighting."},
@@ -157,6 +163,7 @@ const slides: Slide[] = [
     ],
     skills: 'Maya | Unity | Character Animation',
     link: '',
+    linkDescription: '',
     paddingTop: 60,
     images: [
     ]
@@ -171,7 +178,8 @@ const slides: Slide[] = [
       "Responsible for all aspects"
     ],
     skills: 'Adobe Animate | Adobe After Effects | Adobe Premiere Pro',
-    link: 'https://www.youtube.com/watch?v=xH2mZjapZUA',
+    link: '',
+    linkDescription: '',
     paddingTop: 170,
     images: [
       { src: toast1, alt: 'Image 1', width: '220px', height: '121px', description: "still from closing scene of animation" },
@@ -214,7 +222,7 @@ const AnimationPage: React.FC = () => {
           <div key={idx} className="container">
             
             <div className="video-container">
-              <video className="anim_slide" autoPlay={isDesktop()} loop muted controls={!isDesktop()}>
+              <video className="anim_slide" loop muted controls>
                 <source src={slide.src} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -232,7 +240,7 @@ const AnimationPage: React.FC = () => {
               </ul>
 
               {slide.images.length > 0 && (
-                <div className="animationInstruction">Click to View Image Renders Below!</div>
+                <div className="animationInstruction">Click to View Featured Stills Below!</div>
               )}
 
              
@@ -251,7 +259,7 @@ const AnimationPage: React.FC = () => {
             
               {slide.link && (
                 <div className="link">
-                  <a href={slide.link} target="_blank" rel="noopener noreferrer">watch here!</a>
+                  <a href={slide.link} target="_blank" rel="noopener noreferrer">{slide.linkDescription}</a>
                 </div>
               )}
             

@@ -1,1 +1,1 @@
-Hi! This is a website to showcase my interests in and projects related to programming, computer graphics, 3D animation and modeling!
+

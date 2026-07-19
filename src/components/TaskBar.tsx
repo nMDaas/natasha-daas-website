@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import './TaskBar.css';
 import { useNavigate } from 'react-router-dom';
-import resume from "../assets/NatashaDaasResume.pdf";
+import resume from '/other/NatashaDaasResume.pdf';
 import home1icon from '/other/home1.png';
 import home2icon from '/other/home2.png';
 import { GitHub, MailRounded, LinkedIn } from "@mui/icons-material";
